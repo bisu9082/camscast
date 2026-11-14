@@ -71,6 +71,23 @@ Two reconstruction scenarios (PM2.5-mode and total-dust) are reported in Supplem
 
 ---
 
+## 5. Atmospheric Environment revision (14 November 2026)
+
+    CAMS EAC4 AOD/wind  ADS, cams-global-reanalysis-eac4; total_aerosol_optical_depth_550nm,
+                        dust_aerosol_optical_depth_550nm, sea_salt_aerosol_optical_depth_550nm,
+                        10m_u/v_component_of_wind; area 25.5/51.75/22.5/56.25; 1 Oct 2022 to
+                        31 May 2024; 00-21 UTC every 3 h (ae/code/fetch_cams_eac4_aod_wind.py)
+    AERONET             aeronet.gsfc.nasa.gov print_web_data_v3, site DEWA_ResearchCentre,
+                        Version 3 Level 1.5 daily averages, SDA15 and AOD15
+                        (ae/code/fetch_aeronet.py; no account)
+    METAR               Iowa Environmental Mesonet ASOS/METAR archive, station OMAA,
+                        30 Sep 2022 to 31 May 2024, vsby + wxcodes + raw METAR
+                        (ae/code/fetch_metar_omaa.py; no account)
+
+None of these raw files is redistributed in the repository.
+
+---
+
 ## What is already built
 
 `data_processed/` holds the outputs of the steps above, so the audit and the simulation both run

@@ -1452,6 +1452,84 @@
   }
  },
  {
+  "key": "holben1998",
+  "title": "{AERONET---A federated instrument network and data archive for aerosol characterization}",
+  "year": "1998",
+  "doi": "10.1016/S0034-4257(98)00031-5",
+  "first_author": "holben",
+  "crossref": {
+   "found": true,
+   "registry": "Crossref",
+   "title": "AERONET—A Federated Instrument Network and Data Archive for Aerosol Characterization",
+   "title_sim": 0.994,
+   "first_author": "holben",
+   "first_author_match": true,
+   "years": [
+    1998
+   ],
+   "year_match": true,
+   "container": "Remote Sensing of Environment"
+  },
+  "s2": {
+   "found": true,
+   "title_sim": 1.0,
+   "year": 1998,
+   "has_abstract": true
+  }
+ },
+ {
+  "key": "oneill2003",
+  "title": "{Spectral discrimination of coarse and fine mode optical depth}",
+  "year": "2003",
+  "doi": "10.1029/2002JD002975",
+  "first_author": "o neill",
+  "crossref": {
+   "found": true,
+   "registry": "Crossref",
+   "title": "Spectral discrimination of coarse and fine mode optical depth",
+   "title_sim": 1.0,
+   "first_author": "o neill",
+   "first_author_match": true,
+   "years": [
+    2003
+   ],
+   "year_match": true,
+   "container": "Journal of Geophysical Research: Atmospheres"
+  },
+  "s2": {
+   "found": true,
+   "title_sim": 1.0,
+   "year": 2003,
+   "has_abstract": true
+  }
+ },
+ {
+  "key": "giles2019",
+  "title": "{Advancements in the Aerosol Robotic Network (AERONET) Version 3 database -- automated near-real-time quality control algorithm with improved cloud screening for Sun photometer aerosol optical depth (AOD) measurements}",
+  "year": "2019",
+  "doi": "10.5194/amt-12-169-2019",
+  "first_author": "giles",
+  "crossref": {
+   "found": true,
+   "registry": "Crossref",
+   "title": "Advancements in the Aerosol Robotic Network (AERONET) Version 3 database – automated near-real-time quality control algorithm with improved cloud screening for Sun photometer aerosol optical depth (AOD) measurements",
+   "title_sim": 1.0,
+   "first_author": "giles",
+   "first_author_match": true,
+   "years": [
+    2019
+   ],
+   "year_match": true,
+   "container": "Atmospheric Measurement Techniques"
+  },
+  "s2": {
+   "found": true,
+   "title_sim": 1.0,
+   "year": 2018,
+   "has_abstract": true
+  }
+ },
+ {
   "key": "kruskal1952",
   "title": "{Use of Ranks in One-Criterion Variance Analysis}",
   "year": "1952",

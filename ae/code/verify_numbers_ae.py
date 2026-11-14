@@ -186,7 +186,67 @@ chk(f"{100*S[km]:.0f}\\% lay inside single model cells ({100*S[kd]:.0f}\\% for m
 chk(f"(equitable threat score {r['ETS']:.2f})")
 chk(f"regional level (Spearman {RG['spearman_regional_obs_vs_cams']:.2f})")
 chk(f"from ${N['bias_min']:.0f}$ to ${N['bias_max']:+.0f}$~\\ugm{{}} and was organised in space")
-assert all(55 <= -v <= 65 for v in mm)            # "about 60"
+# --- GATE-8 revision: season, aggregation, interpolation (revision_diagnostics.json)
+RV = J("revision_diagnostics.json")
+TS, WS = RV["A_season"]["tercile_by_season"], RV["A_season"]["within_season_terciles"]
+chk(f"77 of the 107 days of the highest tercile")
+assert TS["high"]["warm"] == 77 and sum(TS["high"].values()) == 107
+assert TS["low"]["cool"] == 94 and sum(TS["low"].values()) == 109
+chk("94 of the 109 days of the lowest")
+wc, ww = WS["cool"]["classes"], WS["warm"]["classes"]
+mn = lambda x: f"{x:+.0f}".replace("+", "$+$") if x > 0 else f"${x:.0f}$"
+chk(f"from ${wc['low']['bias_metro']:.0f}$ to ${wc['high']['bias_metro']:.0f}$~\\ugm{{}} in the cool season and from ${ww['low']['bias_metro']:.0f}$ to ${ww['high']['bias_metro']:.0f}$~\\ugm{{}} in the warm one")
+chk(f"Al~Ain bias from ${wc['low']['bias_al_ain']:+.0f}$ to ${wc['high']['bias_al_ain']:.0f}$ and from ${ww['low']['bias_al_ain']:+.0f}$ to ${ww['high']['bias_al_ain']:.0f}$~\\ugm{{}}")
+B8 = RV["B_offset"]
+lows = [v["low"] for v in B8["variants"].values()] + B8["loo_range"]["low"] + [wc["low"]["metro_minus_al_ain"], ww["low"]["metro_minus_al_ain"]]
+chk(f"between ${-round(-max(lows)):.0f}$ and ${round(min(lows)):.0f}$~\\ugm{{}} however it is aggregated")
+chk(f"${B8['variants']['pooled_excl_al_mafraq']['high']:.0f}$~\\ugm{{}} without Al~Mafraq")
+chk(f"${B8['variants']['monitor_median']['high']:.0f}$~\\ugm{{}} with the median over monitors, and ${ww['high']['metro_minus_al_ain']:.0f}$~\\ugm{{}}")
+fa, fx = B8["daily_regression"]["fits"]["all"], B8["daily_regression"]["fits"]["all_excl_al_mafraq"]
+chk(f"slope of $-{abs(fa['slope']):.2f}$ (95\\% interval ${fa['ci95'][0]:.2f}$ to ${fa['ci95'][1]:+.2f}$) over all monitors and ${fx['slope']:+.2f}$ (${fx['ci95'][0]:.2f}$ to ${fx['ci95'][1]:+.2f}$)")
+assert all(f["ci95"][0] < 0 < f["ci95"][1] for f in B8["daily_regression"]["fits"].values())   # "No slope differs from zero"
+CI8 = RV["C_interpolation"]
+chk(f"at most {CI8['max_abs_change_station_bias']:.0f}~\\ugm{{}}, leaves the ranking of the monitors by bias almost unchanged (Spearman {CI8['spearman_bias_rank_nearest_vs_bilinear']:.2f})")
+chk(f"inversely related ($\\rho={CI8['bilinear']['spearman_station_means']:.2f}$)")
+assert CI8["bilinear"]["cams_between_monitor_sd_median"] < CI8["nearest"]["cams_between_monitor_sd_median"]   # "narrows"
+assert 49.5 <= -max(lows) and -min(lows) <= 62.5     # "about 50 to 60"
+AE8 = J("aeronet_dust_check.json")
+AB, AS, AX = AE8["by_coarse_aod_tercile"], AE8["spearman"], AE8["regional_tercile_x_dust_tercile"]
+chk(f"On the {AE8['_meta']['n_days_matched']} days with a sun-photometer value")
+chk(f"$\\rho={AS['coarse_aod_vs_obs_regional']['rho']:.2f}$ (with the modelled one at {AS['coarse_aod_vs_cams_regional']['rho']:.2f})")
+chk(f"of the {sum(AX['high'].values())} days of the highest regional tercile among them, {AX['high']['high']} fall in the highest tercile")
+assert AX["high"]["low"] == 0
+chk("level is " + ", ".join(f"${AB[k]['regional_bias_median']:.0f}$" for k in ("low", "mid")) + f" and ${AB['high']['regional_bias_median']:.0f}$~\\ugm{{}} from the least")
+chk("difference is " + ", ".join(f"${AB[k]['metro_minus_al_ain']:.0f}$" for k in ("low", "mid")) + f" and ${AB['high']['metro_minus_al_ain']:.0f}$~\\ugm{{}} (" + ", ".join(f"${AB[k]['metro_minus_al_ain_excl_al_mafraq']:.0f}$" for k in ("low", "mid")) + f" and")
+lowb = AE8["low_dust_days_metro_bias_by_monitor"]
+assert max(lowb.values()) < 0
+chk(f"underestimated, by {-max(lowb.values()):.0f} to {-min(lowb.values()):.0f}~\\ugm{{}}")
+chk(f"Its Spearman correlation with the observed regional level is {AS['coarse_aod_vs_obs_regional']['rho']:.2f}")
+chk(f"fine-mode fraction correlates with the observed regional level at ${AS['fine_fraction_vs_obs_regional']['rho']:.2f}$")
+DW = J("dust_wind_analysis.json")
+DS, DC, DB = DW["spearman"], DW["aeronet_consistency"], DW["by_sector"]
+chk(f"measured there (Spearman $\\rho={DC['cams_dust_aod_vs_aeronet_coarse_aod']['rho']:.2f}$ over {DC['n_days']} days)")
+chk(f"dust optical depth over the metropolitan cells ($\\rho={DS['off_vs_dust_aod']['rho']:.2f}$; ${DS['off_excl_vs_dust_aod']['rho']:+.2f}$ without Al~Mafraq")
+chk(f"10-m wind speed ($\\rho={DS['off_vs_wind_speed']['rho']:+.2f}$; ${DS['off_excl_vs_wind_speed']['rho']:+.2f}$ without Al~Mafraq)")
+chk(f"prevails on {DW['nw_sector_days']} of {DW['_meta']['n_days']} days")
+chk(f"(medians ${DB['NW_270_360']['off_median']:.0f}$ and ${DB['other']['off_median']:.0f}$~\\ugm{{}}, Mann--Whitney $p={DB['mann_whitney_p']:.2f}$)")
+chk(f"a median {100*DW['seasalt_share_median']['metro']:.1f}\\% of the modelled optical depth over the metropolitan cells")
+chk(f"AERONET coarse-mode optical depth at {DC['cams_dust_aod_vs_aeronet_coarse_aod']['rho']:.2f}, and its dust share of the optical depth with the AERONET fine-mode fraction at ${DC['cams_dust_share_vs_aeronet_fine_fraction']['rho']:.2f}$ ({DC['n_days']} days)")
+chk(f"dust accounts for a median {100*DW['dust_share_median']['metro']:.0f}\\% of the modelled optical depth and sea salt for a median {100*DW['seasalt_share_median']['metro']:.1f}\\% (maximum {100*DW['seasalt_share_max']['metro']:.1f}\\%)")
+chk(f"gives $p={DB['mann_whitney_p']:.2f}$")
+assert DS["off_excl_vs_dust_aod"]["rho"] > 0 and DS["off_excl_vs_wind_speed"]["rho"] > 0   # "deficit smaller", "does not grow"
+MT = J("metar_dust_check.json"); MG = MT["groups"]
+chk(f"On the {MG['dust_report']['n_days']} days with a reported dust event the regional level has a median of {MG['dust_report']['regional_obs_median']:.0f}~\\ugm{{}}, against {MG['no_dust_report']['regional_obs_median']:.0f} on the other days, and the model falls short of it by {-MG['dust_report']['regional_bias_median']:.0f}~\\ugm{{}}, against {-MG['no_dust_report']['regional_bias_median']:.0f}")
+chk(f"difference is ${MG['dust_report']['local_deficit_median']:.0f}$ against ${MG['no_dust_report']['local_deficit_median']:.0f}$~\\ugm{{}} ($p={MT['mann_whitney_local_deficit_dust_vs_other_p']:.2f}$)")
+cb = MT["clear_day_metro_bias_by_monitor"]; assert max(cb.values()) < 0
+chk(f"On the {MG['clear']['n_days']} clear days the difference is ${MG['clear']['local_deficit_median']:.0f}$~\\ugm{{}} and every metropolitan monitor is underestimated, by {-max(cb.values()):.0f} to {-min(cb.values()):.0f}~\\ugm{{}}")
+chk(f"record dust on only {MG['dust_report']['n_days']} days")
+chk(f"{MT['_meta']['n_reports']:,} reports")
+chk(f"Dust or sand is reported {MT['_meta']['n_reports_dust']} times (DU {MT['_meta']['dust_codes_found']['DU']}, BLDU {MT['_meta']['dust_codes_found']['BLDU']}), on {MG['dust_report']['n_days']} days; haze is reported {MT['_meta']['n_reports_haze']} times")
+chk(f"median coarse-mode optical depth at the sun photometer is {MT['aeronet']['coarse_aod_median_dust_report_days']:.2f}, against {MT['aeronet']['coarse_aod_median_other_days']:.2f}")
+chk(f"correlates with the observed regional level at {MT['spearman']['obscured_vs_obs_regional']['rho']:.2f} and with the coarse-mode optical depth at {MT['aeronet']['obscured_vs_coarse_aod']['rho']:.2f}")
+chk(f"reports has $p={MT['mann_whitney_local_deficit_dust_vs_other_p']:.2f}$ (Mann--Whitney), that in regional bias $p={MT['mann_whitney_regional_bias_dust_vs_other_p']:.2f}$")
+chk(f"{MT['_meta']['n_days_with_record']} days of the daily record qualify")
 # --- SI
 m = AC["_meta"]
 chk(f"6,803 daily files holding {th(m['rows'])} rows")

@@ -46,12 +46,12 @@ for key, lab, col, mk, ls in (("bias_metro", "Abu Dhabi conurbation", BLUE, "o",
     a2.plot(x, y, color=col, lw=1.6 if ls == "-" else 1.0, ls=ls, marker=mk,
             ms=4 if ls == "-" else 3, label=lab)
 a2.axhline(0, color=INK2, lw=0.6)
-a2.set_xticks(x); a2.set_xticklabels(["clean", "", "dusty"])
+a2.set_xticks(x); a2.set_xticklabels(["low", "mid", "high"])
 a2.set_xlabel("Regional level of the day")
 a2.set_ylim(-100, 45); a2.set_yticks([-80, -40, 0, 40])
 a2.set_ylabel("Bias (µg m$^{-3}$)")
 d = [reg["classes"][k]["metro_minus_al_ain"] for k in ks]
-a2.set_title(f"Where: not ({min(-v for v in d):.0f}–{max(-v for v in d):.0f} µg m$^{{-3}}$ local offset)",
+a2.set_title("Where: not (city deficit on all days)",
              fontsize=7.5, color=INK, loc="left", pad=4)
 a2.legend(loc="upper right", fontsize=5.5, handlelength=1.8, labelspacing=0.25)
 for sp in ("top", "right"):

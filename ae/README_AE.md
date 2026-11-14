@@ -1,4 +1,4 @@
-# camscast: Atmospheric Environment version (2026-11-14)
+# camscast: Atmospheric Environment version (2026-11-14, revised after internal review)
 
 **A global reanalysis reproduces when, but not where, PM10 is high across the dense monitoring
 network of an arid emirate.** Jin Yoo, Jeongyun Kim, Doo-Hee Lee, Ku Kang.
@@ -21,6 +21,23 @@ network of an arid emirate.** Jin Yoo, Jeongyun Kim, Doo-Hee Lee, Ku Kang.
    `results/audit_instantaneous.json`, `results/audit_matched_guard3.json`).
    Results of the earlier August-December 2023 subset are kept in `results/v13period/`.
 
+5. **Revision analyses (GATE-8 review, 14 Nov 2026)**, all on the daily record (24-h means
+   ending 08 UTC); exploratory, added after the main results were known:
+   - `code/revision_diagnostics.py` -> `results/revision_diagnostics.json`: regional terciles by
+     season and within season, aggregation sensitivity and daily regression of the
+     metropolitan minus Al Ain bias, nearest grid point versus bilinear interpolation
+   - `code/fetch_aeronet.py` + `code/aeronet_dust_check.py` -> `results/aeronet_dust_check.json`:
+     AERONET V3 Level 1.5 SDA coarse-mode AOD at DEWA_ResearchCentre (Dubai) as independent dust
+     indicator
+   - `code/fetch_metar_omaa.py` + `code/metar_dust_check.py` -> `results/metar_dust_check.json`:
+     dust/sand present-weather codes and visibility at Abu Dhabi International Airport (OMAA,
+     Iowa Environmental Mesonet archive)
+   - `code/fetch_cams_eac4_aod_wind.py` + `code/dust_wind_analysis.py` ->
+     `results/dust_wind_analysis.json`: CAMS EAC4 total, dust and sea-salt AOD at 550 nm and
+     10-m wind (ADS account needed), with a consistency check against AERONET
+   - `code/make_tables_revision.py` -> SI tables S9-S14
+   The AERONET, METAR and CAMS raw files are not redistributed; the fetch scripts retrieve them.
+
 ## Run order (from code/)
 
     python fetch_openaq_archive.py            # optional: rebuilds data_raw/ from the archive
@@ -40,8 +57,13 @@ network of an arid emirate.** Jin Yoo, Jeongyun Kim, Doo-Hee Lee, Ku Kang.
     #     CAMSCAST_OUT=../../results/audit_matched.json python audit_v7.py
     #   same with GUARD_DAYS=3  -> audit_matched_guard3.json
     #   CAMSCAST_DATA=../../data_processed/full/derived/instantaneous GUARD_DAYS=10 ... -> audit_instantaneous.json
-    python make_tables_ae.py && python make_figs_ae.py && python make_graphical_abstract.py
-    python verify_numbers_ae.py               # 101 quoted phrases checked against results/
+    python revision_diagnostics.py            # -> results/revision_diagnostics.json
+    python fetch_aeronet.py && python aeronet_dust_check.py
+    python fetch_metar_omaa.py && python metar_dust_check.py
+    python fetch_cams_eac4_aod_wind.py ../data_raw/cams && python dust_wind_analysis.py
+    python make_tables_ae.py && python make_tables_revision.py
+    python make_figs_ae.py && python make_graphical_abstract.py
+    python verify_numbers_ae.py               # 138 quoted phrases checked against results/
     cd ../manuscript && pdflatex main_ae && bibtex main_ae && pdflatex main_ae && pdflatex main_ae
     pdflatex SI_ae && pdflatex SI_ae && pdflatex cover_letter_ae
     cd ../code && python extract_cited_bib.py   # manuscript/references.bib (cited entries only)

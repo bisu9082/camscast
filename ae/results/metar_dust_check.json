@@ -1,0 +1,81 @@
+{
+ "_meta": {
+  "station": "OMAA",
+  "lat": 24.433,
+  "lon": 54.6511,
+  "n_reports": 14632,
+  "n_days_with_record": 327,
+  "min_reports": 18,
+  "dust_codes_found": {
+   "DU": 42,
+   "BLDU": 14
+  },
+  "n_reports_dust": 56,
+  "n_reports_haze": 234
+ },
+ "spearman": {
+  "obscured_vs_obs_regional": {
+   "rho": 0.35315267764129155,
+   "p": 4.875029711701659e-11
+  },
+  "obscured_vs_cams_regional": {
+   "rho": 0.2952718521984265,
+   "p": 5.3047375834225e-08
+  },
+  "obscured_vs_local_deficit": {
+   "rho": 0.036397823107990515,
+   "p": 0.5138561763446993
+  },
+  "obscured_vs_local_deficit_excl_al_mafraq": {
+   "rho": 0.015533999832773393,
+   "p": 0.7805916194654593
+  }
+ },
+ "aeronet": {
+  "n_days": 228,
+  "obscured_vs_coarse_aod": {
+   "rho": 0.13067753296238743,
+   "p": 0.04874661627869055
+  },
+  "coarse_aod_median_dust_report_days": 0.22620099999999999,
+  "coarse_aod_median_other_days": 0.12781,
+  "site": "DEWA_ResearchCentre"
+ },
+ "groups": {
+  "dust_report": {
+   "n_days": 14,
+   "regional_obs_median": 125.25,
+   "regional_bias_median": -37.310795000000006,
+   "local_deficit_median": -72.22686458333334,
+   "local_deficit_excl_al_mafraq_median": -50.069306874999995,
+   "n_days_with_deficit": 14
+  },
+  "no_dust_report": {
+   "n_days": 313,
+   "regional_obs_median": 69.0,
+   "regional_bias_median": -21.20187875,
+   "local_deficit_median": -58.22034732142858,
+   "local_deficit_excl_al_mafraq_median": -47.72816375000001,
+   "n_days_with_deficit": 310
+  },
+  "clear": {
+   "n_days": 150,
+   "regional_obs_median": 64.25,
+   "regional_bias_median": -15.170661249999995,
+   "local_deficit_median": -59.68607616071428,
+   "local_deficit_excl_al_mafraq_median": -47.742249375,
+   "n_days_with_deficit": 150
+  }
+ },
+ "mann_whitney_local_deficit_dust_vs_other_p": 0.25592021051102287,
+ "mann_whitney_regional_bias_dust_vs_other_p": 0.07532734798668483,
+ "clear_day_metro_bias_by_monitor": {
+  "Khadeeja School": -41.324279102348996,
+  "Hamdan St.": -50.65968881849315,
+  "Mussafah": -56.0226525085034,
+  "Khalifa City": -41.96918886824324,
+  "Al Maqtaa": -39.73771466549296,
+  "Baniyas School": -32.532285425,
+  "Al Mafraq": -136.86425363636363
+ }
+}

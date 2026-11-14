@@ -56,10 +56,12 @@ averaged over the same 24~h, October 2022 to May 2024 (32,566 three-hourly value
 monitor-days). The reanalysis reproduced when \pmten{} was high: the daily network-median level
 correlated with its model counterpart at 0.67 (Spearman). It did not reproduce where. Mean bias
 ranged from $-128$ to $+40$~\ugm{} and was spatially organised. Over the Abu Dhabi conurbation a
-regional deficit that grew on dusty days, shared by the inland city of Al~Ain, was compounded by
-a local offset of about 60~\ugm{} that did not change with the regional level. Of the
+regional deficit that grew with the regional level in both seasons, shared by the inland city of
+Al~Ain, was compounded by a local deficit of about 50--60~\ugm{} present on the cleanest
+days. Of the
 between-monitor variance of mean \pmten{}, 46\% lay inside single model cells (31\% for medians).
-A gradient-boosted correction gave no established gain at a monitor treated as unmonitored; an
+A gradient-boosted correction from the model value, date and position gave no established gain
+at a monitor treated as unmonitored; an
 apparent gain of 28--34\% arose only when running means were compared with instantaneous model
 values. Mean \pmten{} exceeded the WHO 24-h guideline value at every monitor; the reanalysis had
 little chance-corrected skill for exceedance (equitable threat score 0.09). Statements about
@@ -70,8 +72,8 @@ little chance-corrected skill for exceedance (equitable threat score 0.09). Stat
 \item Archived PM$_{10}$ of the Abu Dhabi network are 24-h running means, not hourly values
 \item CAMS tracked the regional daily level (Spearman 0.67) but not its spatial pattern
 \item Up to half of the between-monitor PM$_{10}$ variance lay inside single model cells
-\item A local offset of about 60 \ugm{} over the conurbation did not vary with dust
-\item Statistical correction gave no established gain at monitors treated as unmonitored
+\item The conurbation carried a local deficit of 50--60 \ugm{} even on the cleanest days
+\item A correction from model value, date and position did not transfer to new sites
 \end{highlights}
 
 \begin{keyword}
@@ -107,7 +109,10 @@ article.
 
 \section*{Acknowledgements}
 We thank the Environment Agency -- Abu Dhabi, the OpenAQ initiative and the Copernicus Atmosphere
-Monitoring Service for open access to the data used in this study.
+Monitoring Service for open access to the data used in this study, and the AERONET project and
+the principal investigator of the DEWA Research Centre site, Luis Mart\'in Pomares, and his staff
+for establishing and maintaining the site whose data are used here, and the Iowa Environmental
+Mesonet for the archive of airport weather reports.
 
 \section*{Funding}
 This research did not receive any specific grant from funding agencies in the public, commercial,
@@ -118,10 +123,14 @@ or not-for-profit sectors.
 The hourly archive of the 19 monitors as retrieved from the OpenAQ public archive, the script
 that retrieves it, the analysed three-hourly observation--model records, the analysis and figure
 scripts and all result artefacts are available in the public repository
-\url{https://github.com/bisu9082/serra_camscast} under the MIT licence. The evidence on the
+\url{https://github.com/bisu9082/camscast} under the MIT licence. The evidence on the
 averaging interval is produced by \texttt{archive\_checks.py} and
 \texttt{averaging\_fingerprint.py}, the station-level, sub-grid and regional statistics by
-\texttt{station\_representativeness.py} and \texttt{extended\_observations.py}, the exceedance
+\texttt{station\_representativeness.py}, \texttt{extended\_observations.py} and
+\texttt{revision\_diagnostics.py}, the sun-photometer comparison by
+\texttt{fetch\_aeronet.py} and \texttt{aeronet\_dust\_check.py}, the airport reports by
+\texttt{fetch\_metar\_omaa.py} and \texttt{metar\_dust\_check.py}, the dust and wind analysis by
+\texttt{fetch\_cams\_eac4\_aod\_wind.py} and \texttt{dust\_wind\_analysis.py}, the exceedance
 scores by \texttt{exceedance\_detection.py}, the tables by \texttt{make\_tables\_ae.py} and
 Figures~\ref{fig:map}--\ref{fig:regional} by \texttt{make\_figs\_ae.py}. The raw CAMS EAC4 fields
 are distributed by the Copernicus Atmosphere Data Store and are not redistributed; the request

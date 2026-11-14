@@ -65,3 +65,6 @@ no,key,doi,registry,title_match,first_author_match,year_match,arxiv,s2,relevance
 64,you2026nai,10.1016/j.apradiso.2026.113084,Crossref,1.0,True,True,,True,0.5,True,own work: systematic difference between co-located instruments arises from what each quantity includes; analogy for comparing quantities averaged differently
 65,hurynovich2026,10.1016/j.atmosenv.2026.122386,Crossref,1.0,True,True,,True,0.8,False,transferability of dust-related PM2.5 models between arid regimes
 66,zhang2018lur,10.1016/j.atmosenv.2018.08.046,Crossref,1.0,True,True,,True,0.75,False,land-use regression predictors for PM10
+67,holben1998,10.1016/S0034-4257(98)00031-5,Crossref,0.994,True,True,,True,0.9,False,AERONET network used to identify dust independently
+68,oneill2003,10.1029/2002JD002975,Crossref,1.0,True,True,,True,0.9,False,spectral deconvolution coarse-mode AOD used as dust indicator
+69,giles2019,10.5194/amt-12-169-2019,Crossref,1.0,True,True,,True,0.9,False,AERONET Version 3 Level 1.5 quality control of the data used
