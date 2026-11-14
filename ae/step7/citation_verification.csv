@@ -1,0 +1,67 @@
+no,key,doi,registry,title_match,first_author_match,year_match,arxiv,s2,relevance,own_work,basis
+1,gandham2020,10.1029/2020JD032931,Crossref,0.996,True,True,,True,0.9,False,extreme dust events over the Arabian Peninsula: regional dust burden
+2,shahid2026,10.1007/s41748-026-01216-1,Crossref,1.0,True,True,,True,0.85,False,aerosol variability over the Arabian Peninsula
+3,barbulescu2020,10.1016/j.atmosres.2019.104669,Crossref,1.0,True,True,,True,0.9,False,statistics of dust storms in the UAE
+4,karagulian2019,10.1007/s11869-019-00674-z,Crossref,1.0,True,True,,True,0.85,False,"severe dust storm over the UAE, ground and model analysis"
+5,givehchi2013,10.1016/j.atmosenv.2013.04.039,Crossref,1.0,True,True,,True,0.8,False,Middle Eastern dust source areas contribute to urban PM10 receptors
+6,thorpe2008,10.1016/j.scitotenv.2008.06.007,Crossref,1.0,True,True,,True,0.85,False,review of non-exhaust traffic PM sources
+7,amato2009,10.1016/j.atmosenv.2008.12.009,Crossref,1.0,True,True,,True,0.8,False,road dust PM10 deposited in urban environment: local resuspension source
+8,harrison2021,10.1016/j.atmosenv.2021.118592,Crossref,1.0,True,True,,True,0.85,False,review of non-exhaust traffic PM emissions
+9,lenschow2001,10.1016/S1352-2310(01)00122-4,Crossref,1.0,True,True,,True,0.95,False,urban increment of PM10 over regional background
+10,hopke2026,10.1016/j.atmosenv.2026.122223,Crossref,1.0,True,True,,True,0.7,False,sources of PM10 in Kuwait (title-level check; abstract not available)
+11,abuelgasim2020,10.1007/s41748-020-00186-2,Crossref,1.0,True,True,,True,0.9,False,PM10/PM2.5 variability over Abu Dhabi
+12,bae2025be7,10.1016/j.jenvrad.2025.107725,Crossref,1.0,True,True,,True,0.55,True,"own work: deposition of particle-bound radionuclides varies regionally with meteorology (rain, wind, fine dust) and geology; supports site-to-site variation of particle-bound species, not PM10 itself"
+13,cohen2017,10.1016/S0140-6736(17)30505-6,Crossref,1.0,True,True,,True,0.9,False,global burden of disease from ambient PM
+14,lelieveled2015,10.1038/nature15371,Crossref,1.0,True,True,,True,0.85,False,premature mortality from outdoor air pollution sources
+15,chen2020,10.1016/j.envint.2020.105974,Crossref,1.0,True,True,,True,0.85,False,systematic review: long-term PM exposure and mortality
+16,orellano2020,10.1016/j.envint.2020.105876,Crossref,1.0,True,True,,True,0.9,False,systematic review: short-term PM10/PM2.5 and mortality
+17,karanasiou2012,10.1016/j.envint.2012.06.012,Crossref,1.0,True,True,,True,0.8,False,health effects of desert dust episodes
+18,shin2026resilient,10.1016/j.pnucene.2026.106446,Crossref,1.0,True,True,,True,0.5,True,own work: model-based hazard mapping and dose assessment when measurement/network infrastructure is unavailable; analogy in a different hazard domain
+19,inness2019,10.5194/acp-19-3515-2019,Crossref,1.0,True,True,,True,1.0,False,CAMS reanalysis description
+20,flemming2015,10.5194/gmd-8-975-2015,Crossref,1.0,True,True,,True,0.85,False,IFS composition model underlying CAMS
+21,morcrette2009,10.1029/2008JD011235,Crossref,1.0,True,True,,True,0.85,False,ECMWF IFS aerosol analysis and forecast system underlying CAMS aerosol
+22,gelaro2017,10.1175/JCLI-D-16-0758.1,Crossref,1.0,True,True,,True,0.85,False,MERRA-2 description
+23,randles2017,10.1175/JCLI-D-16-0609.1,Crossref,1.0,True,True,,True,0.9,False,MERRA-2 aerosol reanalysis
+24,van_donkelaar2016,10.1021/acs.est.5b05833,Crossref,1.0,True,True,,True,0.85,False,satellite-model fused surface PM2.5
+25,hammer2020,10.1021/acs.est.0c01764,Crossref,0.994,True,True,,True,0.85,False,satellite-model fused surface PM2.5
+26,eskes2015,10.5194/gmd-8-3523-2015,Crossref,1.0,True,True,,True,0.8,False,validation of MACC/CAMS aerosol products
+27,gueymard2020,10.1016/j.atmosenv.2019.117216,Crossref,1.0,True,True,,True,0.85,False,worldwide AOD validation of CAMS and MERRA-2
+28,labban2023,10.1016/j.heliyon.2023.e17047,Crossref,1.0,True,True,,True,0.75,False,MERRA-2 AOD evaluation over Saudi Arabia
+29,ukhov2020,10.5194/acp-20-9281-2020,Crossref,1.0,True,True,,title search,0.9,False,MERRA-2/CAMS vs surface PM in the Middle East
+30,schutgens2016,10.5194/acp-16-6335-2016,Crossref,1.0,True,True,,True,0.95,False,representation error from spatial sampling
+31,schutgens2017,10.5194/acp-17-9761-2017,Crossref,1.0,True,True,,True,0.95,False,spatio-temporal representativeness of observations
+32,janjic2018,10.1002/qj.3130,Crossref,1.0,True,True,,True,0.9,False,representation error in data assimilation
+33,janssen2012,10.1016/j.atmosenv.2012.05.028,Crossref,1.0,True,True,,True,0.9,False,spatial representativeness of AQ monitoring stations
+34,righini2014,10.1016/j.atmosenv.2014.08.015,Crossref,1.0,True,True,,True,0.85,False,spatial representativeness of AQ stations from emissions
+35,duyzer2015,10.1016/j.atmosenv.2014.12.067,Crossref,1.0,True,True,,True,0.9,False,representativeness of AQ monitoring networks
+36,denby2011,10.1016/j.atmosenv.2011.05.007,Crossref,1.0,True,True,,True,0.95,False,sub-grid variability and exposure assessment
+37,denby2024,10.1016/j.atmosenv.2024.120586,Crossref,1.0,True,True,,True,0.9,False,"sub-grid variability and exposure, uEMEP downscaling"
+38,theobald2016,10.5194/gmd-9-4475-2016,Crossref,1.0,True,True,,True,0.85,False,sub-grid downscaling of regional AQ model
+39,djalalova2015,10.1016/j.atmosenv.2015.02.021,Crossref,1.0,True,True,,True,0.85,False,statistical post-processing of CTM PM2.5
+40,huang2017,10.1175/WAF-D-16-0118.1,Crossref,1.0,True,True,,True,0.85,False,bias correction of NAQFC PM2.5
+41,sarafian2025,10.3390/rs17020222,Crossref,1.0,True,True,,True,0.9,False,correction of CAMS PM10 reanalysis for dust forecasting
+42,kaffashzadeh2024,10.5194/gmd-17-4155-2024,Crossref,1.0,True,True,,True,0.8,False,downscaled CAMS reanalysis assessed at urban stations (ozone)
+43,kang2026mapping,10.1016/j.jenvrad.2026.108185,Crossref,1.0,True,True,,True,0.6,True,"own work: reconstructing continuous fields from point measurements, interpolation accuracy depends on field structure (radiological contamination)"
+44,roberts2017,10.1111/ecog.02881,Crossref,0.995,True,True,,True,0.95,False,cross-validation for structured data
+45,ploton2020,10.1038/s41467-020-18321-y,Crossref,1.0,True,True,,True,0.95,False,spatial validation of mapping models
+46,meyer2021aoa,10.1111/2041-210X.13650,Crossref,1.0,True,True,,True,0.9,False,area of applicability of spatial prediction models
+47,wadoux2021,10.1016/j.ecolmodel.2021.109692,Crossref,1.0,True,True,,True,0.95,False,spatial cross-validation and map accuracy
+48,valavi2019,10.1111/2041-210X.13107,Crossref,0.908,True,True,,True,0.8,False,spatially separated folds for cross-validation
+49,mila2022,10.1111/2041-210X.13851,Crossref,0.953,True,True,,True,0.85,False,NNDM cross-validation for map validation
+50,linnenbrink2024,10.5194/gmd-17-5897-2024,Crossref,1.0,True,True,,True,0.85,False,kNNDM cross-validation for map accuracy
+51,meyer2022global,10.1038/s41467-022-29838-9,Crossref,1.0,True,True,,True,0.8,False,challenge of assessing ML-based maps
+52,vieira2023,10.1016/j.atmosenv.2023.119773,Crossref,1.0,True,True,,True,0.85,False,global reanalyses cannot reproduce surface ozone cycles; AE precedent
+53,rosales2025,10.1007/s40572-025-00487-6,Crossref,1.0,True,True,,True,0.85,False,open air-quality data platforms incl. OpenAQ
+54,remy2019,10.5194/gmd-12-4627-2019,Crossref,0.923,True,True,,title search,0.9,False,CAMS aerosol scheme description
+55,moran1950,10.1093/biomet/37.1-2.17,Crossref,1.0,True,True,,True,1.0,False,Moran's I
+56,spearman1904,10.2307/1412159,Crossref,1.0,True,True,,title search,1.0,False,Spearman correlation
+57,kruskal1952,10.1080/01621459.1952.10483441,Crossref,1.0,True,True,,True,1.0,False,Kruskal-Wallis test
+58,mann1947,10.1214/aoms/1177730491,Crossref,1.0,True,True,,True,1.0,False,Mann-Whitney test
+59,friedman2001,10.1214/aos/1013203451,Crossref,1.0,True,True,,True,1.0,False,gradient boosting
+60,pedregosa2011,10.48550/arXiv.1201.0490,DataCite,1.0,True,True,True,title search,1.0,False,scikit-learn
+61,benjamini1995,10.1111/j.2517-6161.1995.tb02031.x,Crossref,1.0,True,True,,True,1.0,False,Benjamini-Hochberg
+62,efron1979,10.1214/aos/1176344552,Crossref,1.0,True,True,,True,1.0,False,bootstrap
+63,hogan2010,10.1175/2009WAF2222350.1,Crossref,1.0,True,True,,True,0.95,False,equitability of ETS
+64,you2026nai,10.1016/j.apradiso.2026.113084,Crossref,1.0,True,True,,True,0.5,True,own work: systematic difference between co-located instruments arises from what each quantity includes; analogy for comparing quantities averaged differently
+65,hurynovich2026,10.1016/j.atmosenv.2026.122386,Crossref,1.0,True,True,,True,0.8,False,transferability of dust-related PM2.5 models between arid regimes
+66,zhang2018lur,10.1016/j.atmosenv.2018.08.046,Crossref,1.0,True,True,,True,0.75,False,land-use regression predictors for PM10

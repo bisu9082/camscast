@@ -1,4 +1,5 @@
-"""Write manuscript/references.bib holding only the entries cited in main_ae (from main_ae.aux)."""
+"""Write manuscript/references.bib holding only the entries cited in main_ae (from main_ae.aux),
+in order of first citation, with title capitalisation protected."""
 import os
 import re
 
@@ -21,5 +22,12 @@ for m in re.finditer(r"@(\w+)\{([^,]+),", bib):
             break
 missing = [k for k in keys if k not in entries]
 assert not missing, missing
-open(os.path.join(MS, "references.bib"), "w").write("\n\n".join(entries[k] for k in keys) + "\n")
+def protect(e):
+    """Keep the capitalisation of titles (the numbered style lowercases them otherwise)."""
+    return re.sub(r"(\btitle\s*=\s*)\{(?!\{)(.*?)\},\n", lambda m: m.group(1) + "{{" + m.group(2) + "}},\n",
+                  e, count=1, flags=re.S)
+
+
+open(os.path.join(MS, "references.bib"), "w").write(
+    "\n\n".join(protect(entries[k]) for k in keys) + "\n")
 print(len(keys), "entries written")

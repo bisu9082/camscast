@@ -1,0 +1,1204 @@
+{
+ "lenschow2001": {
+  "doi": "10.1016/S1352-2310(01)00122-4",
+  "found": true,
+  "title": "Some ideas about the sources of PM10",
+  "authors": [
+   [
+    "Lenschow",
+    "P"
+   ]
+  ],
+  "year": 2001,
+  "container": "Atmospheric Environment",
+  "volume": "35",
+  "issue": null,
+  "page": "23-33",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "gueymard2020": {
+  "doi": "10.1016/j.atmosenv.2019.117216",
+  "found": true,
+  "title": "Worldwide validation of CAMS and MERRA-2 reanalysis aerosol optical depth products using 15 years of AERONET observations",
+  "authors": [
+   [
+    "Gueymard",
+    "Christian A."
+   ],
+   [
+    "Yang",
+    "Dazhi"
+   ]
+  ],
+  "year": 2020,
+  "container": "Atmospheric Environment",
+  "volume": "225",
+  "issue": null,
+  "page": "117216",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "janssen2012": {
+  "doi": "10.1016/j.atmosenv.2012.05.028",
+  "found": true,
+  "title": "Land use to characterize spatial representativeness of air quality monitoring stations and its relevance for model validation",
+  "authors": [
+   [
+    "Janssen",
+    "Stijn"
+   ],
+   [
+    "Dumont",
+    "Gerwin"
+   ],
+   [
+    "Fierens",
+    "Frans"
+   ],
+   [
+    "Deutsch",
+    "Felix"
+   ],
+   [
+    "Maiheu",
+    "Bino"
+   ],
+   [
+    "Celis",
+    "David"
+   ],
+   [
+    "Trimpeneers",
+    "Elke"
+   ],
+   [
+    "Mensink",
+    "Clemens"
+   ]
+  ],
+  "year": 2012,
+  "container": "Atmospheric Environment",
+  "volume": "59",
+  "issue": null,
+  "page": "492-500",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "righini2014": {
+  "doi": "10.1016/j.atmosenv.2014.08.015",
+  "found": true,
+  "title": "GIS based assessment of the spatial representativeness of air quality monitoring stations using pollutant emissions data",
+  "authors": [
+   [
+    "Righini",
+    "G."
+   ],
+   [
+    "Cappelletti",
+    "A."
+   ],
+   [
+    "Ciucci",
+    "A."
+   ],
+   [
+    "Cremona",
+    "G."
+   ],
+   [
+    "Piersanti",
+    "A."
+   ],
+   [
+    "Vitali",
+    "L."
+   ],
+   [
+    "Ciancarella",
+    "L."
+   ]
+  ],
+  "year": 2014,
+  "container": "Atmospheric Environment",
+  "volume": "97",
+  "issue": null,
+  "page": "121-129",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "duyzer2015": {
+  "doi": "10.1016/j.atmosenv.2014.12.067",
+  "found": true,
+  "title": "Representativeness of air quality monitoring networks",
+  "authors": [
+   [
+    "Duyzer",
+    "Jan"
+   ],
+   [
+    "van den Hout",
+    "Dick"
+   ],
+   [
+    "Zandveld",
+    "Peter"
+   ],
+   [
+    "van Ratingen",
+    "Sjoerd"
+   ]
+  ],
+  "year": 2015,
+  "container": "Atmospheric Environment",
+  "volume": "104",
+  "issue": null,
+  "page": "88-101",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "amato2009": {
+  "doi": "10.1016/j.atmosenv.2008.12.009",
+  "found": true,
+  "title": "Spatial and chemical patterns of PM10 in road dust deposited in urban environment",
+  "authors": [
+   [
+    "Amato",
+    "F."
+   ],
+   [
+    "Pandolfi",
+    "M."
+   ],
+   [
+    "Viana",
+    "M."
+   ],
+   [
+    "Querol",
+    "X."
+   ],
+   [
+    "Alastuey",
+    "A."
+   ],
+   [
+    "Moreno",
+    "T."
+   ]
+  ],
+  "year": 2009,
+  "container": "Atmospheric Environment",
+  "volume": "43",
+  "issue": "9",
+  "page": "1650-1659",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "thorpe2008": {
+  "doi": "10.1016/j.scitotenv.2008.06.007",
+  "found": true,
+  "title": "Sources and properties of non-exhaust particulate matter from road traffic: A review",
+  "authors": [
+   [
+    "Thorpe",
+    "Alistair"
+   ],
+   [
+    "Harrison",
+    "Roy M."
+   ]
+  ],
+  "year": 2008,
+  "container": "Science of The Total Environment",
+  "volume": "400",
+  "issue": "1-3",
+  "page": "270-282",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "harrison2021": {
+  "doi": "10.1016/j.atmosenv.2021.118592",
+  "found": true,
+  "title": "Non-exhaust vehicle emissions of particulate matter and VOC from road traffic: A review",
+  "authors": [
+   [
+    "Harrison",
+    "Roy M."
+   ],
+   [
+    "Allan",
+    "James"
+   ],
+   [
+    "Carruthers",
+    "David"
+   ],
+   [
+    "Heal",
+    "Mathew R."
+   ],
+   [
+    "Lewis",
+    "Alastair C."
+   ],
+   [
+    "Marner",
+    "Ben"
+   ],
+   [
+    "Murrells",
+    "Tim"
+   ],
+   [
+    "Williams",
+    "Andrew"
+   ]
+  ],
+  "year": 2021,
+  "container": "Atmospheric Environment",
+  "volume": "262",
+  "issue": null,
+  "page": "118592",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "morcrette2009": {
+  "doi": "10.1029/2008JD011235",
+  "found": true,
+  "title": "Aerosol analysis and forecast in the European Centre for Medium‐Range Weather Forecasts Integrated Forecast System: Forward modeling",
+  "authors": [
+   [
+    "Morcrette",
+    "J.‐J."
+   ],
+   [
+    "Boucher",
+    "O."
+   ],
+   [
+    "Jones",
+    "L."
+   ],
+   [
+    "Salmond",
+    "D."
+   ],
+   [
+    "Bechtold",
+    "P."
+   ],
+   [
+    "Beljaars",
+    "A."
+   ],
+   [
+    "Benedetti",
+    "A."
+   ],
+   [
+    "Bonet",
+    "A."
+   ],
+   [
+    "Kaiser",
+    "J. W."
+   ],
+   [
+    "Razinger",
+    "M."
+   ],
+   [
+    "Schulz",
+    "M."
+   ],
+   [
+    "Serrar",
+    "S."
+   ],
+   [
+    "Simmons",
+    "A. J."
+   ],
+   [
+    "Sofiev",
+    "M."
+   ],
+   [
+    "Suttie",
+    "M."
+   ],
+   [
+    "Tompkins",
+    "A. M."
+   ],
+   [
+    "Untch",
+    "A."
+   ]
+  ],
+  "year": 2009,
+  "container": "Journal of Geophysical Research: Atmospheres",
+  "volume": "114",
+  "issue": "D6",
+  "page": "2008JD011235",
+  "type": "journal-article",
+  "abstract": "This paper presents the aerosol modeling now part of the ECMWF Integrated Forecasting System (IFS). It includes new prognostic variables for the mass of sea salt, dust, organic matter and black carbon, and sulphate aerosols, interactive with both the dynamics and the physics of the model. It details the various parameterizations used in the IFS to account for the presence of tropospheric aerosols. Details are given of the various formulations and data sets for the sources of the different aerosols and of the parameterizations describing their sinks. Comparisons of monthly mean and daily aerosol quantities like optical depths against satellite and surface observations are presented. The capability of the forecast model to simulate aerosol events is illustrated through comparisons of dust plume events. The ECMWF IFS provides a good description of the horizontal distribution and temporal variability of the main aerosol types. The forecast‐only model described here generally gives the total aerosol optical depth within 0.12 of the relevant observations and can therefore provide the background trajectory information for the aerosol assimilation system described in part 2 of this paper."
+ },
+ "eskes2015": {
+  "doi": "10.5194/gmd-8-3523-2015",
+  "found": true,
+  "title": "Validation of reactive gases and aerosols in the MACC global analysis and forecast system",
+  "authors": [
+   [
+    "Eskes",
+    "H."
+   ],
+   [
+    "Huijnen",
+    "V."
+   ],
+   [
+    "Arola",
+    "A."
+   ],
+   [
+    "Benedictow",
+    "A."
+   ],
+   [
+    "Blechschmidt",
+    "A.-M."
+   ],
+   [
+    "Botek",
+    "E."
+   ],
+   [
+    "Boucher",
+    "O."
+   ],
+   [
+    "Bouarar",
+    "I."
+   ],
+   [
+    "Chabrillat",
+    "S."
+   ],
+   [
+    "Cuevas",
+    "E."
+   ],
+   [
+    "Engelen",
+    "R."
+   ],
+   [
+    "Flentje",
+    "H."
+   ],
+   [
+    "Gaudel",
+    "A."
+   ],
+   [
+    "Griesfeller",
+    "J."
+   ],
+   [
+    "Jones",
+    "L."
+   ],
+   [
+    "Kapsomenakis",
+    "J."
+   ],
+   [
+    "Katragkou",
+    "E."
+   ],
+   [
+    "Kinne",
+    "S."
+   ],
+   [
+    "Langerock",
+    "B."
+   ],
+   [
+    "Razinger",
+    "M."
+   ],
+   [
+    "Richter",
+    "A."
+   ],
+   [
+    "Schultz",
+    "M."
+   ],
+   [
+    "Schulz",
+    "M."
+   ],
+   [
+    "Sudarchikova",
+    "N."
+   ],
+   [
+    "Thouret",
+    "V."
+   ],
+   [
+    "Vrekoussis",
+    "M."
+   ],
+   [
+    "Wagner",
+    "A."
+   ],
+   [
+    "Zerefos",
+    "C."
+   ]
+  ],
+  "year": 2015,
+  "container": "Geoscientific Model Development",
+  "volume": "8",
+  "issue": "11",
+  "page": "3523-3543",
+  "type": "journal-article",
+  "abstract": "Abstract. The European MACC (Monitoring Atmospheric Composition and Climate) project is preparing the operational Copernicus Atmosphere Monitoring Service (CAMS), one of the services of the European Copernicus Programme on Earth observation and environmental services. MACC uses data assimilation to combine in situ and remote sensing observations with global and regional models of atmospheric reactive gases, aerosols, and greenhouse gases, and is based on the Integrated Forecasting System of the European Centre for Medium-Range Weather Forecasts (ECMWF). The global component of the MACC service has a dedicated validation activity to document the quality of the atmospheric composition products. In this paper we discuss the approach to validation that has been developed over the past 3 years. Topics discussed are the validation requirements, the operational aspects, the measurement data sets used, the structure of the validation reports, the models and assimilation systems validated, the procedure to introduce new upgrades, and the scoring methods. One specific target of the MACC system concerns forecasting special events with high-pollution concentrations. Such events receive extra attention in the validation process. Finally, a summary is provided of the results from the validation of the latest set of daily global analysis and forecast products from the MACC system reported in November 2014."
+ },
+ "hogan2010": {
+  "doi": "10.1175/2009WAF2222350.1",
+  "found": true,
+  "title": "Equitability Revisited: Why the “Equitable Threat Score” Is Not Equitable",
+  "authors": [
+   [
+    "Hogan",
+    "Robin J."
+   ],
+   [
+    "Ferro",
+    "Christopher A. T."
+   ],
+   [
+    "Jolliffe",
+    "Ian T."
+   ],
+   [
+    "Stephenson",
+    "David B."
+   ]
+  ],
+  "year": 2010,
+  "container": "Weather and Forecasting",
+  "volume": "25",
+  "issue": "2",
+  "page": "710-726",
+  "type": "journal-article",
+  "abstract": "Abstract In the forecasting of binary events, verification measures that are “equitable” were defined by Gandin and Murphy to satisfy two requirements: 1) they award all random forecasting systems, including those that always issue the same forecast, the same expected score (typically zero), and 2) they are expressible as the linear weighted sum of the elements of the contingency table, where the weights are independent of the entries in the table, apart from the base rate. The authors demonstrate that the widely used “equitable threat score” (ETS), as well as numerous others, satisfies neither of these requirements and only satisfies the first requirement in the limit of an infinite sample size. Such measures are referred to as “asymptotically equitable.” In the case of ETS, the expected score of a random forecasting system is always positive and only falls below 0.01 when the number of samples is greater than around 30. Two other asymptotically equitable measures are the odds ratio skill score and the symmetric extreme dependency score, which are more strongly inequitable than ETS, particularly for rare events; for example, when the base rate is 2% and the sample size is 1000, random but unbiased forecasting systems yield an expected score of around −0.5, reducing in magnitude to −0.01 or smaller only for sample sizes exceeding 25 000. This presents a problem since these nonlinear measures have other desirable properties, in particular being reliable indicators of skill for rare events (provided that the sample size is large enough). A potential way to reconcile these properties with equitability is to recognize that Gandin and Murphy’s two requirements are independent, and the second can be safely discarded without losing the key advantages of equitability that are embodied in the first. This enables inequitable and asymptotically equitable measures to be scaled to make them equitable, while retaining their nonlinearity and other properties such as being reliable indicators of skill for rare events. It also opens up the possibility of designing new equitable verification measures."
+ },
+ "moran1950": {
+  "doi": "10.1093/biomet/37.1-2.17",
+  "found": true,
+  "title": "NOTES ON CONTINUOUS STOCHASTIC PHENOMENA",
+  "authors": [
+   [
+    "MORAN",
+    "P. A. P."
+   ]
+  ],
+  "year": 1950,
+  "container": "Biometrika",
+  "volume": "37",
+  "issue": "1-2",
+  "page": "17-23",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "mann1947": {
+  "doi": "10.1214/aoms/1177730491",
+  "found": true,
+  "title": "On a Test of Whether one of Two Random Variables is Stochastically Larger than the Other",
+  "authors": [
+   [
+    "Mann",
+    "H. B."
+   ],
+   [
+    "Whitney",
+    "D. R."
+   ]
+  ],
+  "year": 1947,
+  "container": "The Annals of Mathematical Statistics",
+  "volume": "18",
+  "issue": "1",
+  "page": "50-60",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "kruskal1952": {
+  "doi": "10.1080/01621459.1952.10483441",
+  "found": true,
+  "title": "Use of Ranks in One-Criterion Variance Analysis",
+  "authors": [
+   [
+    "Kruskal",
+    "William H."
+   ],
+   [
+    "Wallis",
+    "W. Allen"
+   ]
+  ],
+  "year": 1952,
+  "container": "Journal of the American Statistical Association",
+  "volume": "47",
+  "issue": "260",
+  "page": "583-621",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "spearman1904": {
+  "doi": "10.2307/1412159",
+  "found": true,
+  "title": "The Proof and Measurement of Association between Two Things",
+  "authors": [
+   [
+    "Spearman",
+    "C."
+   ]
+  ],
+  "year": 1904,
+  "container": "The American Journal of Psychology",
+  "volume": "15",
+  "issue": "1",
+  "page": "72",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "chen2020": {
+  "doi": "10.1016/j.envint.2020.105974",
+  "found": true,
+  "title": "Long-term exposure to PM and all-cause and cause-specific mortality: A systematic review and meta-analysis",
+  "authors": [
+   [
+    "Chen",
+    "Jie"
+   ],
+   [
+    "Hoek",
+    "Gerard"
+   ]
+  ],
+  "year": 2020,
+  "container": "Environment International",
+  "volume": "143",
+  "issue": null,
+  "page": "105974",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "orellano2020": {
+  "doi": "10.1016/j.envint.2020.105876",
+  "found": true,
+  "title": "Short-term exposure to particulate matter (PM10 and PM2.5), nitrogen dioxide (NO2), and ozone (O3) and all-cause and cause-specific mortality: Systematic review and meta-analysis",
+  "authors": [
+   [
+    "Orellano",
+    "Pablo"
+   ],
+   [
+    "Reynoso",
+    "Julieta"
+   ],
+   [
+    "Quaranta",
+    "Nancy"
+   ],
+   [
+    "Bardach",
+    "Ariel"
+   ],
+   [
+    "Ciapponi",
+    "Agustin"
+   ]
+  ],
+  "year": 2020,
+  "container": "Environment International",
+  "volume": "142",
+  "issue": null,
+  "page": "105876",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "karanasiou2012": {
+  "doi": "10.1016/j.envint.2012.06.012",
+  "found": true,
+  "title": "Health effects from Sahara dust episodes in Europe: Literature review and research gaps",
+  "authors": [
+   [
+    "Karanasiou",
+    "A."
+   ],
+   [
+    "Moreno",
+    "N."
+   ],
+   [
+    "Moreno",
+    "T."
+   ],
+   [
+    "Viana",
+    "M."
+   ],
+   [
+    "de Leeuw",
+    "F."
+   ],
+   [
+    "Querol",
+    "X."
+   ]
+  ],
+  "year": 2012,
+  "container": "Environment International",
+  "volume": "47",
+  "issue": null,
+  "page": "107-114",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "valavi2019": {
+  "doi": "10.1111/2041-210X.13107",
+  "found": true,
+  "title": "<scp>block</scp>\n                    <scp>CV</scp>\n                    : An\n                    <scp>r</scp>\n                    package for generating spatially or environmentally separated folds for\n                    <i>k</i>\n                    ‐fold cross‐validation of species distribution models",
+  "authors": [
+   [
+    "Valavi",
+    "Roozbeh"
+   ],
+   [
+    "Elith",
+    "Jane"
+   ],
+   [
+    "Lahoz‐Monfort",
+    "José J."
+   ],
+   [
+    "Guillera‐Arroita",
+    "Gurutzeta"
+   ]
+  ],
+  "year": 2018,
+  "container": "Methods in Ecology and Evolution",
+  "volume": "10",
+  "issue": "2",
+  "page": "225-232",
+  "type": "journal-article",
+  "abstract": "Abstract When applied to structured data, conventional random cross‐validation techniques can lead to underestimation of prediction error, and may result in inappropriate model selection. We present the r package block CV , a new toolbox for cross‐validation of species distribution modelling. Although it has been developed with species distribution modelling in mind, it can be used for any spatial modelling. The package can generate spatially or environmentally separated folds. It includes tools to measure spatial autocorrelation ranges in candidate covariates, providing the user with insights into the spatial structure in these data. It also offers interactive graphical capabilities for creating spatial blocks and exploring data folds. Package block CV enables modellers to more easily implement a range of evaluation approaches. It will help the modelling community learn more about the impacts of evaluation approaches on our understanding of predictive performance of species distribution models."
+ },
+ "mila2022": {
+  "doi": "10.1111/2041-210X.13851",
+  "found": true,
+  "title": "Nearest neighbour distance matching\n                    <scp>Leave‐One‐Out Cross‐Validation</scp>\n                    for map validation",
+  "authors": [
+   [
+    "Milà",
+    "Carles"
+   ],
+   [
+    "Mateu",
+    "Jorge"
+   ],
+   [
+    "Pebesma",
+    "Edzer"
+   ],
+   [
+    "Meyer",
+    "Hanna"
+   ]
+  ],
+  "year": 2022,
+  "container": "Methods in Ecology and Evolution",
+  "volume": "13",
+  "issue": "6",
+  "page": "1304-1316",
+  "type": "journal-article",
+  "abstract": "Abstract Several spatial and non‐spatial Cross‐Validation (CV) methods have been used to perform map validation when additional sampling for validation purposes is not possible, yet it is unclear in which situations one CV method might be preferred over the other. Three factors have been identified as determinants of the performance of CV methods for map validation: the prediction area (geographical interpolation vs. extrapolation), the sampling pattern and the landscape spatial autocorrelation. In this study, we propose a new CV strategy that takes the geographical prediction space into account, and test how the new method compares with other established CV methods under different configurations of these three factors. We propose a variation of Leave‐One‐Out (LOO) CV for map validation, called Nearest Neighbour Distance Matching (NNDM) LOO CV, in which the nearest neighbour distance distribution function between the test and training data during the CV process is matched to the nearest neighbour distance distribution function between the target prediction and training points. Using random forest as a machine learning algorithm, we then examine the suitability of NNDM LOO CV as well as the established LOO (non‐spatial) and buffered‐LOO (bLOO, spatial) CV methods in two simulations with varying prediction areas, landscape autocorrelation and sampling distributions. LOO CV provided good map accuracy estimates in landscapes with short autocorrelation ranges, or when estimating geographical interpolation map accuracy with randomly distributed samples. bLOO CV yielded realistic error estimates when estimating map accuracy in new prediction areas, but generally overestimated geographical interpolation errors. NNDM LOO CV returned reliable estimates in all scenarios we considered. While LOO and bLOO CV provided reliable map accuracy estimates only in certain situations, our newly proposed NNDM LOO CV method returned robust estimates and generalised to LOO and bLOO CV whenever these methods were the most appropriate approach. Our work recognises the necessity of considering the geographical prediction space when designing CV‐based methods for map validation."
+ },
+ "linnenbrink2024": {
+  "doi": "10.5194/gmd-17-5897-2024",
+  "found": true,
+  "title": "kNNDM CV:\n                    <i>k</i>\n                    -fold nearest-neighbour distance matching cross-validation for map accuracy estimation",
+  "authors": [
+   [
+    "Linnenbrink",
+    "Jan"
+   ],
+   [
+    "Milà",
+    "Carles"
+   ],
+   [
+    "Ludwig",
+    "Marvin"
+   ],
+   [
+    "Meyer",
+    "Hanna"
+   ]
+  ],
+  "year": 2024,
+  "container": "Geoscientific Model Development",
+  "volume": "17",
+  "issue": "15",
+  "page": "5897-5912",
+  "type": "journal-article",
+  "abstract": "Random and spatial cross-validation (CV) methods are commonly used to evaluate machine-learning-based spatial prediction models, and the performance values obtained are often interpreted as map accuracy estimates. However, the appropriateness of such approaches is currently the subject of controversy. For the common case where no probability sample for validation purposes is available, in Milà et al. (2022) we proposed the nearest-neighbour distance matching (NNDM) leave-one-out (LOO) CV method. This method produces a distribution of geographical nearest-neighbour distances (NNDs) between test and training locations during CV that matches the distribution of NNDs between prediction and training locations. Hence, it creates predictive conditions during CV that are comparable to what is required when predicting a defined area. Although NNDM LOO CV produced largely reliable map accuracy estimates in our analysis, as a LOO-based method, it cannot be applied to the large datasets found in many studies. Here, we propose a novel k -fold CV strategy for map accuracy estimation inspired by the concepts of NNDM LOO CV: the k -fold NNDM (kNNDM) CV. The kNNDM algorithm tries to find a k -fold configuration such that the empirical cumulative distribution function (ECDF) of NNDs between test and training locations during CV is matched to the ECDF of NNDs between prediction and training locations. We tested kNNDM CV in a simulation study with different sampling distributions and compared it to other CV methods including NNDM LOO CV. We found that kNNDM CV performed similarly to NNDM LOO CV and produced reasonably reliable map accuracy estimates across sampling patterns. However, compared to NNDM LOO CV, kNNDM resulted in significantly reduced computation times. In an experiment using 4000 strongly clustered training points, kNNDM CV reduced the time spent on fold assignment and model training from 4.8 d to 1.2 min. Furthermore, we found a positive association between the quality of the match of the two ECDFs in kNNDM and the reliability of the map accuracy estimates. kNNDM provided the advantages of our original NNDM LOO CV strategy while bypassing its sample size limitations."
+ },
+ "denby2011": {
+  "doi": "10.1016/j.atmosenv.2011.05.007",
+  "found": true,
+  "title": "Sub-grid variability and its impact on European wide air quality exposure assessment",
+  "authors": [
+   [
+    "Denby",
+    "Bruce"
+   ],
+   [
+    "Cassiani",
+    "Massimo"
+   ],
+   [
+    "de Smet",
+    "Peter"
+   ],
+   [
+    "de Leeuw",
+    "Frank"
+   ],
+   [
+    "Horálek",
+    "Jan"
+   ]
+  ],
+  "year": 2011,
+  "container": "Atmospheric Environment",
+  "volume": "45",
+  "issue": "25",
+  "page": "4220-4229",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "denby2024": {
+  "doi": "10.1016/j.atmosenv.2024.120586",
+  "found": true,
+  "title": "Sub-grid Variability and its Impact on Exposure in Regional Scale Air Quality and Integrated Assessment Models: Application of the uEMEP Downscaling Model",
+  "authors": [
+   [
+    "Denby",
+    "Bruce R."
+   ],
+   [
+    "Kiesewetter",
+    "Gregor"
+   ],
+   [
+    "Nyiri",
+    "Agnes"
+   ],
+   [
+    "Klimont",
+    "Zbigniew"
+   ],
+   [
+    "Fagerli",
+    "Hilde"
+   ],
+   [
+    "Wærsted",
+    "Eivind G."
+   ],
+   [
+    "Wind",
+    "Peter"
+   ]
+  ],
+  "year": 2024,
+  "container": "Atmospheric Environment",
+  "volume": "333",
+  "issue": null,
+  "page": "120586",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "theobald2016": {
+  "doi": "10.5194/gmd-9-4475-2016",
+  "found": true,
+  "title": "Improving the spatial resolution of air-quality modelling at a European scale – development and evaluation of the Air Quality Re-gridder Model (AQR v1.1)",
+  "authors": [
+   [
+    "Theobald",
+    "Mark R."
+   ],
+   [
+    "Simpson",
+    "David"
+   ],
+   [
+    "Vieno",
+    "Massimo"
+   ]
+  ],
+  "year": 2016,
+  "container": "Geoscientific Model Development",
+  "volume": "9",
+  "issue": "12",
+  "page": "4475-4489",
+  "type": "journal-article",
+  "abstract": "Abstract. Currently, atmospheric chemistry and transport models (ACTMs) used to assess impacts of air quality, applied at a European scale, lack the spatial resolution necessary to simulate fine-scale spatial variability. This spatial variability is especially important for assessing the impacts to human health or ecosystems of short-lived pollutants, such as nitrogen dioxide (NO2) or ammonia (NH3). In order to simulate this spatial variability, the Air Quality Re-gridder (AQR) model has been developed to estimate the spatial distributions (at a spatial resolution of 1 × 1 km2) of annual mean atmospheric concentrations within the grid squares of an ACTM (in this case with a spatial resolution of 50 × 50 km2). This is done as a post-processing step by combining the coarse-resolution ACTM concentrations with high-spatial-resolution emission data and simple parameterisations of atmospheric dispersion. The AQR model was tested for two European sub-domains (the Netherlands and central Scotland) and evaluated using NO2 and NH3 concentration data from monitoring networks within each domain. A statistical comparison of the performance of the two models shows that AQR gives a substantial improvement on the predictions of the ACTM, reducing both mean model error (from 61 to 41 % for NO2 and from 42 to 27 % for NH3) and increasing the spatial correlation (r) with the measured concentrations (from 0.0 to 0.39 for NO2 and from 0.74 to 0.84 for NH3). This improvement was greatest for monitoring locations close to pollutant sources. Although the model ideally requires high-spatial-resolution emission data, which are not available for the whole of Europe, the use of a Europe-wide emission dataset with a lower spatial resolution also gave an improvement on the ACTM predictions for the two test domains. The AQR model provides an easy-to-use and robust method to estimate sub-grid variability that can potentially be extended to different timescales and pollutants."
+ },
+ "karagulian2019": {
+  "doi": "10.1007/s11869-019-00674-z",
+  "found": true,
+  "title": "Analysis of a severe dust storm and its impact on air quality conditions using WRF-Chem modeling, satellite imagery, and ground observations",
+  "authors": [
+   [
+    "Karagulian",
+    "Federico"
+   ],
+   [
+    "Temimi",
+    "Marouane"
+   ],
+   [
+    "Ghebreyesus",
+    "Dawit"
+   ],
+   [
+    "Weston",
+    "Michael"
+   ],
+   [
+    "Kondapalli",
+    "Niranjan Kumar"
+   ],
+   [
+    "Valappil",
+    "Vineeth Krishnan"
+   ],
+   [
+    "Aldababesh",
+    "Amal"
+   ],
+   [
+    "Lyapustin",
+    "Alexei"
+   ],
+   [
+    "Chaouch",
+    "Naira"
+   ],
+   [
+    "Al Hammadi",
+    "Fatima"
+   ],
+   [
+    "Al Abdooli",
+    "Aisha"
+   ]
+  ],
+  "year": 2019,
+  "container": "Air Quality, Atmosphere &amp; Health",
+  "volume": "12",
+  "issue": "4",
+  "page": "453-470",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "barbulescu2020": {
+  "doi": "10.1016/j.atmosres.2019.104669",
+  "found": true,
+  "title": "Statistical analysis of dust storms in the United Arab Emirates",
+  "authors": [
+   [
+    "Barbulescu",
+    "Alina"
+   ],
+   [
+    "Nazzal",
+    "Yousef"
+   ]
+  ],
+  "year": 2020,
+  "container": "Atmospheric Research",
+  "volume": "231",
+  "issue": null,
+  "page": "104669",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "labban2023": {
+  "doi": "10.1016/j.heliyon.2023.e17047",
+  "found": true,
+  "title": "Evaluation of MERRA-2 data for aerosols patterns over the Kingdom of Saudi Arabia",
+  "authors": [
+   [
+    "Labban",
+    "Abdulhaleem H."
+   ],
+   [
+    "Butt",
+    "Mohsin Jamil"
+   ]
+  ],
+  "year": 2023,
+  "container": "Heliyon",
+  "volume": "9",
+  "issue": "6",
+  "page": "e17047",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "givehchi2013": {
+  "doi": "10.1016/j.atmosenv.2013.04.039",
+  "found": true,
+  "title": "Contribution of the Middle Eastern dust source areas to PM10 levels in urban receptors: Case study of Tehran, Iran",
+  "authors": [
+   [
+    "Givehchi",
+    "Raheleh"
+   ],
+   [
+    "Arhami",
+    "Mohammad"
+   ],
+   [
+    "Tajrishy",
+    "Massoud"
+   ]
+  ],
+  "year": 2013,
+  "container": "Atmospheric Environment",
+  "volume": "75",
+  "issue": null,
+  "page": "287-295",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "sarafian2025": {
+  "doi": "10.3390/rs17020222",
+  "found": true,
+  "title": "Correction of CAMS PM10 Reanalysis Improves AI-Based Dust Event Forecast",
+  "authors": [
+   [
+    "Sarafian",
+    "Ron"
+   ],
+   [
+    "Nathan",
+    "Sagi"
+   ],
+   [
+    "Nissenbaum",
+    "Dori"
+   ],
+   [
+    "Khan",
+    "Salman"
+   ],
+   [
+    "Rudich",
+    "Yinon"
+   ]
+  ],
+  "year": 2025,
+  "container": "Remote Sensing",
+  "volume": "17",
+  "issue": "2",
+  "page": "222",
+  "type": "journal-article",
+  "abstract": "High dust loading significantly impacts air quality, climate, and public health. Early warning is crucial for mitigating short-term effects, and accurate dust field estimates are needed for forecasting. The Copernicus Atmosphere Monitoring Service (CAMS) offers global reanalysis datasets and forecasts of particulate matter with a diameter of under 10 μm (PM10), which approximate dust, but recent studies highlight discrepancies between CAMS data and ground in-situ measurements. Since CAMS is often used for forecasting, errors in PM10 fields can hinder accurate dust event forecasts, which is particularly challenging for models that use artificial intelligence (AI) due to the scarcity of dust events and limited training data. This study proposes a machine-learning approach to correct CAMS PM10 fields using in-situ data to enhance AI-based dust event forecasting. A correction model that links pixel-wise errors with atmospheric and meteorological variables was taught using gradient-boosting algorithms. This model is then utilized to predict CAMS error in previously unobserved pixels across the Eastern Mediterranean, generating CAMS error fields. Our bias-corrected PM10 fields are, on average, 12 μg m−3 more accurate, often reducing CAMS errors by significant percentages. To evaluate the contribution, we train a deep neural network to predict city-scale dust events (0–72 h) over the Balkans using PM10 fields. Comparing the network’s performance when trained on both original and bias-corrected CAMS PM10 fields, we show that the correction improves AI-based forecasting performance across all metrics."
+ },
+ "meyer2022global": {
+  "doi": "10.1038/s41467-022-29838-9",
+  "found": true,
+  "title": "Machine learning-based global maps of ecological variables and the challenge of assessing them",
+  "authors": [
+   [
+    "Meyer",
+    "Hanna"
+   ],
+   [
+    "Pebesma",
+    "Edzer"
+   ]
+  ],
+  "year": 2022,
+  "container": "Nature Communications",
+  "volume": "13",
+  "issue": "1",
+  "page": "2208",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "kaffashzadeh2024": {
+  "doi": "10.5194/gmd-17-4155-2024",
+  "found": true,
+  "title": "Assessment of surface ozone products from downscaled CAMS reanalysis and CAMS daily forecast using urban air quality monitoring stations in Iran",
+  "authors": [
+   [
+    "Kaffashzadeh",
+    "Najmeh"
+   ],
+   [
+    "Aliakbari Bidokhti",
+    "Abbas-Ali"
+   ]
+  ],
+  "year": 2024,
+  "container": "Geoscientific Model Development",
+  "volume": "17",
+  "issue": "10",
+  "page": "4155-4179",
+  "type": "journal-article",
+  "abstract": "Tropospheric ozone time series consist of the effects of various scales of motion, from meso-scales to large timescales, which are often challenging for global models to capture. This study uses two global datasets, namely the reanalysis and the daily forecast of the Copernicus Atmosphere Monitoring Service (CAMS), to assess the capability of these products in presenting ozone's features on regional scales. We obtained 16 relevant meteorological and several pollutant species, such as O 3 , CO, NO x , etc., from CAMS. Furthermore, we employed a comprehensive set of in situ measurements of ozone at 27 urban stations in Iran for the year 2020. We decomposed the time series into three spectral components, i.e., short ( S ), medium ( M ), and long ( L ) terms. To cope with the scaling issue between the measured data and the CAMS' products, we developed a downscaling approach based on a long short-term memory (LSTM) neural network method which, apart from modeled ozone, also assimilated meteorological quantities as well as lagged O 3 observations. Results show the benefit of applying the LSTM method instead of using the original CAMS products for providing O 3 over Iran. It is found that lagged O 3 observation has a larger contribution than other predictors in improving the LSTM. Compared with the S , the M component shows more associations with observations, e.g., correlation coefficients larger than 0.7 for the S and about 0.95 for the M in both models. The performance of the models varies across cities; for example, the highest error is for areas with high emissions of O 3 precursors. The robustness of the results is confirmed by performing an additional downscaling method. This study demonstrates that coarse-scale global model data, such as CAMS, need to be downscaled for regulatory purposes or policy applications at local scales. Our method can be useful not only for the evaluation but also for the prediction of other chemical species, such as aerosols."
+ },
+ "bae2025be7": {
+  "doi": "10.1016/j.jenvrad.2025.107725",
+  "found": true,
+  "title": "Environmental drivers of Be-7 and K-40 deposition in South Korea: A regional analysis of meteorological and geological influences",
+  "authors": [
+   [
+    "Bae",
+    "Sojeong"
+   ],
+   [
+    "Lee",
+    "Yejin"
+   ],
+   [
+    "Lee",
+    "Seongchan"
+   ],
+   [
+    "Byun",
+    "Ki-Deuk"
+   ],
+   [
+    "Kang",
+    "Ku"
+   ]
+  ],
+  "year": 2025,
+  "container": "Journal of Environmental Radioactivity",
+  "volume": "288",
+  "issue": null,
+  "page": "107725",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "kang2026mapping": {
+  "doi": "10.1016/j.jenvrad.2026.108185",
+  "found": true,
+  "title": "A spatiotemporally corrected radiological contamination mapping platform for multi-scenario nuclear and radiological emergencies",
+  "authors": [
+   [
+    "Kim",
+    "Hyunsung"
+   ],
+   [
+    "Shin",
+    "Myeongsik"
+   ],
+   [
+    "Kang",
+    "Ku"
+   ]
+  ],
+  "year": 2026,
+  "container": "Journal of Environmental Radioactivity",
+  "volume": "300",
+  "issue": null,
+  "page": "108185",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "shin2026resilient": {
+  "doi": "10.1016/j.pnucene.2026.106446",
+  "found": true,
+  "title": "Resilient, offline decision support for radiological hazard mapping and trajectory-based dose assessment in network-denied, disrupted-response environments",
+  "authors": [
+   [
+    "Shin",
+    "Myeongsik"
+   ],
+   [
+    "Kang",
+    "Ku"
+   ]
+  ],
+  "year": 2026,
+  "container": "Progress in Nuclear Energy",
+  "volume": "198",
+  "issue": null,
+  "page": "106446",
+  "type": "journal-article",
+  "abstract": ""
+ },
+ "you2026nai": {
+  "doi": "10.1016/j.apradiso.2026.113084",
+  "found": true,
+  "title": "Site-specific field comparison of in situ NaI(Tl) gamma-ray spectrometry for ambient dose equivalent rate estimation and 137Cs spectral screening",
+  "authors": [
+   [
+    "You",
+    "Hyungwoo"
+   ],
+   [
+    "Bak",
+    "Wonseok"
+   ],
+   [
+    "Choi",
+    "Gyoungjun"
+   ],
+   [
+    "Shin",
+    "Myeongsik"
+   ],
+   [
+    "Yoo",
+    "Jun"
+   ],
+   [
+    "Kim",
+    "Min-Kun"
+   ],
+   [
+    "Kim",
+    "Jangoh"
+   ],
+   [
+    "Kang",
+    "Ku"
+   ]
+  ],
+  "year": 2027,
+  "container": "Applied Radiation and Isotopes",
+  "volume": "240",
+  "issue": null,
+  "page": "113084",
+  "type": "journal-article",
+  "abstract": ""
+ }
+}

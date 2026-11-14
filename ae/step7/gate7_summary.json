@@ -1,0 +1,21 @@
+{
+ "n_references": 66,
+ "doi_resolved": 66,
+ "crossref": 65,
+ "datacite": 1,
+ "metadata_match": 66,
+ "s2_by_doi": 62,
+ "s2_by_title": 4,
+ "arxiv_checked": 1,
+ "integrity_score": 1.0,
+ "hallucinated": 0,
+ "relevance_mean": 0.863,
+ "relevance_min": 0.5,
+ "removed_relevance_below_0_5": 0,
+ "own_work": 4,
+ "footnoted_non_doi_sources": [
+  "WHO AQG 2021",
+  "SCAD methodology",
+  "EAQI 2023"
+ ]
+}

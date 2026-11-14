@@ -2,38 +2,57 @@
 
 Coarse particulate matter is a persistent air-quality problem across the Arabian Gulf. Mineral
 dust lifted from the surrounding deserts dominates the regional aerosol burden
-\citep{gandham2020,shahid2026}, and local sources such as traffic, construction, industry and
-resuspension from unpaved surfaces add to it; the sources of \pmten{} have been characterised
-for Kuwait \citep{hopke2026} and its variability described for Abu Dhabi \citep{abuelgasim2020}.
-The resulting exposure matters for the burden of disease attributed to particulate matter
-\citep{cohen2017,lelieveled2015}, yet routine surface monitoring is sparse across most of the
-Peninsula. Where no monitor exists, assessments of exposure and of guideline exceedance fall back
-on global atmospheric-composition products: the Copernicus Atmosphere Monitoring Service (CAMS)
-reanalysis \citep{inness2019,flemming2015}, MERRA-2 \citep{gelaro2017,randles2017}, or surface
-fields that fuse such models with satellite retrievals \citep{van_donkelaar2016,hammer2020}.
+\citep{gandham2020,shahid2026}, dust storms recur over the Emirates
+\citep{barbulescu2020,karagulian2019}, and dust from Middle Eastern source areas reaches urban
+receptors far downwind \citep{givehchi2013}. Local sources add to this regional background:
+exhaust and non-exhaust traffic emissions, resuspended road dust, construction and industry
+\citep{thorpe2008,amato2009,harrison2021}, which together make up the urban increment of
+\pmten{} over its regional level \citep{lenschow2001}. The sources of \pmten{} have been
+characterised for Kuwait \citep{hopke2026} and its variability described for Abu Dhabi
+\citep{abuelgasim2020}, and the deposition of particle-bound species has been shown to vary
+between sites with meteorology and surface geology \citep{bae2025be7}. The resulting exposure
+matters for the burden of disease attributed to particulate matter
+\citep{cohen2017,lelieveled2015,chen2020,orellano2020}, including during desert dust episodes
+\citep{karanasiou2012}, yet routine surface monitoring is sparse across most of the Peninsula.
+Where no monitor exists, assessments of exposure and of guideline exceedance fall back on models,
+as hazard assessments in general do when measurements are unavailable \citep{shin2026resilient}:
+for particulate matter, on global atmospheric-composition products such as the Copernicus
+Atmosphere Monitoring Service (CAMS) reanalysis \citep{inness2019,flemming2015,morcrette2009},
+MERRA-2 \citep{gelaro2017,randles2017}, or surface fields that fuse such models with satellite
+retrievals \citep{van_donkelaar2016,hammer2020}.
 
 Two properties of these products limit what they can say about \pmten{} at a point. The first is
 skill at the surface. Aerosol data assimilation constrains the column optical depth, not the
-surface mass concentration, and an evaluation of global products against surface particulate
-measurements in the Middle East found substantial differences \citep{ukhov2020}. The second is
+surface mass concentration. The aerosol optical depth of these products has been validated
+worldwide and over Arabia \citep{eskes2015,gueymard2020,labban2023}, but an evaluation against
+surface particulate measurements in the Middle East found substantial differences \citep{ukhov2020}. The second is
 representativeness. A grid value is an average over several thousand square kilometres and a
 monitor samples one location inside that area, so the two would differ even if the model were
-perfect \citep{schutgens2016,schutgens2017,janjic2018}. For well-mixed, long-lived constituents
+perfect \citep{schutgens2016,schutgens2017,janjic2018}; the area that a monitor represents
+depends on the sources around it \citep{janssen2012,righini2014,duyzer2015}. For well-mixed,
+long-lived constituents
 the difference is small. For coarse particles in an arid city it need not be, because roads,
 construction sites, industrial yards and bare soil are much smaller than a grid cell and the
-particles they emit deposit within kilometres. How large this sub-grid variability is over the
-Gulf has rarely been measured, because it takes several monitors inside one model cell to measure
-it. Representativeness also has a temporal side: a model value and an observation are comparable
+particles they emit deposit within kilometres. The effect of sub-grid variability on exposure
+estimates has been quantified for Europe \citep{denby2011,denby2024} and addressed by sub-grid
+downscaling of regional models \citep{theobald2016}, but how large it is over the Gulf has rarely
+been measured, because it takes several monitors inside one model cell to measure it. Representativeness also has a temporal side: a model value and an observation are comparable
 only if they are averaged over the same interval \citep{schutgens2017}, and public archives do not
 always state the interval over which a regulatory network reports.
 
 The usual remedy for model error is statistical. A correction model is fitted to the difference
 between observations and the gridded field at monitored locations and is then applied wherever
-the field is available \citep{djalalova2015,huang2017}. Whether such a correction
+the field is available \citep{djalalova2015,huang2017}; for CAMS this has been done for
+\pmten{} in dust forecasting \citep{sarafian2025} and for ozone at urban stations
+\citep{kaffashzadeh2024}. Alternatively, point measurements are interpolated into continuous
+fields, whose accuracy depends on the spatial structure of the field being mapped
+\citep{kang2026mapping}. Whether such a correction
 carries to places without monitors is normally judged by withholding one station at a time. In a
 dense network that test is weaker than it looks, because the withheld station's neighbours remain
 in the training set a few kilometres away, sampled on the same days and often inside the same
-model cell \citep{roberts2017,ploton2020,meyer2021aoa,wadoux2021}. The question is the
+model cell \citep{roberts2017,ploton2020,meyer2021aoa,wadoux2021}, a problem for which
+dedicated designs of spatial cross-validation have been proposed
+\citep{valavi2019,mila2022,linnenbrink2024,meyer2022global}. The question is the
 representativeness question seen from the other side: if what the gridded field misses is local,
 a correction can only be learned from monitors that share that locality.
 
@@ -46,7 +65,7 @@ day-to-day level of the region from the differences between places; (iii) how mu
 variability lies inside single model cells, where a gridded product has one value to offer;
 (iv) whether a statistical correction fitted at monitored sites improves the reanalysis at a site
 treated as unmonitored; and (v) what the answers imply for assessing exceedance of the World
-Health Organization 24-h guideline \citep{whoaqg2021}. A recent evaluation in this journal showed
+Health Organization 24-h guideline\footnote{World Health Organization, 2021. WHO global air quality guidelines: particulate matter (PM$_{2.5}$ and PM$_{10}$), ozone, nitrogen dioxide, sulfur dioxide and carbon monoxide. ISBN 978-92-4-003422-8. \url{https://www.who.int/publications/i/item/9789240034228}.}. A recent evaluation in this journal showed
 that global reanalyses cannot reproduce the seasonal and diurnal cycles of surface ozone in a
 data-sparse tropical region \citep{vieira2023}; the present study addresses the spatial
 counterpart of that problem for coarse particles in an arid one.
@@ -73,7 +92,7 @@ network were checked against the archive and are identical to the archived value
 time stamps.
 
 Each monitor carries the type assigned by the network operator and published by the Statistics
-Centre -- Abu Dhabi \citep{scad_aq_method}: industrial (four monitors), traffic (three), urban
+Centre -- Abu Dhabi\footnote{Statistics Centre -- Abu Dhabi, Air Quality Statistics: Methodology. \url{https://scad.gov.ae} (accessed 13 November 2026).}: industrial (four monitors), traffic (three), urban
 (three), suburban (seven) and rural background (two). We use this classification as given and do
 not reassign any station.
 
@@ -95,7 +114,7 @@ of the reanalysis over the preceding 24~h than with the reanalysis at the same i
 Pearson $r$ over the monitors 0.50 against 0.37), and in the three-hourly record to December 2023
 the correlation falls at 17 of 19 monitors as the 24-h window is moved from trailing to centred
 to leading. (iv) The national guideline for the Emirati Air Quality Index prescribes a 24-h
-rolling average for \pmten{}, formed from at least 18 valid hourly values \citep{eaqi2023}.
+rolling average for \pmten{}, formed from at least 18 valid hourly values\footnote{Guideline for calculating the Emirati Air Quality Index (EAQI), 2023. \url{https://airquality.ncm.gov.ae/resources/pdf/aqi-quickguide-en-2023.pdf} (accessed 13 November 2026).}.
 
 We therefore treat every archived value as the mean concentration over the 24~h ending at its
 time stamp. Three consequences follow. The model counterpart of an archived value must be averaged
@@ -128,14 +147,13 @@ shows, alters the verdict on statistical correction.
 For each monitor we computed, on the three-hourly record, the mean bias (CAMS minus observed),
 mean absolute error, root-mean-square error, and the Pearson and Spearman correlations between
 the matched model and observed series. Spatial organisation of the mean bias was measured with
-Moran's $I$ in distance bands, with significance from 9,999 permutations of the station labels.
+Moran's $I$ \citep{moran1950} in distance bands, with significance from 9,999 permutations of the station labels.
 
 Sub-grid variability was measured in three ways. First, for each cell holding two or more
 monitors we took the range and standard deviation of the monitors' mean observed concentrations,
 and partitioned the between-monitor sum of squares of mean concentration over all 19 monitors
 into a within-cell and a between-cell part; the partition was repeated on station medians, which
-a single episode cannot dominate. Second, for every pair of monitors we computed the Spearman
-correlation of their observed three-hourly series over common time steps (at least 100) and
+a single episode cannot dominate. Second, for every pair of monitors we computed the Spearman correlation \citep{spearman1904} of their observed three-hourly series over common time steps (at least 100) and
 compared same-cell pairs with the correlation between each monitor and its own matched model
 series. Third, for each pair we counted how often the two monitors lay on opposite sides of the
 guideline value of 45~\ugm{}, over common time steps and over days of the daily record. A gridded
@@ -150,7 +168,8 @@ computed within each tercile. The stability of the results over time was checked
 the daily comparison for four sub-periods.
 
 The association between station type and bias was tested with a Kruskal--Wallis test across the
-five types and, separately, with a one-sided Mann--Whitney test and a 200,000-draw permutation
+five types \citep{kruskal1952} and, separately, with a one-sided Mann--Whitney test
+\citep{mann1947} and a 200,000-draw permutation
 test contrasting the monitors typed industrial, traffic or urban with those typed suburban or
 rural background. The two-group contrast was formed after the five-group result was known; both
 are reported.
@@ -196,7 +215,8 @@ read from them directly. The daily record was used, with its matched model count
 monitor-days. The observed value was classed as exceeding 45~\ugm{} or not and compared with the
 same classification of the matched reanalysis. We report the probability of detection (POD), the
 probability of false detection (POFD) and two scores that discount agreement expected by chance,
-the equitable threat score (ETS) and the Heidke skill score (HSS). Intervals are from 2,000
+the equitable threat score (ETS) and the Heidke skill score (HSS); both are equitable only in
+the limit of large samples \citep{hogan2010}. Intervals are from 2,000
 bootstrap resamples of monitors. Two references that use the monitor itself indicate what local
 information adds: the reanalysis shifted by the mean observed-minus-model difference at that
 monitor over its preceding eight daily values, and persistence of the monitor's value from the
@@ -372,8 +392,9 @@ days everywhere. This is the signature of an error in the amount of dust the mod
 the region on high days. The other part is a difference between the
 conurbation and the interior of about 60~\ugm{} that is the same on the cleanest days as on the
 dustiest. An offset that does not respond to regional dust is not an error of dust transport. It
-points instead to coarse particles of local origin, from traffic, construction, industry and
-resuspension, which a global model at this resolution does not resolve, or to the composition of
+points instead to coarse particles of local origin, from traffic, construction, industry and resuspension \citep{thorpe2008,amato2009}, an urban
+increment over the regional background \citep{lenschow2001} that a global model at this
+resolution does not resolve, or to the composition of
 the coastal cells, which extend over the sea as well as the city (Figure~\ref{fig:map}). The two
 explanations are not exclusive, and this record cannot apportion the offset between them; that the
 offset is constant argues against wind-driven resuspension as its main cause, because
@@ -394,9 +415,11 @@ source-oriented class.
 
 The values that an open archive holds for a regulatory network are whatever the network
 publishes, and for particulate matter that may be the running mean on which an air-quality index
-is based \citep{eaqi2023}, not the hourly concentration. In the present record the two are easy
+is based (Section~\ref{sec:running}), not the hourly concentration. In the present record the two are easy
 to tell apart once the question is asked: hourly values that hardly change, increments that
-reverse after 24~h, and gases from the same stations that behave otherwise. The check costs a
+reverse after 24~h, and gases from the same stations that behave otherwise. The same principle governs comparisons
+between co-located instruments, where a systematic difference can arise entirely from what each
+measured quantity includes \citep{you2026nai}. The check costs a
 few lines of code and should precede any comparison of archived particulate data with a model.
 The consequences of omitting it are not uniform. Mean bias and its spatial pattern were almost
 unaffected here, because averaging does not change a mean. The correlation in time was
@@ -432,7 +455,7 @@ reanalysis of this kind can indicate on which days \pmten{} over a region is hig
 be used to decide whether a particular place exceeded a guideline, and exceedance statistics
 derived from it in a region where the guideline is exceeded on most days should be reported with
 a chance-corrected score and the base rate. Second, the uncertainty attached to a grid value
-used as a point estimate should include the sub-grid spread, which in this network is as large
+used as a point estimate should include the sub-grid spread \citep{denby2011}, which in this network is as large
 as the guideline value itself in the cells that contain strong local sources. Third, because the
 missing component is a local level that changes slowly, a monitor informs its own site far more
 than it informs a statistical model of the region; for a fixed number of instruments, coverage
