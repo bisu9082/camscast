@@ -1,6 +1,6 @@
 %% Atmospheric Environment (Elsevier) -- research paper
 %% Compile: pdflatex -> bibtex -> pdflatex -> pdflatex
-\documentclass[preprint,review,12pt,authoryear]{elsarticle}
+\documentclass[preprint,review,12pt,number,sort&compress]{elsarticle}
 
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
@@ -46,24 +46,23 @@ monitoring network of an arid emirate}
   city={Seoul}, postcode={01805}, country={Republic of Korea}}
 
 \begin{abstract}
-Where surface monitoring is sparse, exposure to coarse particulate matter (\pmten{}) is
-increasingly assessed from global reanalyses, sometimes after statistical correction. We use the
+Where monitors are few, exposure to coarse particulate matter (\pmten{}) is increasingly
+assessed from global reanalyses, sometimes after statistical correction. We use the
 regulatory network of the Emirate of Abu Dhabi (19 monitors, 16 of which share a $0.75^{\circ}$
 cell of the CAMS reanalysis with another monitor) to measure what such a product represents. The
-archived observations proved to be 24-h running means and are compared with the reanalysis
-averaged over the same 24~h, from October 2022 to May 2024 (32,566 three-hourly values; 5,989
+archived observations proved to be 24-h running means and were compared with the reanalysis
+averaged over the same 24~h, October 2022 to May 2024 (32,566 three-hourly values; 5,989
 monitor-days). The reanalysis reproduced when \pmten{} was high: the daily network-median level
 correlated with its model counterpart at 0.67 (Spearman). It did not reproduce where. Mean bias
 ranged from $-128$ to $+40$~\ugm{} and was spatially organised. Over the Abu Dhabi conurbation a
-regional deficit that grew on dusty days, and that the inland city of Al~Ain shared, was
-compounded by a local offset of about 60~\ugm{} that was the same on clean and dusty days. Of the
+regional deficit that grew on dusty days, shared by the inland city of Al~Ain, was compounded by
+a local offset of about 60~\ugm{} that did not change with the regional level. Of the
 between-monitor variance of mean \pmten{}, 46\% lay inside single model cells (31\% for medians).
 A gradient-boosted correction gave no established gain at a monitor treated as unmonitored; an
-apparent gain of 28--34\%, robust to every control, arose only when running means were compared
-with instantaneous model values. Mean \pmten{} exceeded the WHO 24-h guideline value at every
-monitor, and the reanalysis had little chance-corrected skill for exceedance (equitable threat
-score 0.09). A reanalysis indicates when the regional background is high; statements about a
-place require a measurement there.
+apparent gain of 28--34\% arose only when running means were compared with instantaneous model
+values. Mean \pmten{} exceeded the WHO 24-h guideline value at every monitor; the reanalysis had
+little chance-corrected skill for exceedance (equitable threat score 0.09). Statements about
+\pmten{} at a particular place require a measurement there.
 \end{abstract}
 
 \begin{highlights}
@@ -125,8 +124,8 @@ Figures~\ref{fig:map}--\ref{fig:regional} by \texttt{make\_figs\_ae.py}. The raw
 are distributed by the Copernicus Atmosphere Data Store and are not redistributed; the request
 parameters are documented in \texttt{data\_retrieval/RETRIEVAL.md}.
 
-\bibliographystyle{elsarticle-harv}
-\bibliography{refs_ae}
+\bibliographystyle{elsarticle-num}
+\bibliography{references}
 
 \clearpage
 
@@ -175,7 +174,7 @@ own preceding values and are evaluated on the days for which those exist.}
 \end{table}
 
 \begin{figure}[p]\centering
-\includegraphics[width=\textwidth]{../figures/Fig1_map.png}
+\includegraphics[width=\textwidth]{../figures/Fig1_map.pdf}
 \caption{The Abu Dhabi regulatory \pmten{} network and the mean bias of the CAMS reanalysis.
 (a) All 19 monitors; (b) the seven monitors of the Abu Dhabi metropolitan area, with mean bias in
 \ugm{}. Colour gives the mean bias (CAMS minus observed) over each monitor's matched record and
@@ -185,7 +184,7 @@ model cells; the coastline and national borders are from Natural Earth.}
 \end{figure}
 
 \begin{figure}[p]\centering
-\includegraphics[width=\textwidth]{../figures/Fig2_subgrid.png}
+\includegraphics[width=\textwidth]{../figures/Fig2_subgrid.pdf}
 \caption{Variability of \pmten{} below the scale of the model grid. (a) Mean observed \pmten{} at
 each monitor in the six cells that hold more than one monitor (marker shape: station type, as in
 Figure~\ref{fig:map}; grey bar: range within the cell), against the mean of the single model
@@ -197,7 +196,7 @@ median correlation between a monitor and its own matched model series.}
 \end{figure}
 
 \begin{figure}[p]\centering
-\includegraphics[width=\textwidth]{../figures/Fig3_regional.png}
+\includegraphics[width=\textwidth]{../figures/Fig3_regional.pdf}
 \caption{What the reanalysis reproduces and what it does not. (a) Daily regional level (median
 over the monitors of the 24-h mean ending 08~UTC) in the observations and in the matched
 reanalysis, 327 days from October 2022 to May 2024. (b) Mean bias of the reanalysis at the
@@ -207,7 +206,7 @@ monitors of the Abu Dhabi metropolitan area and of Al~Ain, and the difference be
 \end{figure}
 
 \begin{figure}[p]\centering
-\includegraphics[width=\textwidth]{../figures/Fig4_transfer.png}
+\includegraphics[width=\textwidth]{../figures/Fig4_transfer.pdf}
 \caption{Gain of the statistical correction at a monitor treated as unmonitored, with model and
 observations averaged over the same 24~h. Median $\Delta$ over the 19 monitors, with 95\%
 intervals from a bootstrap over model cells, against the radius within which training monitors

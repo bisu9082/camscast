@@ -40,10 +40,14 @@ network of an arid emirate.** Jin Yoo, Jeongyun Kim, Doo-Hee Lee, Ku Kang.
     #     CAMSCAST_OUT=../../results/audit_matched.json python audit_v7.py
     #   same with GUARD_DAYS=3  -> audit_matched_guard3.json
     #   CAMSCAST_DATA=../../data_processed/full/derived/instantaneous GUARD_DAYS=10 ... -> audit_instantaneous.json
-    python make_tables_ae.py && python make_figs_ae.py
+    python make_tables_ae.py && python make_figs_ae.py && python make_graphical_abstract.py
     python verify_numbers_ae.py               # 101 quoted phrases checked against results/
     cd ../manuscript && pdflatex main_ae && bibtex main_ae && pdflatex main_ae && pdflatex main_ae
     pdflatex SI_ae && pdflatex SI_ae && pdflatex cover_letter_ae
+    cd ../code && python extract_cited_bib.py   # manuscript/references.bib (cited entries only)
+
+Submission files for Atmospheric Environment: `submission_AE_20261114/` (LaTeX source with
+vector PDF figures, highlights.docx, graphical abstract, SI, cover letter, checklist).
 
 Software: Python 3.13, scikit-learn 1.9.1, NumPy 2.5.3, pandas 3.0.5, SciPy 1.18.1, h5py,
 Matplotlib.

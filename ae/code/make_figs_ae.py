@@ -11,7 +11,7 @@ Fig. 4  gain of the statistical correction at a monitor treated as unmonitored, 
 
 Reads  results/station_representativeness.json, results/audit_matched.json and
        data_aux/naturalearth_clip.json (Natural Earth 1:10m coastline and borders)
-Writes figures/Fig1_map.png, Fig2_subgrid.png, Fig3_regional.png, Fig4_transfer.png (600 dpi)
+Writes figures/Fig1_map, Fig2_subgrid, Fig3_regional, Fig4_transfer as 600 dpi PNG and vector PDF
 
 Authored at the final two-column width (190 mm = 7.48 in); smallest text 7 pt.
 Identity is never carried by colour alone: station type is a marker shape, the two feature sets
@@ -43,7 +43,14 @@ plt.rcParams.update({
     "xtick.labelsize": 7, "ytick.labelsize": 7, "axes.labelsize": 8,
     "xtick.major.size": 2.5, "ytick.major.size": 2.5, "savefig.facecolor": SURFACE,
     "figure.facecolor": SURFACE, "axes.grid": False, "legend.frameon": False,
+    "pdf.fonttype": 42, "ps.fonttype": 42,
 })
+
+
+def save(fig, name):
+    """600 dpi PNG for review and a vector PDF with embedded fonts for production."""
+    fig.savefig(os.path.join(FIG, name + ".png"), dpi=600)
+    fig.savefig(os.path.join(FIG, name + ".pdf"))
 DIV = LinearSegmentedColormap.from_list(
     "bias", ["#0d366b", "#256abf", "#86b6ef", "#f0efec", "#f2a99c", "#d03b3b", "#7f1717"])
 SHAPE = {"Industrial": "s", "Traffic": "^", "Urban": "D", "Suburban": "o",
@@ -144,7 +151,7 @@ def fig1():
                fontsize=7, handletextpad=0.2, columnspacing=1.2, labelcolor=INK2,
                title="Station type (operator classification)", title_fontsize=7,
                alignment="left")
-    fig.savefig(os.path.join(FIG, "Fig1_map.png"), dpi=600)
+    save(fig, "Fig1_map")
     plt.close(fig)
 
 
@@ -219,7 +226,7 @@ def fig2():
     a2.legend(loc="lower left", bbox_to_anchor=(0.0, 0.0), ncol=1, fontsize=7,
               handletextpad=0.2, labelcolor=INK2)
     panel_letter(a2, "b", dx=-0.09, dy=1.0)
-    fig.savefig(os.path.join(FIG, "Fig2_subgrid.png"), dpi=600)
+    save(fig, "Fig2_subgrid")
     plt.close(fig)
 
 
@@ -286,7 +293,7 @@ def fig3():
     for ax, s in zip(axes, "abc"):
         ax.text(0.0, 1.03, s, transform=ax.transAxes, fontsize=10, fontweight="bold",
                 color=INK, va="bottom", ha="left")
-    fig.savefig(os.path.join(FIG, "Fig4_transfer.png"), dpi=600)
+    save(fig, "Fig4_transfer")
     plt.close(fig)
 
 
@@ -343,7 +350,7 @@ def fig4():
         a2.spines[sp].set_visible(False)
     a2.legend(loc="lower left", fontsize=7, labelcolor=INK2, handlelength=2.2)
     panel_letter(a2, "b", dx=-0.10, dy=1.0)
-    fig.savefig(os.path.join(FIG, "Fig3_regional.png"), dpi=600)
+    save(fig, "Fig3_regional")
     plt.close(fig)
 
 
