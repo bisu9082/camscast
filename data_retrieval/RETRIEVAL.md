@@ -19,13 +19,19 @@ manuscript or supplement, the two agree.
     screening     sentinel (-999) and negative values removed
                   no upper concentration cap applied; the record's largest PM10 value
                   (2,978 ug/m3, E11 Road, 2023-09-15) is retained
-    aggregation   averaged onto the three-hourly CAMS time grid
+    aggregation   the archived value at each three-hourly CAMS time stamp (no averaging).
+                  Correction 2026-11-14: earlier versions of this file said the hourly values
+                  were averaged onto the three-hourly grid; they were sampled. The archived PM10
+                  values are themselves trailing 24-h running means (ae/README_AE.md).
     network       19-station Abu Dhabi Emirate regulatory PM10 network, 2022-10-29 to 2023-12-31
                   (the benchmark arm adds five PM2.5 sites)
 
 Station identifiers, coordinates, periods and matched sample counts are in Supplementary Table S1.
 
 ## 2. CAMS global reanalysis (EAC4) — the mechanistic field
+
+    continuous PM10 series for the nine occupied cells, 2022-10-01 to 2024-05-31:
+    ae/code/fetch_cams_eac4_pm10.py (ADS request) and ae/code/build_cams_cells.py (extraction)
 
     provider      Copernicus Atmosphere Data Store (ADS account required)
     dataset       CAMS global reanalysis (EAC4)

@@ -1,0 +1,6 @@
+data_raw/cams/
+data_processed/full/derived/
+data_processed/full/aligned_qc6/
+data_processed/aligned_qc6/
+logs/
+figures/prev_*

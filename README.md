@@ -1,5 +1,17 @@
 # serra_camscast
 
+> **Correction notice (2026-11-14).** The archived PM10 values of the Abu Dhabi network used in
+> this repository are **trailing 24-h running means**, not hourly concentrations (see
+> `ae/README_AE.md` and `ae/results/archive_checks.json`). The analyses below compare them with
+> the instantaneous CAMS value. When CAMS is averaged over the same 24 h, the
+> leave-one-station-out correction gain reported below is not established (median delta +0.10 to
+> +0.19, 12-13 of 19 monitors, q = 1.00 over 32,135 values, October 2022 to May 2024); under the
+> instantaneous comparison it is +0.32 to +0.42 (q <= 0.015). The mean-bias results are almost
+> unaffected. The statement below that no gain is established "at any radius" under the ten-day
+> guard was also inexact for release v1.3: buffer + time blocks, with coordinates, R = 0 kept
+> 17/19 monitors (q = 0.017). The current analysis is in `ae/`.
+
+
 Reproduction package for
 
 > **A data-adaptive audit of spatial transfer in environmental residual-correction models**

@@ -1,0 +1,85 @@
+{
+ "threshold": 6,
+ "removed": 431,
+ "kept": 32135,
+ "removed_fraction": 0.0132346619173371,
+ "stations_affected": 13,
+ "per_station": {
+  "369953": {
+   "before": 1688,
+   "removed": 84
+  },
+  "369954": {
+   "before": 1733,
+   "removed": 52
+  },
+  "369955": {
+   "before": 1700,
+   "removed": 82
+  },
+  "369957": {
+   "before": 1685,
+   "removed": 8
+  },
+  "369958": {
+   "before": 1705,
+   "removed": 0
+  },
+  "369959": {
+   "before": 1685,
+   "removed": 6
+  },
+  "369960": {
+   "before": 1695,
+   "removed": 7
+  },
+  "369961": {
+   "before": 1696,
+   "removed": 6
+  },
+  "369962": {
+   "before": 1774,
+   "removed": 12
+  },
+  "369963": {
+   "before": 1699,
+   "removed": 58
+  },
+  "369965": {
+   "before": 1772,
+   "removed": 38
+  },
+  "369966": {
+   "before": 1733,
+   "removed": 0
+  },
+  "369967": {
+   "before": 1710,
+   "removed": 20
+  },
+  "369968": {
+   "before": 1712,
+   "removed": 0
+  },
+  "369969": {
+   "before": 1759,
+   "removed": 36
+  },
+  "369971": {
+   "before": 1723,
+   "removed": 0
+  },
+  "369972": {
+   "before": 1711,
+   "removed": 0
+  },
+  "369973": {
+   "before": 1678,
+   "removed": 22
+  },
+  "369974": {
+   "before": 1708,
+   "removed": 0
+  }
+ }
+}
