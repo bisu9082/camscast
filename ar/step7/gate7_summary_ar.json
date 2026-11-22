@@ -1,0 +1,31 @@
+{
+ "n_references": 81,
+ "doi_resolved": 81,
+ "crossref": 80,
+ "datacite": 1,
+ "metadata_match": 81,
+ "s2_by_doi": 76,
+ "s2_by_title": 4,
+ "s2_not_indexed": [
+  "choi2027adaptive"
+ ],
+ "arxiv_checked": 1,
+ "integrity_score": 1.0,
+ "hallucinated": 0,
+ "relevance_mean": 0.846,
+ "relevance_min": 0.5,
+ "removed_relevance_below_0_5": 0,
+ "own_work": 6,
+ "own_work_keys": [
+  "bae2025be7",
+  "choi2027adaptive",
+  "kang2026mapping",
+  "kim2026tas2r",
+  "shin2026resilient",
+  "you2026nai"
+ ],
+ "note_janjic2018": "first-author mismatch is the diacritic in Janjić (encoding), metadata otherwise identical",
+ "removed_after_gate8": [
+  "kang2026dbp (R1 recommendation, user decision)"
+ ]
+}

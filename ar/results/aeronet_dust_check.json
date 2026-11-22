@@ -1,0 +1,95 @@
+{
+ "_meta": {
+  "site": "DEWA_ResearchCentre",
+  "lat": 24.766847,
+  "lon": 55.369125,
+  "level": "Version 3 Level 1.5 (not final calibration)",
+  "product": "SDA daily average",
+  "n_aeronet_days": 427,
+  "n_days_matched": 228,
+  "first": "2022-10-29",
+  "last": "2024-05-16"
+ },
+ "spearman": {
+  "coarse_aod_vs_obs_regional": {
+   "rho": 0.7023351982371888,
+   "p": 3.2751042635425003e-35
+  },
+  "coarse_aod_vs_cams_regional": {
+   "rho": 0.5353895064300194,
+   "p": 2.5994034483051888e-18
+  },
+  "fine_fraction_vs_obs_regional": {
+   "rho": -0.5902857856440208,
+   "p": 8.4508875418152e-23
+  }
+ },
+ "coarse_aod_tercile_bounds": [
+  0.08572149999999999,
+  0.16647499999999998
+ ],
+ "regional_tercile_x_dust_tercile": {
+  "low": {
+   "low": 49,
+   "mid": 23,
+   "high": 10
+  },
+  "mid": {
+   "low": 27,
+   "mid": 33,
+   "high": 15
+  },
+  "high": {
+   "low": 0,
+   "mid": 20,
+   "high": 51
+  }
+ },
+ "by_coarse_aod_tercile": {
+  "low": {
+   "n_days": 76,
+   "coarse_aod_median": 0.060957,
+   "fine_fraction_median": 0.6869265,
+   "regional_obs_median": 58.0,
+   "regional_cams_median": 41.3175965625,
+   "regional_bias_median": -13.605140625,
+   "bias_metro": -53.079888325049694,
+   "bias_al_ain": 6.643422644557823,
+   "metro_minus_al_ain": -59.72331096960752,
+   "metro_minus_al_ain_excl_al_mafraq": -53.01321679593397
+  },
+  "mid": {
+   "n_days": 76,
+   "coarse_aod_median": 0.129534,
+   "fine_fraction_median": 0.54775025,
+   "regional_obs_median": 70.0,
+   "regional_cams_median": 51.045831875000005,
+   "regional_bias_median": -25.668006875,
+   "bias_metro": -60.53137762475538,
+   "bias_al_ain": -2.945466841442952,
+   "metro_minus_al_ain": -57.58591078331243,
+   "metro_minus_al_ain_excl_al_mafraq": -46.488930873003994
+  },
+  "high": {
+   "n_days": 76,
+   "coarse_aod_median": 0.25495124999999996,
+   "fine_fraction_median": 0.32709675,
+   "regional_obs_median": 102.0,
+   "regional_cams_median": 69.94086000000001,
+   "regional_bias_median": -31.648858750000002,
+   "bias_metro": -73.05883886859583,
+   "bias_al_ain": -19.646584805084746,
+   "metro_minus_al_ain": -53.412254063511085,
+   "metro_minus_al_ain_excl_al_mafraq": -29.783611121353314
+  }
+ },
+ "low_dust_days_metro_bias_by_monitor": {
+  "Khadeeja School": -42.43897888698631,
+  "Hamdan St.": -33.873919313380284,
+  "Mussafah": -69.2327397804054,
+  "Khalifa City": -38.54191465753424,
+  "Al Maqtaa": -64.93325267857142,
+  "Baniyas School": -29.760350916666667,
+  "Al Mafraq": -96.74557578358208
+ }
+}

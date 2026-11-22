@@ -1,0 +1,344 @@
+%% Supplementary Information -- Atmospheric Environment
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{rotating}
+\newcommand*{\ugm}{\ensuremath{\mu\mathrm{g\,m^{-3}}}}
+\newcommand*{\pmten}{\ensuremath{\mathrm{PM_{10}}}}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thesection}{S\arabic{section}}
+\emergencystretch=3em
+\sloppy
+
+\begin{document}
+
+\begin{center}
+{\large\bfseries Supplementary Information}\\[6pt]
+{\large A global reanalysis reproduces when, but not where, PM$_{10}$ is high across the dense
+monitoring network of an arid emirate}\\[8pt]
+Jin Yoo, Jeongyun Kim, Doo-Hee Lee, Ku Kang
+\end{center}
+
+\noindent Every value in this document is produced by the scripts named in each section from the
+deposited records; the corresponding result file is given in brackets.
+
+\section{The records, the archive and the model series}
+
+The OpenAQ public archive was retrieved for the 19 location identifiers of the network on
+13~November 2026 (\texttt{fetch\_openaq\_archive.py}): 6,803 daily files holding 401,693 rows,
+of which 98,459 are \pmten{} (29~October 2022 to 20~May 2024); the remainder are nitrogen dioxide
+(99,270), sulfur dioxide (99,218), ozone (68,171) and carbon monoxide (36,575). No value is
+negative and no row is duplicated.
+
+The 20,818 three-hourly values up to 31~December 2023 analysed in earlier work on this network
+are identical to the archived values at the same time stamps, the archive holds no further value
+at a three-hourly time stamp in that period, and the station coordinates agree to within
+$5\times10^{-5}$ degrees [\texttt{archive\_checks.json}]. Those values were therefore archived
+values sampled every third hour; they were not averaged over three hours. The three-hourly record
+of the present study extends the same sampling to 20~May 2024 (32,566 values,
+\texttt{build\_records\_full.py}).
+
+The CAMS EAC4 surface \pmten{} field was retrieved from the Copernicus Atmosphere Data Store on
+14~November 2026 for 25.5--22.5$^{\circ}$N and 51.75--56.25$^{\circ}$E, 1~October 2022 to
+31~May 2024, eight analysis times per day (\texttt{fetch\_cams\_eac4\_pm10.py}). The nine
+occupied cells have a value at every one of the 4,872 three-hourly times. At the 20,818 time
+stamps of the earlier record the retrieved values agree with the model values used there to
+within $1.5\times10^{-5}$~\ugm{} (median $1.1\times10^{-6}$) [\texttt{cams\_cells\_check.json}].
+
+Table~\ref{tab:months} lists what each month contributes. From October 2022 to January 2023 the
+archive holds 14 of the 24 hours of the day (06--19~UTC); in February, May and July 2023 it holds
+one value per day, at 08~UTC; in April and June 2023 it holds 12 hours; from August 2023 it holds
+all 24. The daily record therefore uses the value at 08~UTC, the only hour held in every month.
+
+\begin{table}[ht]\centering\small
+\caption{Months held by the three-hourly record and by the archive. ``Days with 08~UTC value'' counts
+days on which at least one monitor reports at 08~UTC; the network median and the share of
+monitor-days above 45~\ugm{} are computed from those values (24-h means ending 08~UTC).}
+\label{tab:months}
+\resizebox{0.9\textwidth}{!}{\input{tab_si_coverage}}
+\end{table}
+
+\section{Evidence that the archived values are 24-h running means}
+
+\paragraph{Hourly resolution.} Table~\ref{tab:hourly} compares, for each species reported by the
+network, the behaviour of the hourly archive series [\texttt{archive\_checks.json}]. For a
+trailing 24-h running mean $x$ of hourly concentrations $h$,
+\[
+x_t - x_{t-1} = \frac{h_t - h_{t-24}}{24},
+\]
+so that the increment at $t$ and the increment at $t+24$ share the term $h_t$ with opposite
+signs and are negatively correlated, whereas the increments of an hourly concentration with a
+diurnal cycle are positively correlated at a lag of 24~h. The \pmten{} increments are negatively
+correlated at 24~h at all 19 monitors; those of nitrogen dioxide, ozone and carbon monoxide are
+positively correlated at every station that reports them, and those of sulfur dioxide at 16 of
+19. The \pmten{} series is also far smoother from hour to hour than any of the gases, and 35\%
+of its integer values repeat the previous hour.
+
+\begin{table}[ht]\centering\small
+\caption{Hourly signature of the archived series, by species. Medians over stations. ACF(1~h):
+lag-1~h autocorrelation of the series. ``Unchanged'': share of values equal to the value one
+hour earlier. The last four columns refer to the autocorrelation of the hourly increments; the
+range at 24~h is over stations.}
+\label{tab:hourly}
+\resizebox{\textwidth}{!}{\input{tab_si_hourly}}
+\end{table}
+
+\paragraph{Alignment of the averaging window.} Table~\ref{tab:fingerprint} gives, for each
+monitor, statistics of the analysed three-hourly record [\texttt{averaging\_fingerprint.json}]:
+the lag-3~h autocorrelation, the ratio of the variance of three-hourly increments to that of
+24-h increments, and the Pearson correlation of the observed series with the reanalysis at the
+same instant ($r_\mathrm{inst}$) and with the 24-h mean of the reanalysis placed so that it ends
+at the observation time (trailing), is centred on it, or begins at it (leading). The correlation
+decreases from trailing to centred to leading at 17 of the 19 monitors, and the trailing window
+exceeds the instantaneous comparison at 18. The median diurnal amplitude of the observed series
+is 3\% of the mean.
+
+\paragraph{Reporting convention.} The national guideline for calculating the Emirati Air Quality
+Index specifies a 24-h rolling average for \pmten{}, requiring at least 18 valid hourly values.
+The station metadata held by the archive do not state an averaging interval, and the inference
+above was not confirmed with the network operator.
+
+\begin{table}[ht]\centering\small
+\caption{Statistics of the analysed three-hourly record by monitor. $N$: values. ACF(3~h):
+lag-3~h autocorrelation. Var.\ ratio: variance of three-hourly increments divided by variance of
+24-h increments. $r$: Pearson correlation with the reanalysis at the same instant and with its
+24-h mean in three alignments. Diurnal: amplitude of the mean diurnal cycle relative to the
+mean.}
+\label{tab:fingerprint}
+\resizebox{0.95\textwidth}{!}{\input{tab_si_fingerprint}}
+\end{table}
+
+\clearpage
+\section{Matched and instantaneous comparison}
+
+With the reanalysis averaged over the 24~h ending at the observation time, the median Pearson
+correlation between model and observations over the monitors is 0.50; with the reanalysis taken
+at the same instant it is 0.37. The mean bias of a monitor differs between the two treatments by
+at most 2.0~\ugm{}, and the ranking of the 19 monitors by bias is almost identical (Spearman
+$\rho=0.998$) [\texttt{station\_representativeness.json}].
+
+\section{Stability across sub-periods}
+
+Table~\ref{tab:subperiods} repeats the daily model comparison for four sub-periods
+[\texttt{station\_representativeness.json}], and Table~\ref{tab:extended} the statistics that
+need no model [\texttt{extended\_observations.json}]. The ranking of the monitors by mean bias in
+each sub-period agrees with that of the whole record (Spearman 0.92 to 0.98), the metropolitan
+monitors are underestimated by 60 to 69~\ugm{} in each, and the Al~Ain monitors are within
+11~\ugm{}. The station means exceed 45~\ugm{} at all 19 monitors in every sub-period. The share of
+the between-monitor variance of the station means that lies within model cells is between 42\%
+and 51\%, and that of the station medians between 35\% and 44\%.
+
+\begin{table}[ht]\centering\small
+\caption{Daily model comparison by sub-period (24-h means ending 08~UTC). Bias in \ugm{} (CAMS
+minus observed): range over the 19 monitors and mean over the metropolitan and the Al~Ain
+monitors. Rank agreement: Spearman correlation of the monitors' mean bias in the sub-period with
+that of the whole record. Regional $\rho$: Spearman correlation of the observed and modelled
+network median, days with at least ten monitors.}
+\label{tab:subperiods}
+\resizebox{\textwidth}{!}{\input{tab_si_subperiods}}
+\end{table}
+
+\begin{table}[ht]\centering\small
+\caption{Observation-only statistics by sub-period. One value per monitor and day (24-h mean
+ending 08~UTC). Pair statistics use pairs with at least 30 common days.}
+\label{tab:extended}
+\resizebox{\textwidth}{!}{\input{tab_si_extended}}
+\end{table}
+
+\section{Statistical correction: further results}
+
+\paragraph{Effect of the averaging interval.} Table~\ref{tab:three} gives the full set of 24
+comparisons under two treatments of the same 32,135 screened three-hourly values: the
+instantaneous model value at the observation time, and the mean of the model over the 24~h ending
+then [\texttt{audit\_instantaneous.json}, \texttt{audit\_matched.json}]. Under the instantaneous
+treatment 16 of the 24 comparisons establish a gain; under matched averaging none does. The two
+treatments use identical rows, so the difference is due to the averaging alone. In the earlier
+work on this network the record was confined to August--December 2023 for matched averaging and
+the same contrast appeared there: a leave-one-station-out gain of $+0.25$ to $+0.38$ under the
+instantaneous treatment on the matched rows, and of $+0.10$ to $+0.15$, not established, under
+matched averaging [\texttt{v13period/}].
+
+\paragraph{Guard interval.} Table~\ref{tab:guard3} repeats the two stages that use time blocks
+with a guard of three days in place of ten [\texttt{audit\_matched\_guard3.json}]. No comparison
+differs from zero.
+
+\paragraph{Which predictors carry the gain.} Table~\ref{tab:features} gives the
+leave-one-station-out gain of the coordinate-free correction for four sets of predictors
+[\texttt{feature\_sets\_loso.json}]. The hour of day adds little; the day of the year carries
+the gain in both treatments. The last row reproduces the coordinate-free leave-one-station-out
+entry of Table~\ref{tab:three}.
+
+\paragraph{Software.} Python with scikit-learn 1.9.1, NumPy 2.5.3, pandas 3.0.5 and SciPy
+1.18.1. The gradient-boosting settings are those of \texttt{audit\_v7.py} in the repository.
+
+\begin{sidewaystable}[p]\centering\footnotesize
+\caption{Median $\Delta$, number of monitors improved and Benjamini--Hochberg $q$ for the 24
+comparisons under two treatments of the averaging interval, on the same values.}
+\label{tab:three}
+\resizebox{0.75\textheight}{!}{\input{tab_si_three}}
+\end{sidewaystable}
+
+\begin{table}[p]\centering\footnotesize
+\caption{As Table~3 of the main text, with a three-day guard. $q$ is corrected across the 24
+comparisons of this run, which include the eight without time blocks.}
+\label{tab:guard3}
+\resizebox{\textwidth}{!}{\input{tab_si_guard3}}
+\end{table}
+
+\begin{table}[p]\centering\small
+\caption{Leave-one-station-out gain (median $\Delta$ and number of monitors improved) of the
+correction for four sets of predictors, without coordinates.}
+\label{tab:features}
+\input{tab_si_features}
+\end{table}
+
+\clearpage
+\section{Season, aggregation of the local deficit, and interpolation}
+
+All values in this section use the daily record (24-h means ending 08~UTC) and the days with at
+least ten monitors [\texttt{revision\_diagnostics.json}, \texttt{revision\_diagnostics.py}].
+The warm season is May to September and the cool season November to February; March, April and
+October enter only the analyses over all days.
+
+\paragraph{Season.} The terciles of the regional level are largely seasonal
+(Table~\ref{tab:season}, upper part): 77 of the 107 days of the highest tercile are warm-season
+days and 94 of the 109 days of the lowest are cool-season days. Terciles formed within each season
+(lower part) show the same pattern as those over all days: the metropolitan and the Al~Ain bias
+both become more negative as the regional level rises, in each season.
+
+\begin{table}[ht]\centering\small
+\caption{Regional terciles by season. Upper part: season of the days in each tercile over all
+days. Lower part: terciles formed within each season; regional level is the median over the days
+of the tercile; bias (CAMS minus observed, \ugm{}) is the mean over monitor-days of the
+metropolitan and the Al~Ain monitors, and the difference is metropolitan minus Al~Ain.}
+\label{tab:season}
+\input{tab_si_season}
+\end{table}
+
+\paragraph{Aggregation of the local deficit.} Table~\ref{tab:offset} gives the difference between
+the metropolitan and the Al~Ain bias under different aggregations. In the lowest tercile every
+aggregation gives between $-50$ and $-62$~\ugm{}. In the highest tercile the value depends on
+the aggregation and on Al~Mafraq, the monitor with the largest bias. The daily regression of the
+difference on the regional level uses days with at least four metropolitan and two Al~Ain
+monitors; intervals are from 10,000 bootstrap resamples of days. No slope differs from zero.
+
+\begin{table}[ht]\centering\small
+\caption{Metropolitan minus Al~Ain bias (\ugm{}) by tercile of the regional level, under
+different aggregations, and its daily regression on the regional level (slope in \ugm{} per
+\ugm{} of regional level).}
+\label{tab:offset}
+\input{tab_si_offset}
+\end{table}
+
+\paragraph{Interpolation.} Table~\ref{tab:interp} repeats the main statistics with the model
+interpolated bilinearly from the four surrounding grid points in place of the nearest one. The
+station-level values differ from those of the main text, which use the three-hourly record.
+
+\begin{table}[ht]\centering\small
+\caption{Nearest grid point and bilinear interpolation, daily record. Concentrations and biases
+in \ugm{}.}
+\label{tab:interp}
+\input{tab_si_interp}
+\end{table}
+
+\section{Dust from a sun photometer and from airport weather reports}
+
+AERONET Version~3 daily averages were queried on 14~November 2026 for the 24 sites in the
+Emirates, and the record used was retrieved with \texttt{fetch\_aeronet.py}. Over 1~October 2022 to 31~May 2024 only DEWA Research
+Centre (24.77$^{\circ}$N, 55.37$^{\circ}$E) holds a long record, 427 days at Level~1.5; Masdar
+Institute holds 43 days, Mezaira 13 and the other 21 sites none. The coarse-mode aerosol optical
+depth at 500~nm of the spectral deconvolution algorithm, averaged over the day of the observation
+and the previous day, is available for 228 days of the daily record
+[\texttt{aeronet\_dust\_check.json}]. Its Spearman correlation with the observed regional level is
+0.70 and with the modelled one 0.54; the fine-mode fraction correlates with the observed regional
+level at $-0.59$. Table~\ref{tab:aeronet} gives the bias by tercile of the coarse-mode optical
+depth and the cross-classification with the regional terciles. On the least dusty third of days
+the mean bias of the seven metropolitan monitors lies between $-97$ (Al~Mafraq) and $-30$~\ugm{}
+(Baniyas School).
+
+\paragraph{Airport weather reports.} The METAR reports of Abu Dhabi International Airport
+(OMAA) were retrieved from the archive of the Iowa Environmental Mesonet on 14~November 2026
+(\texttt{fetch\_metar\_omaa.py}; 14,632 reports) [\texttt{metar\_dust\_check.json}]. Days need at
+least 18 reports in the 24-h window ending 08~UTC; 327 days of the daily record qualify. Dust or
+sand is reported 56 times (DU 42, BLDU 14), on 14 days; haze is reported 234 times. On the days
+with a dust report the median coarse-mode optical depth at the sun photometer is 0.23, against
+0.13 on the others. The share of reports with visibility reduced below 10~km without
+precipitation, fog or mist correlates with the observed regional level at 0.35 and with the
+coarse-mode optical depth at 0.13, because haze of any origin reduces visibility.
+Table~\ref{tab:metar} gives the regional level, the regional bias and the local deficit (medians
+over days) by class of day. The difference in local deficit between days with and without dust
+reports has $p=0.26$ (Mann--Whitney), that in regional bias $p=0.08$. On the 150 clear days the
+mean bias of the metropolitan monitors lies between $-137$ (Al~Mafraq) and $-33$~\ugm{}
+(Baniyas School).
+
+\begin{table}[ht]\centering\small
+\caption{Regional level, model minus observed regional level and metropolitan minus Al~Ain bias
+(medians over days, \ugm{}) by class of day in the weather reports of Abu Dhabi International
+Airport.}
+\label{tab:metar}
+\resizebox{\textwidth}{!}{\input{tab_si_metar}}
+\end{table}
+
+\begin{table}[ht]\centering\small
+\caption{Bias by tercile of the AERONET coarse-mode aerosol optical depth at DEWA Research Centre
+(228 days). Concentrations and biases in \ugm{}; bias is CAMS minus observed, mean over
+monitor-days. Lower part: number of days in each combination of regional and coarse-AOD tercile.}
+\label{tab:aeronet}
+\input{tab_si_aeronet}
+\end{table}
+
+\section{Dust, sea salt and wind in the reanalysis}
+
+The total, dust and sea-salt aerosol optical depth at 550~nm and the 10-m wind components of
+CAMS EAC4 were retrieved from the Atmosphere Data Store on 14~November 2026 for the same area,
+period and analysis times as the \pmten{} field (\texttt{fetch\_cams\_eac4\_aod\_wind.py}). Each
+quantity was averaged over the eight analysis times of the 24~h ending 08~UTC and over the three
+cells that hold the metropolitan monitors; the wind direction is that of the vector-mean wind
+[\texttt{dust\_wind\_analysis.json}]. The difference between the metropolitan and the Al~Ain bias
+is computed per day from days with at least four metropolitan and two Al~Ain monitors (324 days).
+
+In the cell of the DEWA Research Centre sun photometer the dust optical depth of the reanalysis
+correlates with the AERONET coarse-mode optical depth at 0.85, and its dust share of the optical
+depth with the AERONET fine-mode fraction at $-0.76$ (226 days). Over the metropolitan cells dust
+accounts for a median 30\% of the modelled optical depth and sea salt for a median 1.5\%
+(maximum 9.9\%). Table~\ref{tab:dustwind} stratifies the metropolitan minus Al~Ain difference.
+
+\begin{table}[ht]\centering\small
+\caption{Metropolitan minus Al~Ain bias (median over days, \ugm{}; in brackets without
+Al~Mafraq) by tercile of the CAMS dust optical depth and of the 10-m wind speed over the
+metropolitan cells and by wind sector, and Spearman correlations. The Mann--Whitney test of the
+two wind sectors gives $p=0.22$.}
+\label{tab:dustwind}
+\resizebox{\textwidth}{!}{\input{tab_si_dustwind}}
+\end{table}
+
+The same 228 days with a sun-photometer value were used to compare magnitudes in the cell of the
+sun photometer (\texttt{column\_surface\_check.py}) [\texttt{column\_surface\_check.json}]. The
+AERONET values are at 500~nm and those of the reanalysis at 550~nm; the difference is small for the
+coarse mode and is not corrected. The total optical depth of the reanalysis is close to the
+measured one (median ratio 1.07), its dust optical depth is lower than the measured coarse-mode
+optical depth on 73\% of days (median ratio 0.76), and its dust share of the optical depth (0.31)
+is lower than the measured coarse fraction (0.48; Wilcoxon $p<0.001$). The regional \pmten{} level
+per unit of column dust, network median divided by the dust or coarse-mode optical depth, is lower
+in the model than in the observations on 62\% of days (median ratio 0.86, Wilcoxon $p=0.03$). The
+coarse mode of the sun photometer and the dust of the reanalysis are not the same quantity: the
+first includes coarse sea salt and excludes fine dust, the second includes fine dust. The ratio of
+surface level to column mixes the vertical distribution of the aerosol with its mass per unit
+optical depth, and the network median includes non-dust \pmten{}; Table~\ref{tab:column} reports
+the components by tercile of the coarse-mode optical depth.
+
+\begin{table}[ht]\centering\small
+\caption{Column and surface in the cell of the DEWA Research Centre sun photometer: medians over
+days, for all days and by tercile of the AERONET coarse-mode optical depth (number of days in
+brackets).}
+\label{tab:column}
+\input{tab_si_column}
+\end{table}
+
+\end{document}

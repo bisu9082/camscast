@@ -1,0 +1,76 @@
+{
+ "n_days": 228,
+ "coarse_tercile_bounds": [
+  0.08572149999999999,
+  0.16647499999999998
+ ],
+ "all": {
+  "tau_c": 0.129534,
+  "dewa_dust": 0.09282924933359027,
+  "ratio_dust_to_coarse": 0.763402486446698,
+  "tau": 0.3001285,
+  "dewa_total": 0.31231292337179184,
+  "ratio_total": 1.0741630972531437,
+  "coarse_fraction": 0.47507225000000003,
+  "dust_share": 0.3127428953129391,
+  "reg_obs": 69.5,
+  "reg_cams": 53.176541562500006,
+  "surf_per_col_obs": 577.9191874702133,
+  "surf_per_col_cams": 505.21114688936586,
+  "surf_per_col_ratio": 0.862799397349787
+ },
+ "by_coarse_tercile": {
+  "low": {
+   "n_days": 76,
+   "tau_c": 0.060957,
+   "dewa_dust": 0.048512791749089956,
+   "ratio_dust_to_coarse": 0.757415072480639,
+   "tau": 0.21736699999999998,
+   "dewa_total": 0.2516628336161375,
+   "ratio_total": 1.0981136142946624,
+   "coarse_fraction": 0.3130735,
+   "dust_share": 0.21227849210616373,
+   "reg_obs": 58.0,
+   "reg_cams": 41.3175965625,
+   "surf_per_col_obs": 939.7424203707891,
+   "surf_per_col_cams": 829.9965058473772,
+   "surf_per_col_ratio": 0.8638746833077204
+  },
+  "mid": {
+   "n_days": 76,
+   "tau_c": 0.129534,
+   "dewa_dust": 0.08651622291654348,
+   "ratio_dust_to_coarse": 0.6617945296504717,
+   "tau": 0.275946,
+   "dewa_total": 0.2991052092984319,
+   "ratio_total": 1.0180358882643037,
+   "coarse_fraction": 0.45224974999999995,
+   "dust_share": 0.3007958859948803,
+   "reg_obs": 70.0,
+   "reg_cams": 51.045831875000005,
+   "surf_per_col_obs": 578.2322793899123,
+   "surf_per_col_cams": 560.9008497526622,
+   "surf_per_col_ratio": 0.92436707135892
+  },
+  "high": {
+   "n_days": 76,
+   "tau_c": 0.25495124999999996,
+   "dewa_dust": 0.22881838120520115,
+   "ratio_dust_to_coarse": 0.8305236271741806,
+   "tau": 0.3654485,
+   "dewa_total": 0.4511831421405077,
+   "ratio_total": 1.0919875880627703,
+   "coarse_fraction": 0.67290325,
+   "dust_share": 0.5222561552516309,
+   "reg_obs": 102.0,
+   "reg_cams": 69.94086000000001,
+   "surf_per_col_obs": 385.03526738258586,
+   "surf_per_col_cams": 317.02665450100244,
+   "surf_per_col_ratio": 0.8007619707847315
+  }
+ },
+ "wilcoxon_dust_share_vs_coarse_fraction_p": 6.41410066802541e-32,
+ "wilcoxon_surf_per_col_p": 0.032337647199997537,
+ "share_days_dust_aod_below_coarse_aod": 0.7324561403508771,
+ "share_days_surf_per_col_cams_below_obs": 0.6228070175438597
+}

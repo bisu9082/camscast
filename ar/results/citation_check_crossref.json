@@ -1,0 +1,206 @@
+[
+ [
+  "abuelgasim2020",
+  "OK",
+  "title 1.00 | bib1st 'abuelgasim' vs crossref 'abuelgasim'",
+  "10.1007/s41748-020-00186-2"
+ ],
+ [
+  "benjamini1995",
+  "OK",
+  "title 1.00 | bib1st 'benjamini' vs crossref 'benjamini'",
+  "10.1111/j.2517-6161.1995.tb02031.x"
+ ],
+ [
+  "cohen2017",
+  "OK",
+  "title 1.00 | bib1st 'cohen' vs crossref 'cohen'",
+  "10.1016/S0140-6736(17)30505-6"
+ ],
+ [
+  "djalalova2015",
+  "OK",
+  "title 1.00 | bib1st 'djalalova' vs crossref 'djalalova'",
+  "10.1016/j.atmosenv.2015.02.021"
+ ],
+ [
+  "van_donkelaar2016",
+  "OK",
+  "title 1.00 | bib1st 'van donkelaar' vs crossref 'van donkelaar'",
+  "10.1021/acs.est.5b05833"
+ ],
+ [
+  "efron1979",
+  "OK",
+  "title 1.00 | bib1st 'efron' vs crossref 'efron'",
+  "10.1214/aos/1176344552"
+ ],
+ [
+  "qatar_absorption2024",
+  "CHECK",
+  "title 1.00 | bib1st 'favez' vs crossref 'mahfouz'",
+  "10.1016/j.atmosenv.2024.120427"
+ ],
+ [
+  "flemming2015",
+  "OK",
+  "title 1.00 | bib1st 'flemming' vs crossref 'flemming'",
+  "10.5194/gmd-8-975-2015"
+ ],
+ [
+  "friedman2001",
+  "OK",
+  "title 1.00 | bib1st 'friedman' vs crossref 'friedman'",
+  "10.1214/aos/1013203451"
+ ],
+ [
+  "gandham2020",
+  "OK",
+  "title 0.84 | bib1st 'gandham' vs crossref 'gandham'",
+  "10.1029/2020JD032931"
+ ],
+ [
+  "gelaro2017",
+  "OK",
+  "title 1.00 | bib1st 'gelaro' vs crossref 'gelaro'",
+  "10.1175/JCLI-D-16-0758.1"
+ ],
+ [
+  "hammer2020",
+  "OK",
+  "title 0.79 | bib1st 'hammer' vs crossref 'hammer'",
+  "10.1021/acs.est.0c01764"
+ ],
+ [
+  "hopke2026",
+  "OK",
+  "title 1.00 | bib1st 'hopke' vs crossref 'hopke'",
+  "10.1016/j.atmosenv.2026.122223"
+ ],
+ [
+  "huang2017",
+  "OK",
+  "title 1.00 | bib1st 'huang' vs crossref 'huang'",
+  "10.1175/WAF-D-16-0118.1"
+ ],
+ [
+  "hurynovich2026",
+  "OK",
+  "title 1.00 | bib1st 'hurynovich' vs crossref 'hurynovich'",
+  "10.1016/j.atmosenv.2026.122386"
+ ],
+ [
+  "inness2019",
+  "OK",
+  "title 1.00 | bib1st 'inness' vs crossref 'inness'",
+  "10.5194/acp-19-3515-2019"
+ ],
+ [
+  "janjic2018",
+  "OK",
+  "title 1.00 | bib1st 'janjic' vs crossref 'janjic'",
+  "10.1002/qj.3130"
+ ],
+ [
+  "lelieveled2015",
+  "OK",
+  "title 1.00 | bib1st 'lelieveld' vs crossref 'lelieveld'",
+  "10.1038/nature15371"
+ ],
+ [
+  "meyer2021aoa",
+  "OK",
+  "title 1.00 | bib1st 'meyer' vs crossref 'meyer'",
+  "10.1111/2041-210X.13650"
+ ],
+ [
+  "pedregosa2011",
+  "\uc870\ud68c \uc2e4\ud328 <HTTPError 404: 'Not Found'>",
+  "10.48550/arXiv.1201.0490",
+  ""
+ ],
+ [
+  "ploton2020",
+  "OK",
+  "title 1.00 | bib1st 'ploton' vs crossref 'ploton'",
+  "10.1038/s41467-020-18321-y"
+ ],
+ [
+  "randles2017",
+  "OK",
+  "title 1.00 | bib1st 'randles' vs crossref 'randles'",
+  "10.1175/JCLI-D-16-0609.1"
+ ],
+ [
+  "remy2019",
+  "OK",
+  "title 0.79 | bib1st 'remy' vs crossref 'remy'",
+  "10.5194/gmd-12-4627-2019"
+ ],
+ [
+  "roberts2017",
+  "OK",
+  "title 0.77 | bib1st 'roberts' vs crossref 'roberts'",
+  "10.1111/ecog.02881"
+ ],
+ [
+  "rosales2025",
+  "OK",
+  "title 1.00 | bib1st 'rosales' vs crossref 'rosales'",
+  "10.1007/s40572-025-00487-6"
+ ],
+ [
+  "schutgens2017",
+  "OK",
+  "title 1.00 | bib1st 'schutgens' vs crossref 'schutgens'",
+  "10.5194/acp-17-9761-2017"
+ ],
+ [
+  "schutgens2016",
+  "OK",
+  "title 1.00 | bib1st 'schutgens' vs crossref 'schutgens'",
+  "10.5194/acp-16-6335-2016"
+ ],
+ [
+  "shahid2026",
+  "OK",
+  "title 1.00 | bib1st 'shahid' vs crossref 'shahid'",
+  "10.1007/s41748-026-01216-1"
+ ],
+ [
+  "scad_aq_method",
+  "DOI \uc5c6\uc74c",
+  "",
+  ""
+ ],
+ [
+  "ukhov2020",
+  "OK",
+  "title 1.00 | bib1st 'ukhov' vs crossref 'ukhov'",
+  "10.5194/acp-20-9281-2020"
+ ],
+ [
+  "vieira2023",
+  "OK",
+  "title 1.00 | bib1st 'vieira' vs crossref 'vieira'",
+  "10.1016/j.atmosenv.2023.119773"
+ ],
+ [
+  "wadoux2021",
+  "OK",
+  "title 1.00 | bib1st 'wadoux' vs crossref 'wadoux'",
+  "10.1016/j.ecolmodel.2021.109692"
+ ],
+ [
+  "whoaqg2021",
+  "DOI \uc5c6\uc74c",
+  "",
+  ""
+ ],
+ [
+  "zhang2018lur",
+  "OK",
+  "title 1.00 | bib1st 'zhang' vs crossref 'zhang'",
+  "10.1016/j.atmosenv.2018.08.046"
+ ]
+]

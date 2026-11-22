@@ -1,0 +1,140 @@
+{
+ "_meta": {
+  "cells": {
+   "metro": [
+    [
+     24.0,
+     54.75
+    ],
+    [
+     24.75,
+     54.0
+    ],
+    [
+     24.75,
+     54.75
+    ]
+   ],
+   "al_ain": [
+    [
+     24.0,
+     55.5
+    ]
+   ],
+   "dewa": [
+    [
+     24.75,
+     55.5
+    ]
+   ]
+  },
+  "n_days": 324
+ },
+ "dust_share_median": {
+  "metro": 0.2993320098609238,
+  "al_ain": 0.33992174082312887,
+  "dewa": 0.30454721333538687
+ },
+ "seasalt_aod_median": {
+  "metro": 0.004572431527776644,
+  "al_ain": 0.004036292695673183,
+  "dewa": 0.004239222369506024
+ },
+ "seasalt_share_median": {
+  "metro": 0.015332622830543555,
+  "al_ain": 0.013104892702471584,
+  "dewa": 0.013300937013746253
+ },
+ "seasalt_share_max": {
+  "metro": 0.09945634847979813,
+  "al_ain": 0.06877184484556881,
+  "dewa": 0.07664161869828805
+ },
+ "nw_sector_days": 224,
+ "spearman": {
+  "off_vs_dust_aod": {
+   "rho": -0.007142088504317607,
+   "p": 0.8980996189547749
+  },
+  "off_vs_wind_speed": {
+   "rho": 0.06417189277870394,
+   "p": 0.24939615948066748
+  },
+  "off_excl_vs_dust_aod": {
+   "rho": 0.21355384438975775,
+   "p": 0.00010711000981940662
+  },
+  "off_excl_vs_wind_speed": {
+   "rho": 0.1272331154684096,
+   "p": 0.021982984937582415
+  },
+  "reg_vs_dust_aod": {
+   "rho": 0.6404973113206239,
+   "p": 8.286203220102396e-39
+  }
+ },
+ "by_dust_aod_tercile": {
+  "low": {
+   "n_days": 108,
+   "median": 0.030561862280592322,
+   "off_median": -58.42985339285714,
+   "off_excl_al_mafraq_median": -52.152077083333324
+  },
+  "mid": {
+   "n_days": 108,
+   "median": 0.08995930384844542,
+   "off_median": -56.45181691964286,
+   "off_excl_al_mafraq_median": -48.53057229166666
+  },
+  "high": {
+   "n_days": 108,
+   "median": 0.21320429723709822,
+   "off_median": -60.5656765922619,
+   "off_excl_al_mafraq_median": -39.221317500000005
+  }
+ },
+ "by_wind_speed_tercile": {
+  "low": {
+   "n_days": 108,
+   "median": 2.6275633036949912,
+   "off_median": -56.59120732142858,
+   "off_excl_al_mafraq_median": -48.183352166666666
+  },
+  "mid": {
+   "n_days": 108,
+   "median": 3.3451275550508783,
+   "off_median": -65.62902,
+   "off_excl_al_mafraq_median": -52.187676458333335
+  },
+  "high": {
+   "n_days": 108,
+   "median": 4.772467703095022,
+   "off_median": -55.35573839285714,
+   "off_excl_al_mafraq_median": -40.28800520833334
+  }
+ },
+ "by_sector": {
+  "NW_270_360": {
+   "n_days": 224,
+   "off_median": -58.05640857142858,
+   "off_excl_al_mafraq_median": -47.72816375000001
+  },
+  "other": {
+   "n_days": 100,
+   "off_median": -59.823884494047626,
+   "off_excl_al_mafraq_median": -48.128222083333334
+  },
+  "mann_whitney_p": 0.2151279817982531
+ },
+ "aeronet_consistency": {
+  "n_days": 226,
+  "cams_dust_aod_vs_aeronet_coarse_aod": {
+   "rho": 0.8465480331228386,
+   "p": 2.8789019489648647e-63
+  },
+  "cams_dust_share_vs_aeronet_fine_fraction": {
+   "rho": -0.7648321168758191,
+   "p": 1.1655475695716449e-44
+  }
+ }
+}

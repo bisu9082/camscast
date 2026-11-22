@@ -1,0 +1,590 @@
+{
+ "gandham2020": {
+  "score": 0.9,
+  "basis": "extreme dust events over the Arabian Peninsula: regional dust burden",
+  "contexts": [
+   "\\section{Introduction} \\label{sec:intro} Coarse particulate matter is a persistent air-quality problem across the Arabian Gulf. Mineral dust from the surrounding deserts dominates the regional aerosol burden \\citep{gandham2020,shahid2026}, dust storms recur over the Emirates \\citep{barbulescu2020,",
+   "th the amount of dust: the reanalysis compresses the day-to-day range, overestimating the cleanest days at Al~Ain and underestimating the highest days everywhere, in the cool season as in the warm one. Because desert dust dominates the regional aerosol burden \\citep{gandham2020,shahid2026} and this part is largest on the days with the most coarse a"
+  ]
+ },
+ "shahid2026": {
+  "score": 0.85,
+  "basis": "aerosol variability over the Arabian Peninsula",
+  "contexts": [
+   "\\section{Introduction} \\label{sec:intro} Coarse particulate matter is a persistent air-quality problem across the Arabian Gulf. Mineral dust from the surrounding deserts dominates the regional aerosol burden \\citep{gandham2020,shahid2026}, dust storms recur over the Emirates \\citep{barbulescu2020,",
+   "th the amount of dust: the reanalysis compresses the day-to-day range, overestimating the cleanest days at Al~Ain and underestimating the highest days everywhere, in the cool season as in the warm one. Because desert dust dominates the regional aerosol burden \\citep{gandham2020,shahid2026} and this part is largest on the days with the most coarse a"
+  ]
+ },
+ "barbulescu2020": {
+  "score": 0.9,
+  "basis": "statistics of dust storms in the UAE",
+  "contexts": [
+   "ction} \\label{sec:intro} Coarse particulate matter is a persistent air-quality problem across the Arabian Gulf. Mineral dust from the surrounding deserts dominates the regional aerosol burden \\citep{gandham2020,shahid2026}, dust storms recur over the Emirates \\citep{barbulescu2020,karagulian2019}, Middle Eastern dust raises \\pmten{} at urban receptors far"
+  ]
+ },
+ "karagulian2019": {
+  "score": 0.85,
+  "basis": "severe dust storm over the UAE, ground and model analysis",
+  "contexts": [
+   "ction} \\label{sec:intro} Coarse particulate matter is a persistent air-quality problem across the Arabian Gulf. Mineral dust from the surrounding deserts dominates the regional aerosol burden \\citep{gandham2020,shahid2026}, dust storms recur over the Emirates \\citep{barbulescu2020,karagulian2019}, Middle Eastern dust raises \\pmten{} at urban receptors far"
+  ]
+ },
+ "givehchi2013": {
+  "score": 0.8,
+  "basis": "Middle Eastern dust source areas contribute to urban PM10 receptors",
+  "contexts": [
+   "ulf. Mineral dust from the surrounding deserts dominates the regional aerosol burden \\citep{gandham2020,shahid2026}, dust storms recur over the Emirates \\citep{barbulescu2020,karagulian2019}, Middle Eastern dust raises \\pmten{} at urban receptors far downwind \\citep{givehchi2013,salmabadi2023}, and regional episodes have been reconstructed with numeric"
+  ]
+ },
+ "salmabadi2023": {
+  "score": 0.85,
+  "basis": "Middle Eastern dust sources raise PM10 at a downwind urban receptor (Ahvaz)",
+  "contexts": [
+   "ulf. Mineral dust from the surrounding deserts dominates the regional aerosol burden \\citep{gandham2020,shahid2026}, dust storms recur over the Emirates \\citep{barbulescu2020,karagulian2019}, Middle Eastern dust raises \\pmten{} at urban receptors far downwind \\citep{givehchi2013,salmabadi2023}, and regional episodes have been reconstructed with numeric"
+  ]
+ },
+ "sulaymon2026": {
+  "score": 0.7,
+  "basis": "numerical simulation of a regional Middle East PM episode (May 2022)",
+  "contexts": [
+   "shahid2026}, dust storms recur over the Emirates \\citep{barbulescu2020,karagulian2019}, Middle Eastern dust raises \\pmten{} at urban receptors far downwind \\citep{givehchi2013,salmabadi2023}, and regional episodes have been reconstructed with numerical models \\citep{sulaymon2026}. Traffic, resuspended road dust, construction and industry "
+  ]
+ },
+ "thorpe2008": {
+  "score": 0.85,
+  "basis": "review of non-exhaust traffic PM sources",
+  "contexts": [
+   "dust raises \\pmten{} at urban receptors far downwind \\citep{givehchi2013,salmabadi2023}, and regional episodes have been reconstructed with numerical models \\citep{sulaymon2026}. Traffic, resuspended road dust, construction and industry add an urban increment \\citep{thorpe2008,amato2009,harrison2021,lenschow2001}; \\pmten{} sources have been apportioned for Kuwait \\citep{h",
+   "t days and on the days with the least coarse aerosol, and is not larger on the dustiest days. A deficit of this kind is not explained by dust transport alone. It points to coarse particles of local origin, from traffic, construction, industry and resuspension \\citep{thorpe2008,amato2009}, an urban increment over the regional background \\citep{len"
+  ]
+ },
+ "amato2009": {
+  "score": 0.8,
+  "basis": "road dust PM10 deposited in urban environment: local resuspension source",
+  "contexts": [
+   "dust raises \\pmten{} at urban receptors far downwind \\citep{givehchi2013,salmabadi2023}, and regional episodes have been reconstructed with numerical models \\citep{sulaymon2026}. Traffic, resuspended road dust, construction and industry add an urban increment \\citep{thorpe2008,amato2009,harrison2021,lenschow2001}; \\pmten{} sources have been apportioned for Kuwait \\citep{h",
+   "t days and on the days with the least coarse aerosol, and is not larger on the dustiest days. A deficit of this kind is not explained by dust transport alone. It points to coarse particles of local origin, from traffic, construction, industry and resuspension \\citep{thorpe2008,amato2009}, an urban increment over the regional background \\citep{len"
+  ]
+ },
+ "harrison2021": {
+  "score": 0.85,
+  "basis": "review of non-exhaust traffic PM emissions",
+  "contexts": [
+   "dust raises \\pmten{} at urban receptors far downwind \\citep{givehchi2013,salmabadi2023}, and regional episodes have been reconstructed with numerical models \\citep{sulaymon2026}. Traffic, resuspended road dust, construction and industry add an urban increment \\citep{thorpe2008,amato2009,harrison2021,lenschow2001}; \\pmten{} sources have been apportioned for Kuwait \\citep{h"
+  ]
+ },
+ "lenschow2001": {
+  "score": 0.95,
+  "basis": "urban increment of PM10 over regional background",
+  "contexts": [
+   "dust raises \\pmten{} at urban receptors far downwind \\citep{givehchi2013,salmabadi2023}, and regional episodes have been reconstructed with numerical models \\citep{sulaymon2026}. Traffic, resuspended road dust, construction and industry add an urban increment \\citep{thorpe2008,amato2009,harrison2021,lenschow2001}; \\pmten{} sources have been apportioned for Kuwait \\citep{h",
+   " dustiest days. A deficit of this kind is not explained by dust transport alone. It points to coarse particles of local origin, from traffic, construction, industry and resuspension \\citep{thorpe2008,amato2009}, an urban increment over the regional background \\citep{lenschow2001} that a global model at this resolution does not resolve, or"
+  ]
+ },
+ "hopke2026": {
+  "score": 0.7,
+  "basis": "sources of PM10 in Kuwait (title-level check; abstract not available)",
+  "contexts": [
+   "odes have been reconstructed with numerical models \\citep{sulaymon2026}. Traffic, resuspended road dust, construction and industry add an urban increment \\citep{thorpe2008,amato2009,harrison2021,lenschow2001}; \\pmten{} sources have been apportioned for Kuwait \\citep{hopke2026}, its variability described for Abu Dhabi \\citep{abuelgasim2"
+  ]
+ },
+ "abuelgasim2020": {
+  "score": 0.9,
+  "basis": "PM10/PM2.5 variability over Abu Dhabi",
+  "contexts": [
+   "ulaymon2026}. Traffic, resuspended road dust, construction and industry add an urban increment \\citep{thorpe2008,amato2009,harrison2021,lenschow2001}; \\pmten{} sources have been apportioned for Kuwait \\citep{hopke2026}, its variability described for Abu Dhabi \\citep{abuelgasim2020}, and deposition of particle-bound species shown to vary wit",
+   "trial (four monitors), traffic (three), urban (three), suburban (seven) and rural background (two). We use this classification as given and do not reassign any station. For 2017--2018 the network is reported to have measured \\pmten{} with OPSIS SM200 monitors \\citep{abuelgasim2020}, which determine particle mass by beta attenuation\\footnote",
+   "h means at a monitor exceed it. Of the 5,989 monitor-days, 84\\% exceed the guideline, from 60--68\\% in the cleanest winter months to more than 90\\% from May to September 2023 (Section~S1), in line with the summer maximum reported for the emirate in 2017--2018 \\citep{abuelgasim2020}. The matched reanalysis places the same locations between 3"
+  ]
+ },
+ "bae2025be7": {
+  "score": 0.55,
+  "basis": "own work: deposition of particle-bound radionuclides varies regionally with meteorology (rain, wind, fine dust) and geology; supports site-to-site variation of particle-bound species, not PM10 itself",
+  "contexts": [
+   "to2009,harrison2021,lenschow2001}; \\pmten{} sources have been apportioned for Kuwait \\citep{hopke2026}, its variability described for Abu Dhabi \\citep{abuelgasim2020}, and deposition of particle-bound species shown to vary with meteorology and surface geology \\citep{bae2025be7}. The exposure matters for the burden of disease \\citep{cohe"
+  ]
+ },
+ "cohen2017": {
+  "score": 0.9,
+  "basis": "global burden of disease from ambient PM",
+  "contexts": [
+   "tioned for Kuwait \\citep{hopke2026}, its variability described for Abu Dhabi \\citep{abuelgasim2020}, and deposition of particle-bound species shown to vary with meteorology and surface geology \\citep{bae2025be7}. The exposure matters for the burden of disease \\citep{cohen2017,lelieveled2015,chen2020,orellano2020,karanasiou2012}, yet monitors are sparse, and where none exists assessments"
+  ]
+ },
+ "lelieveled2015": {
+  "score": 0.85,
+  "basis": "premature mortality from outdoor air pollution sources",
+  "contexts": [
+   "tioned for Kuwait \\citep{hopke2026}, its variability described for Abu Dhabi \\citep{abuelgasim2020}, and deposition of particle-bound species shown to vary with meteorology and surface geology \\citep{bae2025be7}. The exposure matters for the burden of disease \\citep{cohen2017,lelieveled2015,chen2020,orellano2020,karanasiou2012}, yet monitors are sparse, and where none exists assessments"
+  ]
+ },
+ "chen2020": {
+  "score": 0.85,
+  "basis": "systematic review: long-term PM exposure and mortality",
+  "contexts": [
+   "tioned for Kuwait \\citep{hopke2026}, its variability described for Abu Dhabi \\citep{abuelgasim2020}, and deposition of particle-bound species shown to vary with meteorology and surface geology \\citep{bae2025be7}. The exposure matters for the burden of disease \\citep{cohen2017,lelieveled2015,chen2020,orellano2020,karanasiou2012}, yet monitors are sparse, and where none exists assessments"
+  ]
+ },
+ "orellano2020": {
+  "score": 0.9,
+  "basis": "systematic review: short-term PM10/PM2.5 and mortality",
+  "contexts": [
+   "tioned for Kuwait \\citep{hopke2026}, its variability described for Abu Dhabi \\citep{abuelgasim2020}, and deposition of particle-bound species shown to vary with meteorology and surface geology \\citep{bae2025be7}. The exposure matters for the burden of disease \\citep{cohen2017,lelieveled2015,chen2020,orellano2020,karanasiou2012}, yet monitors are sparse, and where none exists assessments"
+  ]
+ },
+ "karanasiou2012": {
+  "score": 0.8,
+  "basis": "health effects of desert dust episodes",
+  "contexts": [
+   "tioned for Kuwait \\citep{hopke2026}, its variability described for Abu Dhabi \\citep{abuelgasim2020}, and deposition of particle-bound species shown to vary with meteorology and surface geology \\citep{bae2025be7}. The exposure matters for the burden of disease \\citep{cohen2017,lelieveled2015,chen2020,orellano2020,karanasiou2012}, yet monitors are sparse, and where none exists assessments"
+  ]
+ },
+ "shin2026resilient": {
+  "score": 0.5,
+  "basis": "own work: model-based hazard mapping and dose assessment when measurement/network infrastructure is unavailable; analogy in a different hazard domain",
+  "contexts": [
+   " vary with meteorology and surface geology \\citep{bae2025be7}. The exposure matters for the burden of disease \\citep{cohen2017,lelieveled2015,chen2020,orellano2020,karanasiou2012}, yet monitors are sparse, and where none exists assessments fall back on models \\citep{shin2026resilient}: reanalyses such as that of the Copernicus Atmosphere Monit"
+  ]
+ },
+ "inness2019": {
+  "score": 1.0,
+  "basis": "CAMS reanalysis description",
+  "contexts": [
+   "ase \\citep{cohen2017,lelieveled2015,chen2020,orellano2020,karanasiou2012}, yet monitors are sparse, and where none exists assessments fall back on models \\citep{shin2026resilient}: reanalyses such as that of the Copernicus Atmosphere Monitoring Service (CAMS) \\citep{inness2019,flemming2015,morcrette2009} and MERRA-2 \\citep{gelaro2017,randles2017}, or fields that ",
+   "rmation on the diurnal cycle or on peaks shorter than a day; the hourly concentrations cannot be recovered from integer-rounded running means. \\subsection{Reanalysis and matched averaging} \\label{sec:cams} Surface \\pmten{} from the CAMS global reanalysis EAC4 \\citep{inness2019}, whose aerosol scheme is described by R\\'emy et al.~\\citep{",
+   "ollows closely. Assimilation of optical depth constrains the total column and leaves the rest to the model. In the CAMS system the analysis adjusts the total aerosol and distributes the increment over the species in proportion to their share in the background \\citep{inness2019}, and the model relates the mass of each species and size bi"
+  ]
+ },
+ "flemming2015": {
+  "score": 0.85,
+  "basis": "IFS composition model underlying CAMS",
+  "contexts": [
+   "ase \\citep{cohen2017,lelieveled2015,chen2020,orellano2020,karanasiou2012}, yet monitors are sparse, and where none exists assessments fall back on models \\citep{shin2026resilient}: reanalyses such as that of the Copernicus Atmosphere Monitoring Service (CAMS) \\citep{inness2019,flemming2015,morcrette2009} and MERRA-2 \\citep{gelaro2017,randles2017}, or fields that "
+  ]
+ },
+ "morcrette2009": {
+  "score": 0.85,
+  "basis": "ECMWF IFS aerosol analysis and forecast system underlying CAMS aerosol",
+  "contexts": [
+   "ase \\citep{cohen2017,lelieveled2015,chen2020,orellano2020,karanasiou2012}, yet monitors are sparse, and where none exists assessments fall back on models \\citep{shin2026resilient}: reanalyses such as that of the Copernicus Atmosphere Monitoring Service (CAMS) \\citep{inness2019,flemming2015,morcrette2009} and MERRA-2 \\citep{gelaro2017,randles2017}, or fields that ",
+   "ysis adjusts the total aerosol and distributes the increment over the species in proportion to their share in the background \\citep{inness2019}, and the model relates the mass of each species and size bin to optical depth through prescribed optical properties \\citep{morcrette2009}. The comparison at the sun photometer places the regional d"
+  ]
+ },
+ "gelaro2017": {
+  "score": 0.85,
+  "basis": "MERRA-2 description",
+  "contexts": [
+   "karanasiou2012}, yet monitors are sparse, and where none exists assessments fall back on models \\citep{shin2026resilient}: reanalyses such as that of the Copernicus Atmosphere Monitoring Service (CAMS) \\citep{inness2019,flemming2015,morcrette2009} and MERRA-2 \\citep{gelaro2017,randles2017}, or fields that fuse models with satellite retrievals \\cite"
+  ]
+ },
+ "randles2017": {
+  "score": 0.9,
+  "basis": "MERRA-2 aerosol reanalysis",
+  "contexts": [
+   "karanasiou2012}, yet monitors are sparse, and where none exists assessments fall back on models \\citep{shin2026resilient}: reanalyses such as that of the Copernicus Atmosphere Monitoring Service (CAMS) \\citep{inness2019,flemming2015,morcrette2009} and MERRA-2 \\citep{gelaro2017,randles2017}, or fields that fuse models with satellite retrievals \\cite"
+  ]
+ },
+ "van_donkelaar2016": {
+  "score": 0.85,
+  "basis": "satellite-model fused surface PM2.5",
+  "contexts": [
+   " on models \\citep{shin2026resilient}: reanalyses such as that of the Copernicus Atmosphere Monitoring Service (CAMS) \\citep{inness2019,flemming2015,morcrette2009} and MERRA-2 \\citep{gelaro2017,randles2017}, or fields that fuse models with satellite retrievals \\citep{van_donkelaar2016,hammer2020}. Meteorological reanalyses are routinely evaluated against "
+  ]
+ },
+ "hammer2020": {
+  "score": 0.85,
+  "basis": "satellite-model fused surface PM2.5",
+  "contexts": [
+   " on models \\citep{shin2026resilient}: reanalyses such as that of the Copernicus Atmosphere Monitoring Service (CAMS) \\citep{inness2019,flemming2015,morcrette2009} and MERRA-2 \\citep{gelaro2017,randles2017}, or fields that fuse models with satellite retrievals \\citep{van_donkelaar2016,hammer2020}. Meteorological reanalyses are routinely evaluated against "
+  ]
+ },
+ "ullah2024": {
+  "score": 0.75,
+  "basis": "reanalysis 2-m temperature evaluated against stations over the Arabian Peninsula",
+  "contexts": [
+   "019,flemming2015,morcrette2009} and MERRA-2 \\citep{gelaro2017,randles2017}, or fields that fuse models with satellite retrievals \\citep{van_donkelaar2016,hammer2020}. Meteorological reanalyses are routinely evaluated against stations, over Arabia as elsewhere \\citep{ullah2024,gomiscebolla2023}. For particulate matter this is harder, because aerosol ass"
+  ]
+ },
+ "gomiscebolla2023": {
+  "score": 0.6,
+  "basis": "reanalysis precipitation evaluated against stations (Spain): \"as elsewhere\"",
+  "contexts": [
+   "019,flemming2015,morcrette2009} and MERRA-2 \\citep{gelaro2017,randles2017}, or fields that fuse models with satellite retrievals \\citep{van_donkelaar2016,hammer2020}. Meteorological reanalyses are routinely evaluated against stations, over Arabia as elsewhere \\citep{ullah2024,gomiscebolla2023}. For particulate matter this is harder, because aerosol ass"
+  ]
+ },
+ "eskes2015": {
+  "score": 0.8,
+  "basis": "validation of MACC/CAMS aerosol products",
+  "contexts": [
+   "over Arabia as elsewhere \\citep{ullah2024,gomiscebolla2023}. For particulate matter this is harder, because aerosol assimilation constrains the column optical depth, not the surface concentration. The optical depth has been validated worldwide and over Arabia \\citep{eskes2015,gueymard2020,labban2023}, but surface particulate matter in the Middle East was foun"
+  ]
+ },
+ "gueymard2020": {
+  "score": 0.85,
+  "basis": "worldwide AOD validation of CAMS and MERRA-2",
+  "contexts": [
+   "over Arabia as elsewhere \\citep{ullah2024,gomiscebolla2023}. For particulate matter this is harder, because aerosol assimilation constrains the column optical depth, not the surface concentration. The optical depth has been validated worldwide and over Arabia \\citep{eskes2015,gueymard2020,labban2023}, but surface particulate matter in the Middle East was foun"
+  ]
+ },
+ "labban2023": {
+  "score": 0.75,
+  "basis": "MERRA-2 AOD evaluation over Saudi Arabia",
+  "contexts": [
+   "over Arabia as elsewhere \\citep{ullah2024,gomiscebolla2023}. For particulate matter this is harder, because aerosol assimilation constrains the column optical depth, not the surface concentration. The optical depth has been validated worldwide and over Arabia \\citep{eskes2015,gueymard2020,labban2023}, but surface particulate matter in the Middle East was foun"
+  ]
+ },
+ "ukhov2020": {
+  "score": 0.9,
+  "basis": "MERRA-2/CAMS vs surface PM in the Middle East",
+  "contexts": [
+   "n constrains the column optical depth, not the surface concentration. The optical depth has been validated worldwide and over Arabia \\citep{eskes2015,gueymard2020,labban2023}, but surface particulate matter in the Middle East was found to differ substantially \\citep{ukhov2020}. Whether such a difference lies in the timing of dust event",
+   "poses are not a random sample of a cell. A single global product at $0.75^{\\circ}$ was evaluated; a regional simulation at kilometre scale with resolved local emissions would be the proper test of how much of the sub-grid variance is recoverable by resolution \\citep{ukhov2020}. The correction analysis has 19 units and one model family."
+  ]
+ },
+ "schutgens2017": {
+  "score": 0.95,
+  "basis": "spatio-temporal representativeness of observations",
+  "contexts": [
+   "n independent record of dust. Two further issues decide what an evaluation against monitors can conclude. The first is the averaging interval of the observations. A model value and an observation are comparable only if they are averaged over the same interval \\citep{schutgens2017}, and open archives that redistribute regulatory data \\citep",
+   " be that mean rather than an hourly concentration. The second is representativeness. A grid value is an average over several thousand square kilometres and a monitor samples one location inside that area, so the two would differ even if the model were perfect \\citep{schutgens2016,schutgens2017,janjic2018}; the area that a monitor represents depends on the sources "
+  ]
+ },
+ "rosales2025": {
+  "score": 0.85,
+  "basis": "open air-quality data platforms incl. OpenAQ",
+  "contexts": [
+   "against monitors can conclude. The first is the averaging interval of the observations. A model value and an observation are comparable only if they are averaged over the same interval \\citep{schutgens2017}, and open archives that redistribute regulatory data \\citep{rosales2025} do not always state the interval over which a network repor",
+   "terpart of that problem for coarse particles in an arid one. \\section{Data and methods} \\subsection{Surface observations} \\label{sec:obs} \\pmten{} from the 19 monitors operated by the Environment Agency -- Abu Dhabi was taken from the OpenAQ open-data archive \\citep{rosales2025} (Figure~\\ref{fig:map}, Table~\\ref{tab:stations}). The archi"
+  ]
+ },
+ "schutgens2016": {
+  "score": 0.95,
+  "basis": "representation error from spatial sampling",
+  "contexts": [
+   " be that mean rather than an hourly concentration. The second is representativeness. A grid value is an average over several thousand square kilometres and a monitor samples one location inside that area, so the two would differ even if the model were perfect \\citep{schutgens2016,schutgens2017,janjic2018}; the area that a monitor represents depends on the sources ",
+   "Discussion} \\subsection{Why column dust and surface PM$_{10}$ diverge} \\label{sec:disc-column} The difference between a $0.75^{\\circ}$ field and a point measurement contains model error and representation error, and point data alone cannot fully separate them \\citep{schutgens2016,janjic2018}. The network nevertheless separates two parts of the error "
+  ]
+ },
+ "janjic2018": {
+  "score": 0.9,
+  "basis": "representation error in data assimilation",
+  "contexts": [
+   " be that mean rather than an hourly concentration. The second is representativeness. A grid value is an average over several thousand square kilometres and a monitor samples one location inside that area, so the two would differ even if the model were perfect \\citep{schutgens2016,schutgens2017,janjic2018}; the area that a monitor represents depends on the sources ",
+   "Discussion} \\subsection{Why column dust and surface PM$_{10}$ diverge} \\label{sec:disc-column} The difference between a $0.75^{\\circ}$ field and a point measurement contains model error and representation error, and point data alone cannot fully separate them \\citep{schutgens2016,janjic2018}. The network nevertheless separates two parts of the error "
+  ]
+ },
+ "janssen2012": {
+  "score": 0.9,
+  "basis": "spatial representativeness of AQ monitoring stations",
+  "contexts": [
+   " several thousand square kilometres and a monitor samples one location inside that area, so the two would differ even if the model were perfect \\citep{schutgens2016,schutgens2017,janjic2018}; the area that a monitor represents depends on the sources around it \\citep{janssen2012,righini2014,duyzer2015}, and the representativeness of column aerosol measurements "
+  ]
+ },
+ "righini2014": {
+  "score": 0.85,
+  "basis": "spatial representativeness of AQ stations from emissions",
+  "contexts": [
+   " several thousand square kilometres and a monitor samples one location inside that area, so the two would differ even if the model were perfect \\citep{schutgens2016,schutgens2017,janjic2018}; the area that a monitor represents depends on the sources around it \\citep{janssen2012,righini2014,duyzer2015}, and the representativeness of column aerosol measurements "
+  ]
+ },
+ "duyzer2015": {
+  "score": 0.9,
+  "basis": "representativeness of AQ monitoring networks",
+  "contexts": [
+   " several thousand square kilometres and a monitor samples one location inside that area, so the two would differ even if the model were perfect \\citep{schutgens2016,schutgens2017,janjic2018}; the area that a monitor represents depends on the sources around it \\citep{janssen2012,righini2014,duyzer2015}, and the representativeness of column aerosol measurements "
+  ]
+ },
+ "chen2025aod": {
+  "score": 0.75,
+  "basis": "spatiotemporal representativeness of AOD measurements",
+  "contexts": [
+   "model were perfect \\citep{schutgens2016,schutgens2017,janjic2018}; the area that a monitor represents depends on the sources around it \\citep{janssen2012,righini2014,duyzer2015}, and the representativeness of column aerosol measurements has itself been mapped \\citep{chen2025aod}. For coarse particles in an arid city the difference can be"
+  ]
+ },
+ "denby2011": {
+  "score": 0.95,
+  "basis": "sub-grid variability and exposure assessment",
+  "contexts": [
+   "ce can be large, because roads, construction sites, industrial yards and bare soil are much smaller than a grid cell and the particles they emit deposit within kilometres. The effect of sub-grid variability on exposure estimates has been quantified for Europe \\citep{denby2011,denby2024} and addressed by sub-grid downscaling of regional models \\c",
+   "tatistics derived from it in a region where the guideline is exceeded on most days should be reported with a chance-corrected score and the base rate. Second, the uncertainty attached to a grid value used as a point estimate should include the sub-grid spread \\citep{denby2011}, which in this network is as large as the guideline value i"
+  ]
+ },
+ "denby2024": {
+  "score": 0.9,
+  "basis": "sub-grid variability and exposure, uEMEP downscaling",
+  "contexts": [
+   "ce can be large, because roads, construction sites, industrial yards and bare soil are much smaller than a grid cell and the particles they emit deposit within kilometres. The effect of sub-grid variability on exposure estimates has been quantified for Europe \\citep{denby2011,denby2024} and addressed by sub-grid downscaling of regional models \\c"
+  ]
+ },
+ "theobald2016": {
+  "score": 0.85,
+  "basis": "sub-grid downscaling of regional AQ model",
+  "contexts": [
+   "e much smaller than a grid cell and the particles they emit deposit within kilometres. The effect of sub-grid variability on exposure estimates has been quantified for Europe \\citep{denby2011,denby2024} and addressed by sub-grid downscaling of regional models \\citep{theobald2016}, and local and long-range contributions have been separated"
+  ]
+ },
+ "defoy2024": {
+  "score": 0.8,
+  "basis": "dense PM sensor network separates local sources and long-range transport",
+  "contexts": [
+   "d variability on exposure estimates has been quantified for Europe \\citep{denby2011,denby2024} and addressed by sub-grid downscaling of regional models \\citep{theobald2016}, and local and long-range contributions have been separated with dense sensor networks \\citep{defoy2024}, but over the Gulf the sub-grid variability of \\pmten{} has"
+  ]
+ },
+ "djalalova2015": {
+  "score": 0.85,
+  "basis": "statistical post-processing of CTM PM2.5",
+  "contexts": [
+   "monitors inside one model cell to measure it. The usual remedy for model error is statistical. A correction model is fitted to the difference between observations and the gridded field at monitored locations and is then applied wherever the field is available \\citep{djalalova2015,huang2017}, and machine-learning models of air quality raise issues th",
+   "nd observations were averaged alike. \\subsection{Why correction does not help, and what leave-one-station-out measures} Statistical correction of chemical-transport output is well established where the corrected product is used at the monitors that trained it \\citep{djalalova2015,huang2017}, and the present results are consistent with that use: know"
+  ]
+ },
+ "huang2017": {
+  "score": 0.85,
+  "basis": "bias correction of NAQFC PM2.5",
+  "contexts": [
+   "monitors inside one model cell to measure it. The usual remedy for model error is statistical. A correction model is fitted to the difference between observations and the gridded field at monitored locations and is then applied wherever the field is available \\citep{djalalova2015,huang2017}, and machine-learning models of air quality raise issues th",
+   "nd observations were averaged alike. \\subsection{Why correction does not help, and what leave-one-station-out measures} Statistical correction of chemical-transport output is well established where the corrected product is used at the monitors that trained it \\citep{djalalova2015,huang2017}, and the present results are consistent with that use: know"
+  ]
+ },
+ "tang2024ml": {
+  "score": 0.7,
+  "basis": "review of overlooked issues in ML air-quality modelling",
+  "contexts": [
+   " fitted to the difference between observations and the gridded field at monitored locations and is then applied wherever the field is available \\citep{djalalova2015,huang2017}, and machine-learning models of air quality raise issues that are easily overlooked \\citep{tang2024ml}; for CAMS this has been done for \\pmten{} in dust forecasti"
+  ]
+ },
+ "sarafian2025": {
+  "score": 0.9,
+  "basis": "correction of CAMS PM10 reanalysis for dust forecasting",
+  "contexts": [
+   " locations and is then applied wherever the field is available \\citep{djalalova2015,huang2017}, and machine-learning models of air quality raise issues that are easily overlooked \\citep{tang2024ml}; for CAMS this has been done for \\pmten{} in dust forecasting \\citep{sarafian2025} and for ozone at urban stations \\citep{kaffashzadeh2024}. A"
+  ]
+ },
+ "kaffashzadeh2024": {
+  "score": 0.8,
+  "basis": "downscaled CAMS reanalysis assessed at urban stations (ozone)",
+  "contexts": [
+   "available \\citep{djalalova2015,huang2017}, and machine-learning models of air quality raise issues that are easily overlooked \\citep{tang2024ml}; for CAMS this has been done for \\pmten{} in dust forecasting \\citep{sarafian2025} and for ozone at urban stations \\citep{kaffashzadeh2024}. Alternatively, point measurements are interpolated into co"
+  ]
+ },
+ "kang2026mapping": {
+  "score": 0.6,
+  "basis": "own work: reconstructing continuous fields from point measurements, interpolation accuracy depends on field structure (radiological contamination)",
+  "contexts": [
+   "or \\pmten{} in dust forecasting \\citep{sarafian2025} and for ozone at urban stations \\citep{kaffashzadeh2024}. Alternatively, point measurements are interpolated into continuous fields, whose accuracy depends on the spatial structure of the field being mapped \\citep{kang2026mapping}. Whether such a correction carries to places without monito"
+  ]
+ },
+ "roberts2017": {
+  "score": 0.95,
+  "basis": "cross-validation for structured data",
+  "contexts": [
+   "rmally judged by withholding one station at a time. In a dense network that test is weaker than it looks, because the withheld station's neighbours remain in the training set a few kilometres away, sampled on the same days and often inside the same model cell \\citep{roberts2017,ploton2020,meyer2021aoa,wadoux2021}, a problem for which dedicated designs of spatial cross-val",
+   "held (13 of 19 monitors improved), and it vanished once neighbours within 25~km were withheld or the training data were separated from the target in time. The requirement that a validation withhold what deployment will lack is familiar from spatial prediction \\citep{roberts2017,ploton2020,wadoux2021}, as is the inflation of skill by near-duplicates of the tra"
+  ]
+ },
+ "ploton2020": {
+  "score": 0.95,
+  "basis": "spatial validation of mapping models",
+  "contexts": [
+   "rmally judged by withholding one station at a time. In a dense network that test is weaker than it looks, because the withheld station's neighbours remain in the training set a few kilometres away, sampled on the same days and often inside the same model cell \\citep{roberts2017,ploton2020,meyer2021aoa,wadoux2021}, a problem for which dedicated designs of spatial cross-val",
+   "held (13 of 19 monitors improved), and it vanished once neighbours within 25~km were withheld or the training data were separated from the target in time. The requirement that a validation withhold what deployment will lack is familiar from spatial prediction \\citep{roberts2017,ploton2020,wadoux2021}, as is the inflation of skill by near-duplicates of the tra"
+  ]
+ },
+ "meyer2021aoa": {
+  "score": 0.9,
+  "basis": "area of applicability of spatial prediction models",
+  "contexts": [
+   "rmally judged by withholding one station at a time. In a dense network that test is weaker than it looks, because the withheld station's neighbours remain in the training set a few kilometres away, sampled on the same days and often inside the same model cell \\citep{roberts2017,ploton2020,meyer2021aoa,wadoux2021}, a problem for which dedicated designs of spatial cross-val"
+  ]
+ },
+ "wadoux2021": {
+  "score": 0.95,
+  "basis": "spatial cross-validation and map accuracy",
+  "contexts": [
+   "rmally judged by withholding one station at a time. In a dense network that test is weaker than it looks, because the withheld station's neighbours remain in the training set a few kilometres away, sampled on the same days and often inside the same model cell \\citep{roberts2017,ploton2020,meyer2021aoa,wadoux2021}, a problem for which dedicated designs of spatial cross-val",
+   "held (13 of 19 monitors improved), and it vanished once neighbours within 25~km were withheld or the training data were separated from the target in time. The requirement that a validation withhold what deployment will lack is familiar from spatial prediction \\citep{roberts2017,ploton2020,wadoux2021}, as is the inflation of skill by near-duplicates of the tra"
+  ]
+ },
+ "valavi2019": {
+  "score": 0.8,
+  "basis": "spatially separated folds for cross-validation",
+  "contexts": [
+   "hbours remain in the training set a few kilometres away, sampled on the same days and often inside the same model cell \\citep{roberts2017,ploton2020,meyer2021aoa,wadoux2021}, a problem for which dedicated designs of spatial cross-validation have been proposed \\citep{valavi2019,mila2022,linnenbrink2024,meyer2022global}. The question is the representativeness question seen from "
+  ]
+ },
+ "mila2022": {
+  "score": 0.85,
+  "basis": "NNDM cross-validation for map validation",
+  "contexts": [
+   "hbours remain in the training set a few kilometres away, sampled on the same days and often inside the same model cell \\citep{roberts2017,ploton2020,meyer2021aoa,wadoux2021}, a problem for which dedicated designs of spatial cross-validation have been proposed \\citep{valavi2019,mila2022,linnenbrink2024,meyer2022global}. The question is the representativeness question seen from "
+  ]
+ },
+ "linnenbrink2024": {
+  "score": 0.85,
+  "basis": "kNNDM cross-validation for map accuracy",
+  "contexts": [
+   "hbours remain in the training set a few kilometres away, sampled on the same days and often inside the same model cell \\citep{roberts2017,ploton2020,meyer2021aoa,wadoux2021}, a problem for which dedicated designs of spatial cross-validation have been proposed \\citep{valavi2019,mila2022,linnenbrink2024,meyer2022global}. The question is the representativeness question seen from "
+  ]
+ },
+ "meyer2022global": {
+  "score": 0.8,
+  "basis": "challenge of assessing ML-based maps",
+  "contexts": [
+   "hbours remain in the training set a few kilometres away, sampled on the same days and often inside the same model cell \\citep{roberts2017,ploton2020,meyer2021aoa,wadoux2021}, a problem for which dedicated designs of spatial cross-validation have been proposed \\citep{valavi2019,mila2022,linnenbrink2024,meyer2022global}. The question is the representativeness question seen from "
+  ]
+ },
+ "vieira2023": {
+  "score": 0.85,
+  "basis": "global reanalyses cannot reproduce surface ozone cycles; AE precedent",
+  "contexts": [
+   "de and carbon monoxide. ISBN 978-92-4-003422-8. \\url{https://www.who.int/publications/i/item/9789240034228}.}. A recent evaluation showed that global reanalyses cannot reproduce the seasonal and diurnal cycles of surface ozone in a data-sparse tropical region \\citep{vieira2023}; the present study addresses the spatial counterpart of tha"
+  ]
+ },
+ "remy2019": {
+  "score": 0.9,
+  "basis": "CAMS aerosol scheme description",
+  "contexts": [
+   " concentrations cannot be recovered from integer-rounded running means. \\subsection{Reanalysis and matched averaging} \\label{sec:cams} Surface \\pmten{} from the CAMS global reanalysis EAC4 \\citep{inness2019}, whose aerosol scheme is described by R\\'emy et al.~\\citep{remy2019}, was retrieved from the Copernicus Atmosphere Data Store at"
+  ]
+ },
+ "moran1950": {
+  "score": 1.0,
+  "basis": "Moran's I",
+  "contexts": [
+   "three-hourly record, the mean bias (CAMS minus observed), mean absolute error, root-mean-square error, and the Pearson and Spearman correlations between the matched model and observed series. Spatial organisation of the mean bias was measured with Moran's $I$ \\citep{moran1950} in distance bands, with significance from 9,999 permutation"
+  ]
+ },
+ "spearman1904": {
+  "score": 1.0,
+  "basis": "Spearman correlation",
+  "contexts": [
+   "um of squares of mean concentration over all 19 monitors into a within-cell and a between-cell part; the partition was repeated on station medians, which a single episode cannot dominate. Second, for every pair of monitors we computed the Spearman correlation \\citep{spearman1904} of their observed three-hourly series over common time step"
+  ]
+ },
+ "holben1998": {
+  "score": 0.95,
+  "basis": "AERONET network: data source",
+  "contexts": [
+   "ng its daily value on the regional level (days with at least four metropolitan and two Al~Ain monitors; 10,000 bootstrap resamples of days). Dust was identified independently of the \\pmten{} record with the Aerosol Robotic Network (AERONET) of sun photometers \\citep{holben1998}. Of the 24 AERONET sites in the Emirates, only DEWA Researc"
+  ]
+ },
+ "oneill2003": {
+  "score": 0.95,
+  "basis": "spectral deconvolution (coarse/fine AOD): method used",
+  "contexts": [
+   "re (24.77$^{\\circ}$N, 55.37$^{\\circ}$E, in Dubai, 106~km from central Abu Dhabi and 71~km from Al~Ain) holds data through the study period. We used its daily averages of the coarse-mode aerosol optical depth at 500~nm from the spectral deconvolution algorithm \\citep{oneill2003}, Version~3, Level~1.5 \\citep{giles2019}, averaged over the "
+  ]
+ },
+ "giles2019": {
+  "score": 0.95,
+  "basis": "AERONET Version 3 quality control: data level used",
+  "contexts": [
+   "n Dubai, 106~km from central Abu Dhabi and 71~km from Al~Ain) holds data through the study period. We used its daily averages of the coarse-mode aerosol optical depth at 500~nm from the spectral deconvolution algorithm \\citep{oneill2003}, Version~3, Level~1.5 \\citep{giles2019}, averaged over the day of the observation and the previous "
+  ]
+ },
+ "kruskal1952": {
+  "score": 1.0,
+  "basis": "Kruskal-Wallis test",
+  "contexts": [
+   "p$-values are not corrected for multiplicity. The stability of the results over time was checked by repeating the daily comparison for four sub-periods. The association between station type and bias was tested with a Kruskal--Wallis test across the five types \\citep{kruskal1952} and, separately, with a one-sided Mann--Whitney test \\citep"
+  ]
+ },
+ "mann1947": {
+  "score": 1.0,
+  "basis": "Mann-Whitney test",
+  "contexts": [
+   "s over time was checked by repeating the daily comparison for four sub-periods. The association between station type and bias was tested with a Kruskal--Wallis test across the five types \\citep{kruskal1952} and, separately, with a one-sided Mann--Whitney test \\citep{mann1947} and a 200,000-draw permutation test contrasting the monitor"
+  ]
+ },
+ "friedman2001": {
+  "score": 1.0,
+  "basis": "gradient boosting",
+  "contexts": [
+   " rural background. The two-group contrast was formed after the five-group result was known; both are reported. \\subsection{Statistical correction at a monitor treated as unmonitored} \\label{sec:methods-transfer} The correction is a gradient-boosted regression \\citep{friedman2001,pedregosa2011} of the observed-minus-model difference on the matched model"
+  ]
+ },
+ "pedregosa2011": {
+  "score": 1.0,
+  "basis": "scikit-learn",
+  "contexts": [
+   " rural background. The two-group contrast was formed after the five-group result was known; both are reported. \\subsection{Statistical correction at a monitor treated as unmonitored} \\label{sec:methods-transfer} The correction is a gradient-boosted regression \\citep{friedman2001,pedregosa2011} of the observed-minus-model difference on the matched model"
+  ]
+ },
+ "benjamini1995": {
+  "score": 1.0,
+  "basis": "Benjamini-Hochberg",
+  "contexts": [
+   "y training monitor in the target's CAMS cell is withheld, because it carries the same model series as the target. \\end{enumerate} The test is an exact two-sided sign test on the 19 per-monitor values of $\\Delta$, corrected by the Benjamini--Hochberg procedure \\citep{benjamini1995} across the 24 combinations of radius, feature set and stage"
+  ]
+ },
+ "efron1979": {
+  "score": 1.0,
+  "basis": "bootstrap",
+  "contexts": [
+   "njamini--Hochberg procedure \\citep{benjamini1995} across the 24 combinations of radius, feature set and stage. Intervals for the median $\\Delta$ are from 2,000 bootstrap resamples of the nine occupied cells, the unit within which monitors share a model series \\citep{efron1979}. To show what the averaging interval does to this analysis,"
+  ]
+ },
+ "hogan2010": {
+  "score": 0.95,
+  "basis": "equitability of ETS",
+  "contexts": [
+   "t the probability of detection (POD), the probability of false detection (POFD) and two scores that discount agreement expected by chance, the equitable threat score (ETS) and the Heidke skill score (HSS); both are equitable only in the limit of large samples \\citep{hogan2010}. Intervals are from 2,000 bootstrap resamples of monitors. "
+  ]
+ },
+ "georgoulias2018": {
+  "score": 0.95,
+  "basis": "MACC dust 3-D vs CALIOP: low-level underestimation near Middle East sources (abstract checked)",
+  "contexts": [
+   "n. Against spaceborne lidar it underestimated dust optical depth where loadings were high and, close to the Saharan and Middle Eastern sources, underestimated dust extinction strongly between 1.2~km and about 3 to 5~km while placing dust at heights up to 9~km \\citep{georgoulias2018}; over the Sahel it reproduced the variability of surface du"
+  ]
+ },
+ "cuevas2015": {
+  "score": 0.9,
+  "basis": "MACC-II dust: surface variability reproduced, means underestimated (abstract checked)",
+  "contexts": [
+   "inction strongly between 1.2~km and about 3 to 5~km while placing dust at heights up to 9~km \\citep{georgoulias2018}; over the Sahel it reproduced the variability of surface dust concentration but underestimated its daily and monthly means throughout the year \\citep{cuevas2015}, a pattern like the one found here. The vertical structure "
+  ]
+ },
+ "zhang2025tp": {
+  "score": 0.6,
+  "basis": "reanalysis 3-D aerosol vs CALIPSO (title-level; no abstract available)",
+  "contexts": [
+   "entration but underestimated its daily and monthly means throughout the year \\citep{cuevas2015}, a pattern like the one found here. The vertical structure of reanalysis aerosol products has also been evaluated against spaceborne lidar over the Tibetan Plateau \\citep{zhang2025tp}. Whether the current CAMS reanalysis distributes dust in th"
+  ]
+ },
+ "you2026nai": {
+  "score": 0.5,
+  "basis": "own work: systematic difference between co-located instruments arises from what each quantity includes; analogy for comparing quantities averaged differently",
+  "contexts": [
+   "ange, increments that reverse after 24~h, and gases from the same stations that behave otherwise. The same principle governs comparisons between co-located instruments, where a systematic difference can arise entirely from what each measured quantity includes \\citep{you2026nai}. The check costs a few lines of code and should precede any"
+  ]
+ },
+ "kim2026tas2r": {
+  "score": 0.55,
+  "basis": "own work: random-split inflation by near-duplicates (analogue of LOSO with neighbours)",
+  "contexts": [
+   "quirement that a validation withhold what deployment will lack is familiar from spatial prediction \\citep{roberts2017,ploton2020,wadoux2021}, as is the inflation of skill by near-duplicates of the training data under random splits in chemical machine learning \\citep{kim2026tas2r}, and the transferability of statistical models between arid"
+  ]
+ },
+ "hurynovich2026": {
+  "score": 0.8,
+  "basis": "transferability of dust-related PM2.5 models between arid regimes",
+  "contexts": [
+   "the inflation of skill by near-duplicates of the training data under random splits in chemical machine learning \\citep{kim2026tas2r}, and the transferability of statistical models between arid regimes has recently been examined for dust-related fine particles \\citep{hurynovich2026}. What the atmospheric setting adds is a physical reason for"
+  ]
+ },
+ "zhang2018lur": {
+  "score": 0.75,
+  "basis": "land-use regression predictors for PM10",
+  "contexts": [
+   "ses is local, and no monitor elsewhere holds it. The conclusion applies to corrections built, as this one is, from the model value, the date and the position; predictors that describe the locality itself, such as land use, road density or emission inventories \\citep{zhang2018lur}, address the missing part directly and were not tested. \\su"
+  ]
+ },
+ "choi2027adaptive": {
+  "score": 0.6,
+  "basis": "own work: adaptive survey works only where correlation length exceeds sampling spacing",
+  "contexts": [
+   "orth more to assessment than replication within one. In radiological surveys, likewise, an adaptive design guided by a statistical model of the field found unvisited hot spots only where the field was correlated over distances larger than the sampling spacing \\citep{choi2027adaptive}, and directing surveillance to where routine monitoring lea"
+  ]
+ }
+}

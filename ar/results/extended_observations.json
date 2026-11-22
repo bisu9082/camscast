@@ -1,0 +1,470 @@
+{
+ "_meta": {
+  "hour_utc": 8,
+  "guideline": 45.0,
+  "min_common_days": 30,
+  "note": "one value per monitor and day: 24-h mean ending 08 UTC"
+ },
+ "by_month": {
+  "2022-10": {
+   "n_days": 2,
+   "n_station_days": 34,
+   "network_median": 81.0,
+   "share_above": 0.9705882352941176
+  },
+  "2022-11": {
+   "n_days": 17,
+   "n_station_days": 311,
+   "network_median": 66.0,
+   "share_above": 0.8360128617363344
+  },
+  "2022-12": {
+   "n_days": 21,
+   "n_station_days": 391,
+   "network_median": 55.0,
+   "share_above": 0.6342710997442456
+  },
+  "2023-01": {
+   "n_days": 22,
+   "n_station_days": 331,
+   "network_median": 50.5,
+   "share_above": 0.6042296072507553
+  },
+  "2023-02": {
+   "n_days": 3,
+   "n_station_days": 40,
+   "network_median": 68.0,
+   "share_above": 0.775
+  },
+  "2023-04": {
+   "n_days": 17,
+   "n_station_days": 266,
+   "network_median": 60.0,
+   "share_above": 0.849624060150376
+  },
+  "2023-05": {
+   "n_days": 20,
+   "n_station_days": 377,
+   "network_median": 99.75,
+   "share_above": 0.9310344827586207
+  },
+  "2023-06": {
+   "n_days": 23,
+   "n_station_days": 429,
+   "network_median": 106.0,
+   "share_above": 0.9090909090909091
+  },
+  "2023-07": {
+   "n_days": 11,
+   "n_station_days": 208,
+   "network_median": 105.0,
+   "share_above": 0.9615384615384616
+  },
+  "2023-08": {
+   "n_days": 7,
+   "n_station_days": 132,
+   "network_median": 125.0,
+   "share_above": 0.9772727272727273
+  },
+  "2023-09": {
+   "n_days": 30,
+   "n_station_days": 556,
+   "network_median": 112.25,
+   "share_above": 0.9766187050359713
+  },
+  "2023-10": {
+   "n_days": 21,
+   "n_station_days": 390,
+   "network_median": 82.0,
+   "share_above": 0.9205128205128205
+  },
+  "2023-11": {
+   "n_days": 27,
+   "n_station_days": 502,
+   "network_median": 59.0,
+   "share_above": 0.7908366533864541
+  },
+  "2023-12": {
+   "n_days": 30,
+   "n_station_days": 553,
+   "network_median": 66.0,
+   "share_above": 0.8734177215189873
+  },
+  "2024-01": {
+   "n_days": 31,
+   "n_station_days": 582,
+   "network_median": 66.0,
+   "share_above": 0.8487972508591065
+  },
+  "2024-02": {
+   "n_days": 25,
+   "n_station_days": 453,
+   "network_median": 56.5,
+   "share_above": 0.6821192052980133
+  },
+  "2024-03": {
+   "n_days": 12,
+   "n_station_days": 223,
+   "network_median": 87.75,
+   "share_above": 0.9327354260089686
+  },
+  "2024-04": {
+   "n_days": 8,
+   "n_station_days": 137,
+   "network_median": 79.25,
+   "share_above": 0.8467153284671532
+  },
+  "2024-05": {
+   "n_days": 4,
+   "n_station_days": 74,
+   "network_median": 95.5,
+   "share_above": 0.9324324324324325
+  }
+ },
+ "by_station": {
+  "Bida Zayed": {
+   "n_days": 305,
+   "mean": 55.390163934426226,
+   "share_above": 0.5967213114754099
+  },
+  "Khadeeja School": {
+   "n_days": 324,
+   "mean": 86.16358024691358,
+   "share_above": 0.7746913580246914
+  },
+  "Liwa": {
+   "n_days": 319,
+   "mean": 76.2319749216301,
+   "share_above": 0.8307210031347962
+  },
+  "Hamdan St.": {
+   "n_days": 317,
+   "mean": 88.03785488958991,
+   "share_above": 0.8643533123028391
+  },
+  "Mussafah": {
+   "n_days": 322,
+   "mean": 116.85093167701864,
+   "share_above": 0.9409937888198758
+  },
+  "Al Ain St.": {
+   "n_days": 320,
+   "mean": 91.96875,
+   "share_above": 0.915625
+  },
+  "Sweihan": {
+   "n_days": 313,
+   "mean": 70.10223642172524,
+   "share_above": 0.670926517571885
+  },
+  "Khalifa City": {
+   "n_days": 318,
+   "mean": 104.49685534591195,
+   "share_above": 0.9433962264150944
+  },
+  "Gayathi": {
+   "n_days": 307,
+   "mean": 83.8013029315961,
+   "share_above": 0.8306188925081434
+  },
+  "Al Maqtaa": {
+   "n_days": 306,
+   "mean": 101.60130718954248,
+   "share_above": 0.9313725490196079
+  },
+  "Ruwais": {
+   "n_days": 306,
+   "mean": 66.67647058823529,
+   "share_above": 0.7647058823529411
+  },
+  "Baniyas School": {
+   "n_days": 326,
+   "mean": 93.25766871165644,
+   "share_above": 0.9325153374233128
+  },
+  "Habshan S.": {
+   "n_days": 319,
+   "mean": 66.46081504702194,
+   "share_above": 0.677115987460815
+  },
+  "Al Ain Islamic": {
+   "n_days": 320,
+   "mean": 85.13125,
+   "share_above": 0.85625
+  },
+  "Zakher": {
+   "n_days": 316,
+   "mean": 85.47151898734177,
+   "share_above": 0.9050632911392406
+  },
+  "Al Qua'a": {
+   "n_days": 325,
+   "mean": 93.94769230769231,
+   "share_above": 0.8830769230769231
+  },
+  "Al Tawia": {
+   "n_days": 322,
+   "mean": 90.01242236024845,
+   "share_above": 0.9254658385093167
+  },
+  "E11 Road": {
+   "n_days": 298,
+   "mean": 97.19798657718121,
+   "share_above": 0.7550335570469798
+  },
+  "Al Mafraq": {
+   "n_days": 306,
+   "mean": 198.7156862745098,
+   "share_above": 0.9934640522875817
+  }
+ },
+ "all": {
+  "label": "full archive, 29 Oct 2022 to 20 May 2024",
+  "n_days": 331,
+  "n_station_days": 5989,
+  "first": "2022-10-29",
+  "last": "2024-05-16",
+  "station_mean_min": 55.390163934426226,
+  "station_mean_max": 198.7156862745098,
+  "n_station_means_above_guideline": 19,
+  "share_station_days_above": 0.8425446652195692,
+  "between_station_sd": 29.682199682756796,
+  "share_of_station_mean_variance_within_cells": 0.4572883785206232,
+  "share_of_station_median_variance_within_cells": 0.35304376003125526,
+  "n_station_medians_above_guideline": 19,
+  "within_cell_range": {
+   "24.00,52.50": 17.124832343360808,
+   "24.00,54.00": 41.807822642754985,
+   "24.00,54.75": 105.45801756285337,
+   "24.00,55.50": 6.837500000000006,
+   "24.75,54.00": 1.8742746426763262,
+   "24.75,54.75": 2.895548156369472
+  },
+  "within_cell_sd": {
+   "24.00,52.50": 12.109085076673141,
+   "24.00,54.00": 21.661129025127426,
+   "24.00,54.75": 55.34719741617046,
+   "24.00,55.50": 3.3832191887828182,
+   "24.75,54.00": 1.3253123096424235,
+   "24.75,54.75": 2.047461736621059
+  },
+  "within_cell_range_max": 105.45801756285337,
+  "within_cell_median_range": {
+   "24.00,52.50": 12.0,
+   "24.00,54.00": 13.0,
+   "24.00,54.75": 91.5,
+   "24.00,55.50": 8.0,
+   "24.75,54.00": 3.0,
+   "24.75,54.75": 4.0
+  },
+  "within_cell_sd_median": 7.74615213272798,
+  "same_cell_pairs": 15,
+  "same_cell_spearman_median": 0.6188764745041052,
+  "different_cell_pairs": 156,
+  "different_cell_spearman_median": 0.4716098316705616,
+  "same_cell_pair_days": 4590,
+  "same_cell_share_pair_days_opposite": 0.14248366013071895,
+  "daily_between_monitor_sd_median": 35.57244288505441,
+  "daily_within_cell_sd_median": 16.97056274847714
+ },
+ "to_2023": {
+  "label": "to 31 Dec 2023 (period of the model comparison)",
+  "n_days": 251,
+  "n_station_days": 4520,
+  "first": "2022-10-29",
+  "last": "2023-12-31",
+  "station_mean_min": 56.87280701754386,
+  "station_mean_max": 201.9691629955947,
+  "n_station_means_above_guideline": 19,
+  "share_station_days_above": 0.8517699115044248,
+  "between_station_sd": 30.330850839311896,
+  "share_of_station_mean_variance_within_cells": 0.44832263572075143,
+  "share_of_station_median_variance_within_cells": 0.36350656686188476,
+  "n_station_medians_above_guideline": 19,
+  "within_cell_range": {
+   "24.00,52.50": 17.442240732547177,
+   "24.00,54.00": 45.290088910057946,
+   "24.00,54.75": 106.94082291462304,
+   "24.00,55.50": 5.559289617486328,
+   "24.75,54.00": 1.3768680961663478,
+   "24.75,54.75": 1.4053773619252183
+  },
+  "within_cell_sd": {
+   "24.00,52.50": 12.333526701072323,
+   "24.00,54.00": 23.819656745345192,
+   "24.00,54.75": 55.278951337405886,
+   "24.00,55.50": 2.8033235471411277,
+   "24.75,54.00": 0.973592767598636,
+   "24.75,54.75": 0.9937518627433828
+  },
+  "within_cell_range_max": 106.94082291462304,
+  "within_cell_median_range": {
+   "24.00,52.50": 18.0,
+   "24.00,54.00": 12.0,
+   "24.00,54.75": 97.0,
+   "24.00,55.50": 10.5,
+   "24.75,54.00": 7.0,
+   "24.75,54.75": 1.0
+  },
+  "within_cell_sd_median": 7.568425124106725,
+  "same_cell_pairs": 15,
+  "same_cell_spearman_median": 0.6101949905366613,
+  "different_cell_pairs": 156,
+  "different_cell_spearman_median": 0.48091070457957497,
+  "same_cell_pair_days": 3461,
+  "same_cell_share_pair_days_opposite": 0.1346431667148223,
+  "daily_between_monitor_sd_median": 37.258303967707946,
+  "daily_within_cell_sd_median": 16.97056274847714
+ },
+ "sep_dec_2023": {
+  "label": "September to December 2023",
+  "n_days": 108,
+  "n_station_days": 2001,
+  "first": "2023-09-01",
+  "last": "2023-12-31",
+  "station_mean_min": 55.95145631067961,
+  "station_mean_max": 198.95283018867926,
+  "n_station_means_above_guideline": 19,
+  "share_station_days_above": 0.8905547226386806,
+  "between_station_sd": 32.1273912820937,
+  "share_of_station_mean_variance_within_cells": 0.5072997212460714,
+  "share_of_station_median_variance_within_cells": 0.3987846533853777,
+  "n_station_medians_above_guideline": 19,
+  "within_cell_range": {
+   "24.00,52.50": 19.2420208076177,
+   "24.00,54.00": 68.79111794674614,
+   "24.00,54.75": 104.46208944793851,
+   "24.00,55.50": 13.869810448451233,
+   "24.75,54.00": 19.80952380952381,
+   "24.75,54.75": 15.155884995507634
+  },
+  "within_cell_sd": {
+   "24.00,52.50": 13.606163396799122,
+   "24.00,54.00": 36.99746136696072,
+   "24.00,54.75": 55.132635476179914,
+   "24.00,55.50": 6.113353963556558,
+   "24.75,54.00": 14.007448617790656,
+   "24.75,54.75": 10.716829055206896
+  },
+  "within_cell_range_max": 104.46208944793851,
+  "within_cell_median_range": {
+   "24.00,52.50": 14.0,
+   "24.00,54.00": 19.0,
+   "24.00,54.75": 90.5,
+   "24.00,55.50": 8.0,
+   "24.75,54.00": 51.0,
+   "24.75,54.75": 5.0
+  },
+  "within_cell_sd_median": 13.806806007294888,
+  "same_cell_pairs": 15,
+  "same_cell_spearman_median": 0.6842922601674843,
+  "different_cell_pairs": 156,
+  "different_cell_spearman_median": 0.520359875505849,
+  "same_cell_pair_days": 1546,
+  "same_cell_share_pair_days_opposite": 0.11190168175937905,
+  "daily_between_monitor_sd_median": 35.629263877386585,
+  "daily_within_cell_sd_median": 18.30640403930279
+ },
+ "outside_sep_dec_2023": {
+  "label": "all days outside September-December 2023",
+  "n_days": 223,
+  "n_station_days": 3988,
+  "first": "2022-10-29",
+  "last": "2024-05-16",
+  "station_mean_min": 55.103960396039604,
+  "station_mean_max": 198.59,
+  "n_station_means_above_guideline": 19,
+  "share_station_days_above": 0.8184553660982948,
+  "between_station_sd": 30.044044506560667,
+  "share_of_station_mean_variance_within_cells": 0.41829077057809294,
+  "share_of_station_median_variance_within_cells": 0.35511885806866117,
+  "n_station_medians_above_guideline": 19,
+  "within_cell_range": {
+   "24.00,52.50": 16.010000000000005,
+   "24.00,54.00": 27.97218173594009,
+   "24.00,54.75": 105.94321100917432,
+   "24.00,55.50": 8.182727371983844,
+   "24.75,54.00": 12.537409790452998,
+   "24.75,54.75": 3.268051643192493
+  },
+  "within_cell_sd": {
+   "24.00,52.50": 11.32077956679663,
+   "24.00,54.00": 14.076866447663685,
+   "24.00,54.75": 55.4553691590537,
+   "24.00,55.50": 3.5221510898409996,
+   "24.75,54.00": 8.865287481343927,
+   "24.75,54.75": 2.310861478169251
+  },
+  "within_cell_range_max": 105.94321100917432,
+  "within_cell_median_range": {
+   "24.00,52.50": 11.5,
+   "24.00,54.00": 10.5,
+   "24.00,54.75": 92.5,
+   "24.00,55.50": 10.0,
+   "24.75,54.00": 16.0,
+   "24.75,54.75": 5.5
+  },
+  "within_cell_sd_median": 10.093033524070279,
+  "same_cell_pairs": 15,
+  "same_cell_spearman_median": 0.5946643868708551,
+  "different_cell_pairs": 156,
+  "different_cell_spearman_median": 0.48840446832442497,
+  "same_cell_pair_days": 3044,
+  "same_cell_share_pair_days_opposite": 0.15801576872536136,
+  "daily_between_monitor_sd_median": 35.11625970204146,
+  "daily_within_cell_sd_median": 16.30950643030009
+ },
+ "from_2024": {
+  "label": "1 January to 20 May 2024",
+  "n_days": 80,
+  "n_station_days": 1469,
+  "first": "2024-01-01",
+  "last": "2024-05-16",
+  "station_mean_min": 51.0,
+  "station_mean_max": 189.36708860759492,
+  "n_station_means_above_guideline": 19,
+  "share_station_days_above": 0.8141592920353983,
+  "between_station_sd": 28.809307765097653,
+  "share_of_station_mean_variance_within_cells": 0.5007321735732615,
+  "share_of_station_median_variance_within_cells": 0.43547047859337557,
+  "n_station_medians_above_guideline": 19,
+  "within_cell_range": {
+   "24.00,52.50": 15.868873742291456,
+   "24.00,54.00": 31.948051948051955,
+   "24.00,54.75": 101.64556962025316,
+   "24.00,55.50": 15.874871794871794,
+   "24.75,54.00": 12.326781326781315,
+   "24.75,54.75": 14.682711525649566
+  },
+  "within_cell_sd": {
+   "24.00,52.50": 11.220988232967434,
+   "24.00,54.00": 15.99220010103029,
+   "24.00,54.75": 57.10552806342935,
+   "24.00,55.50": 6.769153840679983,
+   "24.75,54.00": 8.716350666370776,
+   "24.75,54.75": 10.382244885992687
+  },
+  "within_cell_range_max": 101.64556962025316,
+  "within_cell_median_range": {
+   "24.00,52.50": 0.5,
+   "24.00,54.00": 13.0,
+   "24.00,54.75": 86.0,
+   "24.00,55.50": 11.0,
+   "24.75,54.00": 13.0,
+   "24.75,54.75": 12.0
+  },
+  "within_cell_sd_median": 10.80161655948006,
+  "same_cell_pairs": 15,
+  "same_cell_spearman_median": 0.6271271610069069,
+  "different_cell_pairs": 156,
+  "different_cell_spearman_median": 0.5057621540390027,
+  "same_cell_pair_days": 1129,
+  "same_cell_share_pair_days_opposite": 0.16651904340124005,
+  "daily_between_monitor_sd_median": 31.78721284706785,
+  "daily_within_cell_sd_median": 16.168103617806093
+ },
+ "station_mean_rank_agreement_core_vs_rest": {
+  "spearman": 0.6140350877192983,
+  "p": 0.005161852692152184
+ }
+}

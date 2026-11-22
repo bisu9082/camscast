@@ -1,0 +1,649 @@
+\section{Introduction}
+\label{sec:intro}
+
+Coarse particulate matter is a persistent air-quality problem across the Arabian Gulf. Mineral
+dust from the surrounding deserts dominates the regional aerosol burden
+\citep{gandham2020,shahid2026}, dust storms recur over the Emirates
+\citep{barbulescu2020,karagulian2019}, Middle Eastern dust raises \pmten{} at urban receptors far
+downwind \citep{givehchi2013,salmabadi2023}, and regional episodes have been reconstructed with
+numerical models \citep{sulaymon2026}. Traffic, resuspended road dust, construction and industry
+add an urban increment \citep{thorpe2008,amato2009,harrison2021,lenschow2001}; \pmten{} sources have
+been apportioned for Kuwait \citep{hopke2026}, its variability described for Abu Dhabi
+\citep{abuelgasim2020}, and deposition of particle-bound species shown to vary with meteorology and
+surface geology \citep{bae2025be7}. The exposure matters for the burden of disease
+\citep{cohen2017,lelieveled2015,chen2020,orellano2020,karanasiou2012}, yet monitors are sparse,
+and where none exists assessments fall back on models \citep{shin2026resilient}: reanalyses such
+as that of the Copernicus Atmosphere Monitoring Service (CAMS)
+\citep{inness2019,flemming2015,morcrette2009} and MERRA-2 \citep{gelaro2017,randles2017}, or
+fields that fuse models with satellite retrievals \citep{van_donkelaar2016,hammer2020}.
+Meteorological reanalyses are routinely evaluated against stations, over Arabia as elsewhere
+\citep{ullah2024,gomiscebolla2023}. For particulate matter this is harder, because aerosol
+assimilation constrains the column optical depth, not the surface concentration. The optical
+depth has been validated worldwide and over Arabia \citep{eskes2015,gueymard2020,labban2023}, but
+surface particulate matter in the Middle East was found to differ substantially \citep{ukhov2020}.
+Whether such a difference lies in the timing of dust events or in the surface concentration
+attributed to them cannot be decided without an independent record of dust.
+
+Two further issues decide what an evaluation against monitors can conclude. The first is the
+averaging interval of the observations. A model value and an observation are comparable only if
+they are averaged over the same interval \citep{schutgens2017}, and open archives that
+redistribute regulatory data \citep{rosales2025} do not always state the interval over which a
+network reports; where an air-quality index is based on a running mean, the archived value may be
+that mean rather than an hourly concentration. The second is representativeness. A grid value is
+an average over several thousand square kilometres and a monitor samples one location inside
+that area, so the two would differ even if the model were perfect
+\citep{schutgens2016,schutgens2017,janjic2018}; the area that a monitor represents depends on the
+sources around it \citep{janssen2012,righini2014,duyzer2015}, and the representativeness of
+column aerosol measurements has itself been mapped \citep{chen2025aod}. For coarse particles in
+an arid city the difference can be large, because roads, construction sites, industrial yards
+and bare soil are much smaller than a grid cell and the particles they emit deposit within
+kilometres. The effect of sub-grid variability on exposure estimates has been quantified for
+Europe \citep{denby2011,denby2024} and addressed by sub-grid downscaling of regional models
+\citep{theobald2016}, and local and long-range contributions have been separated with dense
+sensor networks \citep{defoy2024}, but over the Gulf the sub-grid variability of \pmten{} has
+rarely been measured, because it takes several monitors inside one model cell to measure it.
+
+The usual remedy for model error is statistical. A correction model is fitted to the difference
+between observations and the gridded field at monitored locations and is then applied wherever
+the field is available \citep{djalalova2015,huang2017}, and machine-learning models of air
+quality raise issues that are easily overlooked \citep{tang2024ml}; for CAMS this has been done for
+\pmten{} in dust forecasting \citep{sarafian2025} and for ozone at urban stations
+\citep{kaffashzadeh2024}. Alternatively, point measurements are interpolated into continuous
+fields, whose accuracy depends on the spatial structure of the field being mapped
+\citep{kang2026mapping}. Whether such a correction
+carries to places without monitors is normally judged by withholding one station at a time. In a
+dense network that test is weaker than it looks, because the withheld station's neighbours remain
+in the training set a few kilometres away, sampled on the same days and often inside the same
+model cell \citep{roberts2017,ploton2020,meyer2021aoa,wadoux2021}, a problem for which
+dedicated designs of spatial cross-validation have been proposed
+\citep{valavi2019,mila2022,linnenbrink2024,meyer2022global}. The question is the
+representativeness question seen from the other side: if what the gridded field misses is local,
+a correction can only be learned from monitors that share that locality.
+
+The regulatory network of the Emirate of Abu Dhabi allows these questions to be put to data.
+Nineteen \pmten{} monitors lie at a median nearest-neighbour separation of 6.5~km, and sixteen of
+them share a $0.75^{\circ}$ CAMS cell with at least one other monitor. We use this network to ask
+(i) over what interval the archived values are averaged, and what follows for comparison with a
+model; (ii) whether the CAMS reanalysis reproduces the timing of dust and its surface
+concentration, judged against an independent sun photometer and airport weather reports;
+(iii) which part of the observed variability the reanalysis reproduces, separating the
+day-to-day level of the region from the differences between places, and how much of the spatial
+variability lies inside single model cells; (iv) whether a statistical correction fitted at
+monitored sites improves the reanalysis at a site treated as unmonitored; and (v) what the
+answers imply for assessing exceedance of the World Health Organization 24-h guideline\footnote{World Health Organization, 2021. WHO global air quality guidelines: particulate matter (PM$_{2.5}$ and PM$_{10}$), ozone, nitrogen dioxide, sulfur dioxide and carbon monoxide. ISBN 978-92-4-003422-8. \url{https://www.who.int/publications/i/item/9789240034228}.}. A recent evaluation showed
+that global reanalyses cannot reproduce the seasonal and diurnal cycles of surface ozone in a
+data-sparse tropical region \citep{vieira2023}; the present study addresses the spatial
+counterpart of that problem for coarse particles in an arid one.
+
+\section{Data and methods}
+
+\subsection{Surface observations}
+\label{sec:obs}
+
+\pmten{} from the 19 monitors operated by the Environment Agency -- Abu Dhabi was taken from the
+OpenAQ open-data archive \citep{rosales2025} (Figure~\ref{fig:map}, Table~\ref{tab:stations}).
+The archive holds 98,459 hourly \pmten{} values for these monitors between 29~October 2022 and
+20~May 2024. Its coverage is uneven: from October 2022 to January 2023 it holds 14 of the 24
+hours of the day, in February, May and July 2023 a single value per day at 08~UTC, in April and
+June 2023 twelve hours, and from August 2023 onwards all hours; March 2023 is absent
+(Supplementary Information, Section~S1). No value is negative and no upper cap was applied.
+
+Two observation records are formed from the archive. The \emph{three-hourly record} holds the
+archived value at every three-hourly time step of the reanalysis, 32,566 values, between 1,678
+and 1,774 per monitor. The \emph{daily record} holds one value per monitor and day, the value at
+08~UTC, which is the only hour the archive holds in every month: 5,989 monitor-days on 331 days.
+The 20,818 three-hourly values up to December 2023 that were analysed in earlier work on this
+network were checked against the archive and are identical to the archived values at the same
+time stamps.
+
+Each monitor carries the type assigned by the network operator and published by the Statistics
+Centre -- Abu Dhabi\footnote{Statistics Centre -- Abu Dhabi, Air Quality Statistics: Methodology. \url{https://scad.gov.ae} (accessed 13 November 2026).}: industrial (four monitors), traffic (three), urban
+(three), suburban (seven) and rural background (two). We use this classification as given and do
+not reassign any station. For 2017--2018 the network is reported to have measured \pmten{} with
+OPSIS SM200 monitors \citep{abuelgasim2020}, which determine particle mass by beta
+attenuation\footnote{Battelle, Environmental Technology Verification Report: Opsis AB SM 200
+Automatic Particle Monitor, U.S. Environmental Protection Agency, 2001.
+\url{https://archive.epa.gov/research/nrmrl/archive-etv/web/pdf/01_vr_opsis_sm200.pdf}
+(accessed 14 November 2026).}. The archive does not record the instrument, the inlet height or
+changes of equipment for the period studied.
+
+\subsection{The archived values are 24-h running means}
+\label{sec:running}
+
+The archived \pmten{} values are not hourly concentrations. Four properties of the record show
+that each is an average over about 24~h (Section~S2). (i) Successive hourly values are almost
+identical: the lag-1~h autocorrelation has a median of 0.996 across the monitors, all values are
+integers, and 35\% of them equal the value one hour earlier. Nitrogen dioxide, sulfur dioxide,
+ozone and carbon monoxide reported by the same stations in the same files have lag-1~h
+autocorrelations of 0.80 to 0.91. (ii) For a trailing 24-h running mean $x$ of hourly
+concentrations $h$, $x_t-x_{t-1}=(h_t-h_{t-24})/24$, so each hourly increment is undone 24~h
+later and the increments are negatively correlated with themselves at that lag. The
+autocorrelation of the hourly \pmten{} increments at 24~h is negative at all 19 monitors (median
+$-0.36$, range $-0.53$ to $-0.19$); for the four gases the median is positive ($+0.06$ to
+$+0.33$), as a diurnal cycle requires. (iii) The observed values correlate better with the mean
+of the reanalysis over the preceding 24~h than with the reanalysis at the same instant (median
+Pearson $r$ over the monitors 0.50 against 0.37), and in the three-hourly record to December 2023
+the correlation falls at 17 of 19 monitors as the 24-h window is moved from trailing to centred
+to leading. (iv) The national guideline for the Emirati Air Quality Index prescribes a 24-h
+rolling average for \pmten{}, formed from at least 18 valid hourly values\footnote{Guideline for calculating the Emirati Air Quality Index (EAQI), 2023. \url{https://airquality.ncm.gov.ae/resources/pdf/aqi-quickguide-en-2023.pdf} (accessed 13 November 2026).}.
+
+We therefore treat every archived value as the mean concentration over the 24~h ending at its
+time stamp. Three consequences follow. The model counterpart of an archived value must be averaged
+over the same 24~h (Section~\ref{sec:cams}). Values three hours apart share 21 of their 24 hours,
+so that the daily record is used wherever independence in time matters. And the record contains
+no information on the diurnal cycle or on peaks shorter than a day; the hourly concentrations
+cannot be recovered from integer-rounded running means.
+
+\subsection{Reanalysis and matched averaging}
+\label{sec:cams}
+
+Surface \pmten{} from the CAMS global reanalysis EAC4 \citep{inness2019}, whose aerosol scheme is
+described by R\'emy et al.~\citep{remy2019}, was retrieved from the Copernicus Atmosphere Data Store at
+$0.75^{\circ}$ and three-hourly resolution for 1~October 2022 to 31~May 2024 without gaps, and
+converted to \ugm{}. Each monitor was matched to the nearest grid point; bilinear interpolation
+between the four surrounding grid points was used as a check (Section~S6). The 19 monitors occupy
+nine cells; six cells hold two or more monitors and account for 16 of the 19
+(Figure~\ref{fig:map}). Fifteen of the 171 monitor pairs share a cell, at separations from 1.0 to
+46~km. The retrieved series reproduces, to within $2\times10^{-5}$~\ugm{}, all 20,818 model values
+used in earlier work on this network.
+
+For an archived value at time $t$ the model counterpart is the mean of the eight three-hourly
+model values in the 24~h ending at $t$. Because the model series is continuous, every value of
+both observation records has a counterpart. Comparing the archived values with the model at the
+same instant instead, as an hourly record would be treated, changes the mean bias of a monitor by
+at most 2~\ugm{}, but lowers the correlation in time and, as Section~\ref{sec:res-transfer}
+shows, alters the verdict on statistical correction.
+
+\subsection{Error structure, sub-grid variability and the regional level}
+
+For each monitor we computed, on the three-hourly record, the mean bias (CAMS minus observed),
+mean absolute error, root-mean-square error, and the Pearson and Spearman correlations between
+the matched model and observed series. Spatial organisation of the mean bias was measured with
+Moran's $I$ \citep{moran1950} in distance bands, with significance from 9,999 permutations of the station labels.
+
+Sub-grid variability was measured in three ways. First, for each cell holding two or more
+monitors we took the range and standard deviation of the monitors' mean observed concentrations,
+and partitioned the between-monitor sum of squares of mean concentration over all 19 monitors
+into a within-cell and a between-cell part; the partition was repeated on station medians, which
+a single episode cannot dominate. Second, for every pair of monitors we computed the Spearman correlation \citep{spearman1904} of their observed three-hourly series over common time steps (at least 100) and
+compared same-cell pairs with the correlation between each monitor and its own matched model
+series. Third, for each pair we counted how often the two monitors lay on opposite sides of the
+guideline value of 45~\ugm{}, over common time steps and over days of the daily record. A gridded
+product that assigns the two monitors one value is necessarily wrong for one of them on every such
+occasion.
+
+To separate the timing of high concentrations from their location, each day of the daily record
+with values from at least ten monitors was characterised by the median over the monitors (the
+\emph{regional level}), for the observations and for the matched model values. Days were divided
+into terciles of the observed regional level, and the bias and the spread between monitors were
+computed within each tercile. Because the regional level has a strong annual cycle, the terciles
+were also formed separately within the warm season (May to September) and the cool season
+(November to February). The difference between the bias of the metropolitan and of the Al~Ain
+monitors was computed with four aggregations (mean over monitor-days, mean and median over
+per-monitor means, and without the most biased monitor), and its dependence on the regional level
+was estimated by regressing its daily value on the regional level (days with at least four
+metropolitan and two Al~Ain monitors; 10,000 bootstrap resamples of days).
+
+Dust was identified independently of the \pmten{} record with the Aerosol Robotic Network
+(AERONET) of sun photometers \citep{holben1998}. Of the 24 AERONET sites in the Emirates, only DEWA
+Research Centre (24.77$^{\circ}$N, 55.37$^{\circ}$E, in Dubai, 106~km from central Abu Dhabi and
+71~km from Al~Ain) holds data through the study period. We used its daily averages of the
+coarse-mode aerosol optical depth at 500~nm from the spectral deconvolution algorithm
+\citep{oneill2003}, Version~3, Level~1.5 \citep{giles2019}, averaged over the day of the
+observation and the previous one so as to cover the 24-h window, and divided the days that have
+such a value into terciles of it. Inside the network, the hourly weather reports (METAR) of Abu
+Dhabi International Airport, 7.5 to 30~km from the seven metropolitan monitors, were used in the same
+24-h windows: a day counts as a dust day when at least one report carries a dust or sand code, and
+as clear when no report without precipitation, fog or mist has a visibility below 10~km. From the reanalysis itself we took the total, dust and
+sea-salt aerosol optical depth at 550~nm and the 10-m wind, averaged over the same 24~h and over
+the three cells that hold the metropolitan monitors, and related the daily metropolitan minus
+Al~Ain difference to the dust optical depth, the wind speed and the wind sector. In the cell of the sun
+photometer the total and dust optical depth of the reanalysis were also compared in magnitude with
+the total and coarse-mode optical depth measured there, and the regional level per unit of column
+dust was compared between model and observations. The analyses by
+season, aggregation, interpolation, sun photometer, airport reports, reanalysis composition and
+wind, and column magnitudes were added after the main results were known; they are exploratory, and their $p$-values are
+not corrected for multiplicity. The stability of the results over time was checked by repeating the daily comparison for four sub-periods.
+
+The association between station type and bias was tested with a Kruskal--Wallis test across the
+five types \citep{kruskal1952} and, separately, with a one-sided Mann--Whitney test
+\citep{mann1947} and a 200,000-draw permutation
+test contrasting the monitors typed industrial, traffic or urban with those typed suburban or
+rural background. The two-group contrast was formed after the five-group result was known; both
+are reported.
+
+\subsection{Statistical correction at a monitor treated as unmonitored}
+\label{sec:methods-transfer}
+
+The correction is a gradient-boosted regression \citep{friedman2001,pedregosa2011} of the
+observed-minus-model difference on the matched model value, the sine and cosine of the hour and
+of the day of the year, and latitude and longitude; a coordinate-free variant omits the last two.
+Each monitor in turn is treated as unmonitored: the regression is trained on other monitors only
+and its prediction, added to the model value, is compared with the withheld observations. The
+gain is expressed as $\Delta=\log(\mathrm{MAE_{raw}}/\mathrm{MAE_{corrected}})$, so that
+$\Delta>0$ means the correction reduced the mean absolute error. The three-hourly record is used,
+after a screen that removes runs of six or more identical consecutive values (431 values, 1.3\%),
+which leaves 32,135 values.
+
+Withholding a monitor does not by itself make it unmonitored, because information about it
+remains in the training data. Three kinds are removed in turn:
+\begin{enumerate}
+\item \emph{Nearby monitors.} All training monitors within a radius $R$ of the target are
+      withheld, for $R=0$, 25, 50 and 100~km; $R=0$ is leave-one-station-out.
+\item \emph{Observations from the same days.} The target record is cut into six blocks holding
+      equal numbers of values, and each block is predicted from training data lying outside the
+      block and outside a guard interval of ten days on either side. The matched residual stays
+      correlated at this lag (median autocorrelation $+0.37$ at one day, $+0.18$ at three days
+      and $+0.12$ at ten days), so no guard within the record makes the training data independent
+      of the block; a three-day guard is reported as a check (Section~S5).
+\item \emph{Monitors sharing the model cell.} Every training monitor in the target's CAMS cell
+      is withheld, because it carries the same model series as the target.
+\end{enumerate}
+The test is an exact two-sided sign test on the 19 per-monitor values of $\Delta$, corrected by
+the Benjamini--Hochberg procedure \citep{benjamini1995} across the 24 combinations of radius,
+feature set and stage. Intervals for the median $\Delta$ are from 2,000 bootstrap resamples of
+the nine occupied cells, the unit within which monitors share a model series \citep{efron1979}.
+To show what the averaging interval does to this analysis, it was repeated on the same values
+with the instantaneous model value in place of the matched one.
+
+\subsection{Exceedance of the 24-h guideline}
+
+Because the archived values are 24-h means, exceedance of the WHO 24-h guideline value can be
+read from them directly. The daily record was used, with its matched model counterpart: 5,989
+monitor-days. The observed value was classed as exceeding 45~\ugm{} or not and compared with the
+same classification of the matched reanalysis. We report the probability of detection (POD), the
+probability of false detection (POFD) and two scores that discount agreement expected by chance,
+the equitable threat score (ETS) and the Heidke skill score (HSS); both are equitable only in
+the limit of large samples \citep{hogan2010}. Intervals are from 2,000
+bootstrap resamples of monitors. Two references that use the monitor itself indicate what local
+information adds: the reanalysis shifted by the mean observed-minus-model difference at that
+monitor over its preceding eight daily values, and persistence of the monitor's value from the
+previous day. Neither is available where there is no monitor.
+
+\section{Results}
+
+\subsection{The reanalysis places dust in time but falls short of its surface concentration}
+\label{sec:res-dust}
+
+The reanalysis follows the day-to-day course of \pmten{} over the region. The observed regional
+level and its model counterpart are related from day to day (Spearman $\rho=0.67$ over 327~days;
+Figure~\ref{fig:regional}a), and the relation holds in each sub-period ($\rho=0.55$ to 0.71). At
+single monitors the median Spearman correlation between the matched model and observed series is
+0.55 (range 0.26 to 0.68; median Pearson $r=0.50$). This lies between the correlation of two
+monitors that share a cell (median 0.66 over the 15 pairs) and that of monitors in different cells
+(0.48; Figure~\ref{fig:subgrid}b): in time, the model stands in for a monitor somewhat better than
+a distant monitor does, and somewhat worse than a neighbour.
+
+The days on which the regional level is high are days of dust. Terciles of the observed regional
+level are largely seasonal: 77 of the 107 days of the highest tercile fall between May and
+September, and 94 of the 109 days of the lowest between November and February. They nonetheless
+follow dust. On the 228 days with a sun-photometer value, the coarse-mode optical depth correlates
+with the observed regional level at $\rho=0.70$ (with the modelled one at 0.54), and of the 71 days
+of the highest regional tercile among them, 51 fall in the highest tercile of coarse-mode optical
+depth and none in the lowest (Section~S7). The airport reports inside the network agree. On the
+14 days with a reported dust event the regional level has a median of 125~\ugm{}, against 69 on
+the other days, and the model falls short of it by 37~\ugm{}, against 21 (Section~S7).
+
+The reanalysis times these events correctly in the column. Its dust optical depth in the cell of
+the sun photometer follows the coarse-mode optical depth measured there (Spearman $\rho=0.85$ over
+226 days), and its total optical depth matches the measured one in magnitude (median ratio 1.07;
+Section~S8). At the surface it falls increasingly short. Classed by the coarse-mode optical depth,
+the median difference between the modelled and the observed regional level is $-14$, $-26$ and
+$-32$~\ugm{} from the least to the most dusty third of days. The model's day-to-day range is
+compressed (regression slope of the model network median on the observed one 0.55), and its network
+median exceeds 150~\ugm{} on 2 of the 327 days, against 12 in the observations. Two steps between
+column and surface contribute (Section~S8). The reanalysis assigns dust a smaller part of the
+column than the sun photometer assigns the coarse mode (median 0.31 against 0.48), so that its dust
+optical depth is lower than the coarse-mode optical depth on 73\% of days (median ratio 0.76); and
+per unit of column dust it carries less regional \pmten{} at the surface than is observed (median
+ratio 0.86, Wilcoxon $p=0.03$).
+
+\subsection{The bias is organised in space, and the conurbation carries a local deficit}
+\label{sec:res-bias}
+
+Mean observed \pmten{} ranges from 54 to 179~\ugm{} across the network
+(Table~\ref{tab:stations}). Every one of the 19 station means lies above the 24-h guideline value
+of 45~\ugm{}, and between 58\% and 99\% of the archived 24-h means at a monitor exceed it. Of the
+5,989 monitor-days, 84\% exceed the guideline, from 60--68\% in the cleanest winter months to
+more than 90\% from May to September 2023 (Section~S1), in line with the summer maximum reported
+for the emirate in 2017--2018 \citep{abuelgasim2020}.
+
+The matched reanalysis places the same locations between 37 and 106~\ugm{}. Its mean bias ranges
+from $-128$~\ugm{} at Al~Mafraq to $+40$~\ugm{} at Sweihan, with a station mean of $-27$~\ugm{};
+the median absolute error is 30~\ugm{} and the median root-mean-square error 48~\ugm{}. The model
+does not reproduce which locations are high. Across the 19 monitors the standard deviation of
+mean concentration is 27~\ugm{} in the observations and 19~\ugm{} in the model, and the two sets
+of means are, if anything, inversely related (Spearman $\rho=-0.45$, $p=0.05$): the model's
+highest values lie over the eastern desert, the observed ones in and around the city of Abu Dhabi.
+None of this depends on taking the nearest grid point. In the daily record, bilinear interpolation
+changes the mean bias of a monitor by at most 21~\ugm{}, leaves the ranking of the monitors by
+bias almost unchanged (Spearman 0.95) and the station means of observations and model still
+inversely related ($\rho=-0.43$), and narrows the spread of the model between monitors rather
+than widening it (Section~S6).
+
+The bias is not scattered at random. Moran's $I$ of the station mean bias is 0.80 for pairs
+within 15~km ($p=0.001$) and 0.41 for pairs within 100~km ($p<0.001$). The seven monitors of the
+Abu Dhabi metropolitan area are all underestimated, by 38 to 128~\ugm{}, whereas the four
+monitors in Al~Ain, more than 100~km inland, are reproduced to within $-7$ to $+5$~\ugm{}
+(Figure~\ref{fig:map}). The operator's station typology accounts for part of this pattern but not
+cleanly. Monitors typed industrial, traffic or urban are underestimated by a median 55~\ugm{} and
+suburban and rural-background monitors by a median 4~\ugm{} (Mann--Whitney $p=0.019$; permutation
+$p=0.015$; Cohen's $d=-1.04$), but the five types taken separately do not differ significantly
+(Kruskal--Wallis $p=0.23$), and each source-oriented type contains a monitor with little bias:
+Ruwais (industrial, $-1$~\ugm{}), Al~Ain Street (traffic, $-7$~\ugm{}) and Zakher (urban,
+$+5$~\ugm{}). Type alone does not predict where the reanalysis fails; location does. The pattern
+is stable in time: the ranking of the monitors by daily mean bias in each of four sub-periods
+agrees with that of the whole record (Spearman 0.92 to 0.98; Section~S4).
+
+On top of the regional deficit of Section~\ref{sec:res-dust}, which the coast shares with the
+interior, the conurbation carries a deficit of its own. When the days are divided by observed
+regional level, the Abu Dhabi metropolitan monitors are underestimated by 46~\ugm{} in the lowest
+tercile (regional level 24 to 61~\ugm{}), by 58~\ugm{} in the middle one and by 86~\ugm{} in the
+highest (87 to 257~\ugm{}), while the Al~Ain monitors move from $+13$ through 0 to $-23$~\ugm{}
+(Figure~\ref{fig:regional}b). The pattern does not arise from the season: with terciles formed
+within each season, the metropolitan bias moves from $-39$ to $-63$~\ugm{} in the cool season and
+from $-50$ to $-115$~\ugm{} in the warm one, and the Al~Ain bias from $+15$ to $-12$ and from $+2$
+to $-41$~\ugm{} (Section~S6). The difference between the metropolitan and the Al~Ain bias is
+$-59$, $-57$ and $-63$~\ugm{} in the three terciles. On the cleanest third of days this local
+deficit lies between $-50$ and $-62$~\ugm{} however it is aggregated. On the highest days its size
+depends on the aggregation (Section~S6): $-41$~\ugm{} without Al~Mafraq, the monitor with the
+largest bias, $-33$~\ugm{} with the median over monitors, and $-75$~\ugm{} in the highest tercile
+of the warm season. Regressed day by day on the regional level, it has a slope of $-0.00$ (95\%
+interval $-0.23$ to $+0.22$) over all monitors and $+0.18$ ($-0.02$ to $+0.39$) without
+Al~Mafraq. Whether the local deficit changes with the regional level is therefore not
+established; that it is present on clean days is.
+
+The local deficit does not follow dust. Classed by the coarse-mode optical depth, the metropolitan
+minus Al~Ain difference is $-60$, $-58$ and $-53$~\ugm{} ($-53$, $-46$ and $-30$~\ugm{} without
+Al~Mafraq) from the least to the most dusty third of days, and on the least dusty third every
+metropolitan monitor is underestimated, by 30 to 97~\ugm{} (Section~S7). On the days with a
+reported dust event the metropolitan minus Al~Ain difference is $-72$ against $-58$~\ugm{}
+($p=0.26$). On the 150 clear days the difference is $-60$~\ugm{} and every metropolitan monitor
+is underestimated, by 33 to 137~\ugm{} (Section~S7). Nor does it follow the reanalysis's own
+fields (Section~S8). The metropolitan minus Al~Ain difference is unrelated to the dust optical
+depth over the metropolitan cells ($\rho=-0.01$; $+0.21$ without Al~Mafraq, the deficit becoming
+smaller on dustier days) and to the 10-m wind speed ($\rho=+0.06$; $+0.13$ without Al~Mafraq), and
+it is the same with wind from the north-west quadrant, which prevails on 224 of 324 days, as with
+wind from elsewhere (medians $-58$ and $-60$~\ugm{}, Mann--Whitney $p=0.22$). Sea salt accounts
+for a median 1.5\% of the modelled optical depth over the metropolitan cells.
+
+Across the regional terciles the spread between monitors grows in the observations but hardly
+in the model: the day-by-day standard deviation across the network has a median of 27, 31 and
+61~\ugm{} in the three terciles in the observations, against 21, 22 and 25~\ugm{} in the model.
+
+\subsection{Up to half of the spatial variance lies inside single model cells}
+\label{sec:res-subgrid}
+
+Table~\ref{tab:cells} and Figure~\ref{fig:subgrid}a show the six cells that hold more than one
+monitor. In four of them the station means agree to within 1--16~\ugm{}. In the other two they do
+not: station means differ by 56~\ugm{} in the cell containing E11~Road, Habshan South and Bida
+Zayed, and by 89~\ugm{} in the cell containing Al~Mafraq, Mussafah and Baniyas, with within-cell
+standard deviations of 30 and 46~\ugm{}. Over the whole network 46\% of the between-monitor
+variance of mean \pmten{} lies within cells. The two high-spread cells differ in kind. The spread
+in the E11~Road cell comes mainly from one episode between late August and mid-September 2023,
+during which the 24-h mean at that roadside monitor reached 2,978~\ugm{}; its median (61~\ugm{})
+is close to those of its neighbours, and on station medians the within-cell share of the variance
+is 31\%. The spread in the Al~Mafraq cell, an industrial area south-east of Abu Dhabi island, is
+persistent: the station medians there differ by more than 70~\ugm{}, and the range of station
+means exceeds 100~\ugm{} in each sub-period of the daily record. In every sub-period between 42\%
+and 51\% of the variance of station means, and between 35\% and 44\% of that of station medians,
+lies within cells (Section~S4). No field on this grid, however accurate as a cell average, can
+represent that part of the variability. Proximity alone does not guarantee coherence either: the two monitors
+closest to each other, Khadeeja School and Hamdan Street, 1.0~km apart with mean concentrations of
+95 and 93~\ugm{}, correlate at only 0.33.
+
+The six cells also separate two kinds of error that a single bias statistic merges. In the two
+cells over Abu Dhabi island and its mainland suburbs the paired monitors agree closely (ranges of
+1~\ugm{} each), yet the model lies 56 and 55~\ugm{} below them. There the discrepancy is not the
+idiosyncrasy of one monitor; it is an urban-scale enhancement that the cell value does not carry.
+In the two high-spread cells, by contrast, the monitor closest to the model is within 6 and
+38~\ugm{} of it and the largest errors belong to individual industrial and roadside sites. In
+Al~Ain the four monitors agree with each other and with the model.
+
+For the guideline the consequence is direct. Two monitors in the same cell lie on opposite sides
+of 45~\ugm{} in a median 10\% of common values, and in up to 39\% for the most dissimilar pair;
+over days the figure is 14\% of 4,590 pair-days. A product with one value per cell is necessarily
+wrong about exceedance at one of the two monitors on those days.
+
+\subsection{A statistical correction gives no established gain, and the averaging interval
+decides whether one appears}
+\label{sec:res-transfer}
+
+With each monitor withheld in turn and nothing else removed, the correction reduces the error at
+13 of 19 monitors with coordinates as predictors (median $\Delta=+0.19$, cell-bootstrap interval
+$+0.04$ to $+0.32$) and at 12 of 19 without them ($+0.11$, $-0.03$ to $+0.42$;
+Figure~\ref{fig:transfer}a, Table~\ref{tab:transfer}). The sign test establishes neither
+($p=0.17$ and 0.36 before correction for multiplicity). Withholding the monitors within 25~km
+already brings the median to $+0.00$ for both feature sets. When the target record is predicted
+in time blocks the gain disappears even with every neighbour retained (medians $+0.04$ and
+$+0.02$, 11 and 10 of 19 monitors improved), and withholding the monitors of the target's cell
+changes little further. None of the 24 comparisons differs from zero ($q=1.00$ for each). A
+three-day guard gives the same result, with medians between $-0.28$ and $+0.09$ in the stages
+with time blocks and no comparison different from zero (Section~S5).
+
+The averaging interval is decisive for this conclusion. If the same 32,135 archived values are
+compared with the model at the same instant, as an hourly record would be treated, the
+leave-one-station-out gain is $+0.32$ with coordinates and $+0.42$ without, an apparent reduction
+of the error by 28\% and 34\% at 17 and 16 of 19 monitors ($q=0.009$ and 0.015). This apparent
+gain survives the controls that remove it under matched averaging: 16 of the 24 comparisons
+establish it, including the coordinate-free correction with time blocks, the target's cell and
+all monitors within 100~km withheld ($+0.15$, 15 of 19 monitors, $q=0.029$; Section~S5). In both
+treatments the gain is carried by the day-of-year predictors; a correction given the model value
+alone gains $+0.05$ under the instantaneous comparison and loses $-0.20$ under matched averaging
+(Section~S5). What the correction learns from other monitors under the instantaneous comparison
+is therefore mainly the mismatch in averaging, which all monitors share, and not something about
+the atmosphere at the withheld site.
+
+That no correction transfers under matched averaging is what Sections~\ref{sec:res-bias}
+and~\ref{sec:res-subgrid} predict. What the reanalysis misses at a monitor is largely a local deficit;
+other monitors do not carry that deficit, and the regional signal that they do carry is already
+in the model.
+
+\subsection{Consequences for assessing guideline exceedance}
+\label{sec:res-exceed}
+
+Of the 5,989 monitor-days evaluated, 5,046 (84\%) exceed the guideline in the observations. With
+a base rate this high a product that always reported exceedance would be right on five days in
+six, and only scores that discount chance agreement are informative (Table~\ref{tab:exceed}).
+
+The reanalysis detects 3,722 of the 5,046 exceedances (POD 0.74, 95\% interval 0.64 to 0.83) and
+reports exceedance on 487 of the 943 days that did not exceed (POFD 0.52). Its equitable threat
+score is 0.09 (0.03 to 0.15) and its Heidke skill score 0.16 (0.06 to 0.25): above chance, but
+small. Shifting the reanalysis by the monitor's own recent mean difference, which adds knowledge
+of the local level but none of the timing, raises the equitable threat score to 0.28 (0.24 to
+0.32). Persistence of the monitor's previous day reaches 0.39 (0.34 to 0.44). The ordering is the
+one the previous sections lead to. The reanalysis carries part of the day-to-day signal, but
+whether a given place exceeds the guideline on a given day depends mostly on a local level that
+the reanalysis does not contain and that only a monitor at the place supplies.
+
+\section{Discussion}
+
+\subsection{Why column dust and surface PM$_{10}$ diverge}
+\label{sec:disc-column}
+
+The difference between a $0.75^{\circ}$ field and a point measurement contains model error and
+representation error, and point data alone cannot fully separate them
+\citep{schutgens2016,janjic2018}. The network nevertheless separates two parts of the error that
+differ in cause. The first is shared by the coast and the interior and grows with the amount of
+dust: the reanalysis compresses the day-to-day range, overestimating the cleanest days at Al~Ain
+and underestimating the highest days everywhere, in the cool season as in the warm one. Because
+desert dust dominates the regional aerosol burden \citep{gandham2020,shahid2026} and this part is
+largest on the days with the most coarse aerosol over an independent sun photometer, it is an
+error in the dust that the model brings to the surface of the region, not in the timing of dust
+events, which the dust optical depth of the reanalysis follows closely.
+
+Assimilation of optical depth constrains the total column and leaves the rest to the model. In the
+CAMS system the analysis adjusts the total aerosol and distributes the increment over the species
+in proportion to their share in the background \citep{inness2019}, and the model relates the mass
+of each species and size bin to optical depth through prescribed optical properties
+\citep{morcrette2009}. The comparison at the sun photometer places the regional deficit along this
+chain (Section~S8). The first link holds: the total optical depth of the reanalysis is close to the
+measured one (median ratio 1.07), as expected of a field that assimilates it. The second does not:
+the reanalysis attributes to dust a smaller share of the column than the sun photometer attributes
+to the coarse mode (0.31 against 0.48), so that its dust optical depth falls short of the measured
+coarse-mode optical depth although the two rise and fall together. The third reduces the surface
+value further: per unit of column dust the model carries 0.86 of the observed regional level. Both
+links point the same way; medians over days do not show how they combine on a given day.
+
+What sets the third link cannot be determined from these data. One contribution is built into
+the product: the \pmten{} of the CAMS reanalysis is diagnosed from its aerosol bins, and of the
+largest dust bin, with radii of 0.9 to 20~$\mu$m, only 40\% of the mass is counted as
+\pmten{}\footnote{Copernicus Atmosphere Monitoring Service, answer on the ECMWF support forum,
+26~September 2019, ``PM10 and PM25 global products'',
+\url{https://forum.ecmwf.int/t/pm10-and-pm25-global-products/1084}; the formula given there for
+the CAMS reanalysis counts 0.4 of the mass of the dust bin of 0.9 to 20~$\mu$m radius.}, so that a
+given dust load yields less \pmten{} the more of it lies in that bin. How much of the deficit this
+accounts for depends on the size distribution of the modelled dust near the surface, which was not
+examined. Beyond the diagnostic, the ratio of surface level to
+column dust mixes the vertical distribution of dust, that is the depth of the mixed layer and the
+share of dust carried aloft, with the mass per unit optical depth, which depends on the size
+distribution and is low for the large particles that carry much of the coarse mass. Evaluations of the
+predecessor MACC reanalysis point to the vertical distribution. Against spaceborne lidar it
+underestimated dust optical depth where loadings were high and, close to the Saharan and Middle
+Eastern sources, underestimated dust extinction strongly between 1.2~km and about 3 to 5~km while
+placing dust at heights up to 9~km \citep{georgoulias2018}; over the Sahel it reproduced the
+variability of surface dust concentration but underestimated its daily and monthly means throughout
+the year \citep{cuevas2015}, a pattern like the one found here. The vertical structure of reanalysis aerosol
+products has also been evaluated against spaceborne lidar over the Tibetan Plateau
+\citep{zhang2025tp}. Whether the current CAMS reanalysis distributes dust in the same way over the
+Gulf was not tested: no profile measurement or size-resolved mass was available to separate these
+effects, and as causes of the deficit all three remain hypotheses. The second link also has a caveat: the coarse mode of the sun photometer and the dust
+of the reanalysis are not the same quantity, the first including coarse sea salt and the second
+fine dust, which bias the comparison in opposite directions. For the evaluation of reanalysis
+aerosol the result has a general consequence. Agreement in optical depth, and even agreement of
+the dust optical depth in time, does not establish the surface concentration; the partition
+between species and the relation of column to surface need to be checked against a surface
+record.
+
+\subsection{The local deficit of the conurbation}
+\label{sec:disc-local}
+
+The second part of the error is an error of place. What the reanalysis lacks is a set of offsets
+that differ from one location to the next, are coherent over a few tens of kilometres, and vanish
+on average at the inland city of Al~Ain. Over Abu Dhabi island and its suburbs four monitors in
+two cells agree with each other and jointly exceed the model by more than 50~\ugm{}, so the
+discrepancy cannot be assigned to the siting of one instrument. This deficit of the conurbation
+relative to the interior, of about 50 to 60~\ugm{}, is
+present already on the cleanest days and on the days with the least coarse aerosol, and is
+not larger on the dustiest days. A deficit of this
+kind is not explained by dust transport alone. It points to coarse particles of local origin, from traffic, construction, industry and resuspension \citep{thorpe2008,amato2009}, an urban
+increment over the regional background \citep{lenschow2001} that a global model at this
+resolution does not resolve, or to the composition of
+the coastal cells, which extend over the sea as well as the city (Figure~\ref{fig:map}). The
+explanations are not exclusive and the record cannot apportion the deficit between them. It does
+weigh against wind-driven resuspension as the main cause, since the deficit does not grow with
+the modelled wind speed or with dust, and against sea salt, which the reanalysis assigns a small
+share of the optical depth; a wind field at $0.75^{\circ}$ does not, however, resolve the sea
+breeze or the flow within the city.
+
+Regulatory monitors are placed where exposure is expected to be high, so a network of this kind
+overstates the deficit of a cell average and should not be read as an estimate of it. For the
+question an assessment asks, namely what people at a given place breathe, the distinction matters
+less than its size: between 31\% and 51\% of the spatial variance of \pmten{} in this
+network is at scales the grid does not contain.
+
+That the bias is spatially coherent but only loosely related to station type has a practical
+corollary. A type-based adjustment, of the kind applied to make gridded products comparable with
+urban or roadside monitors, would have been wrong here for at least one monitor in each
+source-oriented class.
+
+\subsection{The averaging interval of archived observations}
+
+The values that an open archive holds for a regulatory network are whatever the network
+publishes, and for particulate matter that may be the running mean on which an air-quality index
+is based (Section~\ref{sec:running}), not the hourly concentration. In the present record the two are easy
+to tell apart once the question is asked: hourly values that hardly change, increments that
+reverse after 24~h, and gases from the same stations that behave otherwise. The same principle governs comparisons
+between co-located instruments, where a systematic difference can arise entirely from what each
+measured quantity includes \citep{you2026nai}. The check costs a
+few lines of code and should precede any comparison of archived particulate data with a model.
+The consequences of omitting it are not uniform. Mean bias and its spatial pattern were almost
+unaffected here, because averaging does not change a mean. The correlation in time was
+understated (0.37 instead of 0.50). And the evaluation of a statistical correction was
+reversed: an apparent error reduction of 28--34\%, established at 16 and 17 of 19 monitors and
+robust to every control applied, disappeared when model and observations were averaged alike.
+
+\subsection{Why correction does not help, and what leave-one-station-out measures}
+
+Statistical correction of chemical-transport output is well established where the corrected
+product is used at the monitors that trained it \citep{djalalova2015,huang2017}, and the present
+results are consistent with that use: knowledge of a monitor's own recent level raised the
+exceedance score from 0.09 to 0.28. They do not support the further and common inference that a
+correction fitted to a network can be mapped over areas without monitors. In this network the
+leave-one-station-out gain was not established even before anything else was withheld (13 of 19
+monitors improved), and it vanished once neighbours within 25~km were withheld or the training data
+were separated from the target in time.
+The requirement that a validation withhold what deployment will lack is familiar from
+spatial prediction \citep{roberts2017,ploton2020,wadoux2021}, as is the inflation of skill by
+near-duplicates of the training data under random splits in chemical machine learning
+\citep{kim2026tas2r}, and the transferability of
+statistical models between arid regimes has recently been examined for dust-related fine
+particles \citep{hurynovich2026}. What the atmospheric setting adds is a physical reason for the
+outcome. A correction can transfer only the part of the error that monitors share, and here the
+shared part is the regional signal that the reanalysis already reproduces. The part that the
+reanalysis misses is local, and no monitor elsewhere holds it. The conclusion applies to
+corrections built, as this one is, from the model value, the date and the position; predictors
+that describe the locality itself, such as land use, road density or emission inventories
+\citep{zhang2018lur}, address the missing part directly and were not tested.
+
+\subsection{Implications for assessment in arid, sparsely monitored regions}
+
+Three implications follow for the use of reanalysis \pmten{} where monitors are few. First, a
+reanalysis of this kind can indicate on which days \pmten{} over a region is high. It should not
+be used to decide whether a particular place exceeded a guideline, and exceedance statistics
+derived from it in a region where the guideline is exceeded on most days should be reported with
+a chance-corrected score and the base rate. Second, the uncertainty attached to a grid value
+used as a point estimate should include the sub-grid spread \citep{denby2011}, which in this network is as large
+as the guideline value itself in the cells that contain strong local sources. Third, because the
+missing component is a local level that changes slowly, a monitor informs its own site far more
+than it informs a statistical model of the region; for a fixed number of instruments, coverage
+of distinct source environments is worth more to assessment than replication within one. In
+radiological surveys, likewise, an adaptive design guided by a statistical model of the field
+found unvisited hot spots only where the field was correlated over distances larger than the
+sampling spacing \citep{choi2027adaptive}.
+
+\subsection{Limitations}
+\label{sec:limits}
+
+The study rests on one network in one emirate and on 19 months of record. The archive is thin in
+spring and summer 2023, when it holds one value per day in three months, so the dust season is
+represented mainly through the daily record. Days were classed by their regional \pmten{} level,
+which follows the season. Dust was identified from a single sun photometer outside the network,
+71 to 106~km from the monitors, whose Level~1.5 data have not received final calibration, and from
+the weather reports of one airport inside it, which record dust on only 14 days, and the
+wind and the aerosol composition were taken from the reanalysis itself, at a resolution that does
+not resolve local circulations. No vertical profile of aerosol was available, so the relation between column
+and surface could not be decomposed. Satellite dust optical depth, from MODIS for example, was not used to
+check how well the single sun photometer represents the network, and \pmten{} was the only
+particulate metric evaluated; fine particles (PM$_{2.5}$) were not. The archived values are integer-rounded 24-h running
+means, so the study says nothing about diurnal variation or short peaks, and the alignment of the
+averaging window, inferred from the data and from the national reporting convention, could not be
+confirmed from station metadata; neither could the instruments in use during the period. Point monitors sited for regulatory purposes are not a random
+sample of a cell. A single global product at $0.75^{\circ}$ was evaluated; a regional simulation at
+kilometre scale with resolved local emissions would be the proper test of how much of the
+sub-grid variance is recoverable by resolution \citep{ukhov2020}. The correction analysis has 19
+units and one model family. The contrast between source-oriented and background station types was
+formed after an omnibus test had failed and is reported as such. Finally, the exceedance analysis
+classifies 24-h means in retrospect; it is not a verification of forecasts.
+
+\section{Conclusions}
+
+The \pmten{} values that the open archive holds for the 19 regulatory monitors of the Emirate of
+Abu Dhabi are 24-h running means, and they exceed the WHO 24-h guideline value on most days at
+every monitor. Compared over the same averaging interval and over 19 months, the CAMS reanalysis
+followed the day-to-day course of the regional level (Spearman 0.67) and tracked single monitors
+better than a distant monitor did, but it did not reproduce the differences between places: the
+mean bias ranged from $-128$ to $+40$~\ugm{} and was organised in space. Its dust optical depth
+followed an independent sun photometer in time and its total optical depth matched the measured
+one, but it gave dust a smaller share of the column than the measured coarse mode and carried less
+surface \pmten{} per unit of column dust, so that its regional deficit grew with dust, in both
+seasons. Over the Abu Dhabi conurbation a local deficit of about 50 to 60~\ugm{} was added,
+present already on the cleanest and on clear days and unrelated to modelled wind and dust, while the
+inland city of Al~Ain was reproduced on average. Between 31\% and 51\% of the between-monitor variance of \pmten{} lay
+inside single $0.75^{\circ}$ cells. A statistical correction built from the model value, the date and the position and trained on
+other monitors gave no established gain at a monitor treated as unmonitored; the gain that appears when running means
+are compared with instantaneous model values is produced by the mismatch in averaging. Judged by a chance-corrected score, the
+reanalysis had little skill in separating days that exceeded the guideline at a monitor from days
+that did not. In arid regions with strong local sources of coarse particles, a global reanalysis
+describes when the regional background is high; statements about a particular place still require
+a measurement there.

@@ -1,0 +1,232 @@
+%% Atmospheric Research (Elsevier) -- research paper
+%% Compile: pdflatex -> bibtex -> pdflatex -> pdflatex
+\documentclass[preprint,review,12pt,authoryear]{elsarticle}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{lineno}
+\usepackage{rotating}
+
+\newcommand*{\ugm}{\ensuremath{\mu\mathrm{g\,m^{-3}}}}
+\newcommand*{\pmten}{\ensuremath{\mathrm{PM_{10}}}}
+\setlist[enumerate]{itemsep=2pt,topsep=4pt}
+\emergencystretch=1.5em
+
+\journal{Atmospheric Research}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{The CAMS reanalysis follows column dust in time but not surface PM$_{10}$ across the Abu Dhabi
+monitoring network}
+
+%% ORCIDs (enter in the submission system), as recorded for ATMENV-D-26-01869:
+%% Jin Yoo 0000-0002-7738-8424; Jeongyun Kim 0009-0004-1377-8572;
+%% Doo-Hee Lee 0000-0002-5116-2064; Ku Kang 0000-0001-8739-218X.
+\author[cbrn]{Jin Yoo\fnref{eq}}
+\author[snu]{Jeongyun Kim\fnref{eq}}
+\author[kma]{Doo-Hee Lee}
+\author[cbrn]{Ku Kang\corref{cor}}
+\ead{bisu9082@gmail.com}
+
+\cortext[cor]{Corresponding author.}
+\fntext[eq]{These authors contributed equally to this work.}
+
+\affiliation[cbrn]{organization={CBRN Defense Research Institute, Korea Ministry of National Defense},
+  city={Seoul}, postcode={06796}, country={Republic of Korea}}
+\affiliation[snu]{organization={Department of Chemical and Biological Engineering, Seoul National University},
+  city={Seoul}, postcode={08826}, country={Republic of Korea}}
+\affiliation[kma]{organization={Department of Civil Engineering and Environmental Sciences, Korea Military Academy},
+  city={Seoul}, postcode={01805}, country={Republic of Korea}}
+
+\begin{abstract}
+Global reanalyses that assimilate aerosol optical depth are used to estimate surface
+coarse particulate matter (\pmten{}) where monitors are few. We evaluate the CAMS reanalysis
+against the 19-monitor regulatory network of the Emirate of Abu Dhabi, October 2022 to May 2024,
+and identify dust independently with a sun photometer and airport weather reports. First, the \pmten{} values that the OpenAQ archive holds for this
+network are 24-h running means, not hourly concentrations. Compared with instantaneous model
+values they understate the correlation (0.37 instead of 0.50) and produce an apparent 28--34\%
+error reduction by statistical correction that is no longer established when model and
+observations are averaged alike. Second, the reanalysis places dust in time but not its surface concentration: its dust
+optical depth follows the AERONET coarse-mode optical depth (Spearman 0.85), yet its deficit in
+the regional \pmten{} level grows from 14 to 32~\ugm{} from the least to the most dusty third of
+days. Over the conurbation a local deficit, present at all seven metropolitan monitors on
+the least dusty and on clear days, is unrelated to modelled wind speed and dust.
+Of the between-monitor variance of mean \pmten{}, 46\% lies inside single $0.75^{\circ}$ cells.
+The regional daily level is reproduced (Spearman 0.67), but mean bias ranges from $-128$ to
+$+40$~\ugm{}, and exceedance of the WHO 24-h guideline is poorly detected
+(equitable threat score 0.09). Archived averaging intervals should be checked before model evaluation, and
+reanalysis \pmten{} does not represent a particular place in an arid city.
+\end{abstract}
+
+\begin{highlights}
+\item Archived PM$_{10}$ were 24-h running means, which created an apparent correction gain
+\item CAMS dust optical depth tracked AERONET (Spearman 0.85) but surface PM$_{10}$ fell short
+\item CAMS total AOD matched AERONET, but dust took too small a share of the column
+\item A local deficit over the city persisted on clear, low-dust days at all 7 monitors
+\item Up to half of the between-monitor PM$_{10}$ variance lay inside single model cells
+\end{highlights}
+
+\begin{keyword}
+PM$_{10}$ \sep CAMS reanalysis \sep Spatial representativeness \sep Sub-grid variability \sep
+Running mean \sep Bias correction \sep Arabian Gulf
+\end{keyword}
+
+\end{frontmatter}
+
+\linenumbers
+
+\input{body_ae}
+
+\section*{CRediT authorship contribution statement}
+\textbf{Jin Yoo:} Conceptualization, Methodology, Software, Formal analysis, Writing -- original
+draft. \textbf{Jeongyun Kim:} Data curation, Investigation, Writing -- review and editing.
+\textbf{Doo-Hee Lee:} Methodology, Software, Formal analysis, Validation, Writing -- original
+draft. \textbf{Ku Kang:} Conceptualization, Supervision, Writing -- review
+and editing. Jin Yoo and Jeongyun Kim contributed equally to this work.
+
+\section*{Declaration of competing interest}
+The authors declare that they have no known competing financial interests or personal
+relationships that could have appeared to influence the work reported in this paper.
+
+\section*{Acknowledgements}
+We thank the Environment Agency -- Abu Dhabi, the OpenAQ initiative and the Copernicus Atmosphere
+Monitoring Service for open access to the data used in this study, and the AERONET project and
+the principal investigator of the DEWA Research Centre site, Luis Mart\'in Pomares, and his staff
+for establishing and maintaining the site whose data are used here, and the Iowa Environmental
+Mesonet for the archive of airport weather reports.
+
+\section*{Funding}
+This research did not receive any specific grant from funding agencies in the public, commercial,
+or not-for-profit sectors.
+
+\section*{Data and code availability}
+\sloppy
+The hourly archive of the 19 monitors as retrieved from the OpenAQ public archive, the script
+that retrieves it, the analysed three-hourly observation--model records, the analysis and figure
+scripts and all result artefacts are available in the public repository
+\url{https://github.com/bisu9082/camscast} under the MIT licence; the version used for this article, release v2.0.0, is archived at Zenodo (\url{https://doi.org/10.5281/zenodo.24440611}). The evidence on the
+averaging interval is produced by \texttt{archive\_checks.py} and
+\texttt{averaging\_fingerprint.py}, the station-level, sub-grid and regional statistics by
+\texttt{station\_representativeness.py}, \texttt{extended\_observations.py} and
+\texttt{revision\_diagnostics.py}, the sun-photometer comparison by
+\texttt{fetch\_aeronet.py} and \texttt{aeronet\_dust\_check.py}, the airport reports by
+\texttt{fetch\_metar\_omaa.py} and \texttt{metar\_dust\_check.py}, the dust and wind analysis by
+\texttt{fetch\_cams\_eac4\_aod\_wind.py} and \texttt{dust\_wind\_analysis.py}, the comparison of column and surface by \texttt{column\_surface\_check.py}, the exceedance
+scores by \texttt{exceedance\_detection.py}, the tables by \texttt{make\_tables\_ae.py} and
+Figures~\ref{fig:map}--\ref{fig:regional} by \texttt{make\_figs\_ae.py}. The raw CAMS EAC4 fields
+are distributed by the Copernicus Atmosphere Data Store and are not redistributed; the request
+parameters are documented in \texttt{data\_retrieval/RETRIEVAL.md}.
+
+\section*{Declaration of generative AI and AI-assisted technologies in the writing process}
+During the preparation of this work the authors used Claude (Anthropic) to assist with drafting
+and language editing of the manuscript text and with writing and debugging the analysis and
+figure-generation code. All measurements and model fields were obtained from the cited public
+archives; no data, numerical results or references were generated by AI. After using this tool
+the authors reviewed and edited the content as needed, verified every reported numerical value
+against the underlying artefacts, and take full responsibility for the content of the published
+article.
+
+\bibliographystyle{elsarticle-harv}
+\bibliography{references}
+
+\clearpage
+
+\begin{table}[p]\centering\footnotesize
+\caption{The 19 monitors: operator station type (Statistics Centre -- Abu Dhabi), coordinates, number of
+values in the three-hourly record $N$ (29~October 2022 to 20~May 2024), mean observed \pmten{},
+mean of the matched CAMS values (the mean over the 24~h ending at each observation), mean bias
+(CAMS minus observed) and Pearson correlation $r$ between the matched model and observed series.
+Concentrations in \ugm{}. Observed values are 24-h running means. Monitors are ordered by type
+and, within type, by bias.}
+\label{tab:stations}
+\resizebox{\textwidth}{!}{\input{tab_stations}}
+\end{table}
+
+\begin{table}[p]\centering\footnotesize
+\caption{Sub-grid variability. For each $0.75^{\circ}$ CAMS cell holding two or more monitors:
+the mean observed \pmten{} over the cell's monitors, the mean matched CAMS value, the offset
+between them (CAMS minus observed), and the range and
+standard deviation of the monitors' mean observed concentrations (all in \ugm{}). Monitors in a
+cell receive the same model series.}
+\label{tab:cells}
+\resizebox{\textwidth}{!}{\input{tab_cells}}
+\end{table}
+
+\begin{sidewaystable}[p]\centering\footnotesize
+\caption{Gain of the statistical correction at a monitor treated as unmonitored, with model and
+observations averaged over the same 24~h.
+$\Delta=\log(\mathrm{MAE_{raw}}/\mathrm{MAE_{corrected}})$; the median is over the 19 monitors and
+the interval is from 2,000 bootstrap resamples of the nine occupied model cells. ``Sources'' is
+the mean number of training monitors remaining. ``Improved'' counts monitors with $\Delta>0$.
+$q$ is the Benjamini--Hochberg-corrected exact two-sided sign test across the 24 comparisons.
+Model and observations cover 29~October 2022 to 20~May 2024 (32,135 values after the flat-line
+screen).}
+\label{tab:transfer}
+\resizebox{\textheight}{!}{\input{tab_transfer}}
+\end{sidewaystable}
+
+\begin{table}[p]\centering\footnotesize
+\caption{Exceedance of the WHO 24-h \pmten{} guideline value (45~\ugm{}) by monitor and day (24-h
+mean ending 08~UTC), 29~October 2022 to 16~May 2024. POD: probability of detection; POFD: probability of
+false detection; ETS: equitable threat score; HSS: Heidke skill score. Intervals are from 2,000
+bootstrap resamples of monitors. The level-shifted reanalysis and persistence use the monitor's
+own preceding values and are evaluated on the days for which those exist.}
+\label{tab:exceed}
+\resizebox{\textwidth}{!}{\input{tab_exceed}}
+\end{table}
+
+\begin{figure}[p]\centering
+\includegraphics[width=\textwidth]{Fig1_map.pdf}
+\caption{The Abu Dhabi regulatory \pmten{} network and the mean bias of the CAMS reanalysis.
+(a) All 19 monitors; (b) the seven monitors of the Abu Dhabi metropolitan area, with mean bias in
+\ugm{}. Colour gives the mean bias (CAMS minus observed) over each monitor's matched record and
+marker shape the operator's station type. Grey lines are the boundaries of the $0.75^{\circ}$
+model cells; the coastline is from Natural Earth. Map lines delineate study areas and do not
+necessarily depict accepted national boundaries.}
+\label{fig:map}
+\end{figure}
+
+\begin{figure}[p]\centering
+\includegraphics[width=\textwidth]{Fig2_subgrid.pdf}
+\caption{Variability of \pmten{} below the scale of the model grid. (a) Mean observed \pmten{} at
+each monitor in the six cells that hold more than one monitor (marker shape: station type, as in
+Figure~\ref{fig:map}; grey bar: range within the cell), against the mean of the single model
+series the cell supplies (blue) and the WHO 24-h guideline value (dashed). (b) Spearman
+correlation between the observed series of each pair of monitors against their separation, for
+pairs in the same model cell (filled) and in different cells (open); the dashed line is the
+median correlation between a monitor and its own matched model series.}
+\label{fig:subgrid}
+\end{figure}
+
+\begin{figure}[p]\centering
+\includegraphics[width=\textwidth]{Fig3_regional.pdf}
+\caption{What the reanalysis reproduces and what it does not. (a) Daily regional level (median
+over the monitors of the 24-h mean ending 08~UTC) in the observations and in the matched
+reanalysis, 327 days from October 2022 to May 2024. (b) Mean bias of the reanalysis at the
+monitors of the Abu Dhabi metropolitan area and of Al~Ain, and the difference between the two
+(dashed), for days divided into terciles of the observed regional level.}
+\label{fig:regional}
+\end{figure}
+
+\begin{figure}[p]\centering
+\includegraphics[width=\textwidth]{Fig4_transfer.pdf}
+\caption{Gain of the statistical correction at a monitor treated as unmonitored, with model and
+observations averaged over the same 24~h. Median $\Delta$ over the 19 monitors, with 95\%
+intervals from a bootstrap over model cells, against the radius within which training monitors
+are withheld. (a) Distance buffer only; $R=0$ is leave-one-station-out. (b) With the target
+record additionally predicted in time blocks separated from training data by a ten-day guard.
+(c) With monitors sharing the target's model cell also withheld. Filled markers differ from zero
+by the sign test after Benjamini--Hochberg correction ($q<0.05$); open markers do not.
+Intervals that extend below the plotted range are labelled with their lower limit.}
+\label{fig:transfer}
+\end{figure}
+
+\end{document}

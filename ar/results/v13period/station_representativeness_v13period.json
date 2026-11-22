@@ -1,0 +1,3568 @@
+{
+ "_meta": {
+  "who_24h_guideline": 45.0,
+  "seed": 20261113,
+  "n_stations": 19,
+  "note": "obs are trailing 24-h running means; cams24 is the matched mean"
+ },
+ "stations": [
+  {
+   "sid": "369953",
+   "name": "Bida Zayed",
+   "lat": 23.6522,
+   "lon": 53.7038,
+   "type": "Suburban",
+   "cell": [
+    24.0,
+    54.0
+   ],
+   "n": 1073,
+   "obs_mean": 56.09878844361603,
+   "obs_median": 49.0,
+   "frac_above_guideline": 0.6272134203168686,
+   "n_matched": 728,
+   "obs_mean_matched": 55.56456043956044,
+   "cams_mean": 51.8609612919692,
+   "bias": -3.7035991475912473,
+   "bias_median": -4.020549499999994,
+   "mae": 15.6680611339531,
+   "rmse": 22.227174020248885,
+   "pearson_r": 0.5642008888243074,
+   "spearman_r": 0.5997356305697834,
+   "bias_unmatched": -5.475199243429636,
+   "pearson_r_unmatched": 0.3120494148174842
+  },
+  {
+   "sid": "369954",
+   "name": "Khadeeja School",
+   "lat": 24.4819,
+   "lon": 54.3691,
+   "type": "Urban",
+   "cell": [
+    24.75,
+    54.0
+   ],
+   "n": 1127,
+   "obs_mean": 102.94942324755989,
+   "obs_median": 97.0,
+   "frac_above_guideline": 0.8642413487133984,
+   "n_matched": 798,
+   "obs_mean_matched": 116.37092731829574,
+   "cams_mean": 46.4917372280187,
+   "bias": -69.87919009027704,
+   "bias_median": -66.532063375,
+   "mae": 70.58471810871599,
+   "rmse": 78.93445621134148,
+   "pearson_r": 0.2960630822758652,
+   "spearman_r": 0.3062241150893478,
+   "bias_unmatched": -60.016598563567,
+   "pearson_r_unmatched": 0.3784577660501261
+  },
+  {
+   "sid": "369955",
+   "name": "Liwa",
+   "lat": 23.0957,
+   "lon": 53.6064,
+   "type": "Rural background",
+   "cell": [
+    23.25,
+    53.25
+   ],
+   "n": 1083,
+   "obs_mean": 71.36842105263158,
+   "obs_median": 69.0,
+   "frac_above_guideline": 0.7433056325023084,
+   "n_matched": 738,
+   "obs_mean_matched": 73.82384823848238,
+   "cams_mean": 77.66578334897164,
+   "bias": 3.841935110489263,
+   "bias_median": 8.369504446428575,
+   "mae": 25.449052788731617,
+   "rmse": 31.256542433200853,
+   "pearson_r": 0.5105969872502805,
+   "spearman_r": 0.40857622083508854,
+   "bias_unmatched": 8.259068586149585,
+   "pearson_r_unmatched": 0.2866963483551709
+  },
+  {
+   "sid": "369957",
+   "name": "Hamdan St.",
+   "lat": 24.4889,
+   "lon": 54.3637,
+   "type": "Traffic",
+   "cell": [
+    24.75,
+    54.0
+   ],
+   "n": 1081,
+   "obs_mean": 96.09435707678075,
+   "obs_median": 75.0,
+   "frac_above_guideline": 0.8501387604070305,
+   "n_matched": 743,
+   "obs_mean_matched": 105.85329744279946,
+   "cams_mean": 45.87581506243271,
+   "bias": -59.97748238036675,
+   "bias_median": -41.91391025,
+   "mae": 60.48469560229524,
+   "rmse": 160.34743426123617,
+   "pearson_r": 0.11346954287326841,
+   "spearman_r": 0.5662662012554479,
+   "bias_unmatched": -53.372698709842744,
+   "pearson_r_unmatched": 0.10710368847533377
+  },
+  {
+   "sid": "369958",
+   "name": "Mussafah",
+   "lat": 24.3471,
+   "lon": 54.5028,
+   "type": "Industrial",
+   "cell": [
+    24.0,
+    54.75
+   ],
+   "n": 1080,
+   "obs_mean": 128.18055555555554,
+   "obs_median": 118.0,
+   "frac_above_guideline": 0.9740740740740741,
+   "n_matched": 743,
+   "obs_mean_matched": 130.66890982503364,
+   "cams_mean": 57.5584888794703,
+   "bias": -73.11042094556335,
+   "bias_median": -63.212832,
+   "mae": 74.14978000843587,
+   "rmse": 139.66467004872314,
+   "pearson_r": 0.17088469418466334,
+   "spearman_r": 0.1636030734025542,
+   "bias_unmatched": -73.01225888055276,
+   "pearson_r_unmatched": 0.12469425268168316
+  },
+  {
+   "sid": "369959",
+   "name": "Al Ain St.",
+   "lat": 24.2258,
+   "lon": 55.7658,
+   "type": "Traffic",
+   "cell": [
+    24.0,
+    55.5
+   ],
+   "n": 1068,
+   "obs_mean": 83.2940074906367,
+   "obs_median": 71.0,
+   "frac_above_guideline": 0.9382022471910112,
+   "n_matched": 715,
+   "obs_mean_matched": 86.62517482517482,
+   "cams_mean": 83.70783206843156,
+   "bias": -2.9173427567432566,
+   "bias_median": 1.7338778750000046,
+   "mae": 16.948331852347653,
+   "rmse": 23.551519588996374,
+   "pearson_r": 0.7771802593378374,
+   "spearman_r": 0.7335269351569865,
+   "bias_unmatched": -1.4241710795880154,
+   "pearson_r_unmatched": 0.4961164850624844
+  },
+  {
+   "sid": "369960",
+   "name": "Sweihan",
+   "lat": 24.4665,
+   "lon": 55.3428,
+   "type": "Suburban",
+   "cell": [
+    24.75,
+    55.5
+   ],
+   "n": 1099,
+   "obs_mean": 68.43676069153776,
+   "obs_median": 57.0,
+   "frac_above_guideline": 0.7088262056414922,
+   "n_matched": 769,
+   "obs_mean_matched": 72.38361508452536,
+   "cams_mean": 110.50927745803921,
+   "bias": 38.12566237351384,
+   "bias_median": 44.352335249999996,
+   "mae": 42.50981078285807,
+   "rmse": 47.107026392632044,
+   "pearson_r": 0.6339087468635268,
+   "spearman_r": 0.6327537020535993,
+   "bias_unmatched": 37.258800687443134,
+   "pearson_r_unmatched": 0.3787848008655606
+  },
+  {
+   "sid": "369961",
+   "name": "Khalifa City",
+   "lat": 24.4199,
+   "lon": 54.5781,
+   "type": "Suburban",
+   "cell": [
+    24.75,
+    54.75
+   ],
+   "n": 1079,
+   "obs_mean": 102.68303985171455,
+   "obs_median": 84.0,
+   "frac_above_guideline": 0.9443929564411492,
+   "n_matched": 710,
+   "obs_mean_matched": 111.50422535211267,
+   "cams_mean": 53.00426770462777,
+   "bias": -58.4999576474849,
+   "bias_median": -45.296820955357134,
+   "mae": 59.56051669959758,
+   "rmse": 81.548775075631,
+   "pearson_r": 0.38977082969981947,
+   "spearman_r": 0.4348328922241076,
+   "bias_unmatched": -52.393746383160334,
+   "pearson_r_unmatched": 0.38551217243943525
+  },
+  {
+   "sid": "369962",
+   "name": "Gayathi",
+   "lat": 23.8355,
+   "lon": 52.8103,
+   "type": "Suburban",
+   "cell": [
+    24.0,
+    52.5
+   ],
+   "n": 1144,
+   "obs_mean": 79.14248251748252,
+   "obs_median": 69.0,
+   "frac_above_guideline": 0.868006993006993,
+   "n_matched": 817,
+   "obs_mean_matched": 80.46144430844554,
+   "cams_mean": 60.737390929227125,
+   "bias": -19.7240533792184,
+   "bias_median": -15.526100250000013,
+   "mae": 23.629627940068193,
+   "rmse": 33.269282566040964,
+   "pearson_r": 0.6706561436952926,
+   "spearman_r": 0.7183512839809826,
+   "bias_unmatched": -19.690256822027976,
+   "pearson_r_unmatched": 0.5210171406228018
+  },
+  {
+   "sid": "369963",
+   "name": "Al Maqtaa",
+   "lat": 24.4035,
+   "lon": 54.516,
+   "type": "Urban",
+   "cell": [
+    24.75,
+    54.75
+   ],
+   "n": 1083,
+   "obs_mean": 108.92059095106187,
+   "obs_median": 90.0,
+   "frac_above_guideline": 0.9852262234533703,
+   "n_matched": 736,
+   "obs_mean_matched": 117.27445652173913,
+   "cams_mean": 53.231749517068614,
+   "bias": -64.04270700467052,
+   "bias_median": -45.75661475,
+   "mae": 64.59815018028193,
+   "rmse": 115.10105196245269,
+   "pearson_r": 0.40581295169582415,
+   "spearman_r": 0.499780438549524,
+   "bias_unmatched": -58.92190831507849,
+   "pearson_r_unmatched": 0.33280562660875407
+  },
+  {
+   "sid": "369965",
+   "name": "Ruwais",
+   "lat": 24.0908,
+   "lon": 52.7548,
+   "type": "Industrial",
+   "cell": [
+    24.0,
+    52.5
+   ],
+   "n": 1134,
+   "obs_mean": 62.6931216931217,
+   "obs_median": 60.0,
+   "frac_above_guideline": 0.7865961199294532,
+   "n_matched": 805,
+   "obs_mean_matched": 64.52422360248447,
+   "cams_mean": 60.55735990563442,
+   "bias": -3.966863696850051,
+   "bias_median": -8.08234500000001,
+   "mae": 19.66656183626886,
+   "rmse": 24.78398681505834,
+   "pearson_r": 0.4553669424289841,
+   "spearman_r": 0.3488587917006588,
+   "bias_unmatched": -3.394626556790124,
+   "pearson_r_unmatched": 0.36423384568671946
+  },
+  {
+   "sid": "369966",
+   "name": "Baniyas School",
+   "lat": 24.3213,
+   "lon": 54.6359,
+   "type": "Suburban",
+   "cell": [
+    24.0,
+    54.75
+   ],
+   "n": 1108,
+   "obs_mean": 90.17689530685921,
+   "obs_median": 83.0,
+   "frac_above_guideline": 0.9611913357400722,
+   "n_matched": 756,
+   "obs_mean_matched": 95.10317460317461,
+   "cams_mean": 56.46870516341174,
+   "bias": -38.63446943976285,
+   "bias_median": -37.03685333928571,
+   "mae": 38.96354981447941,
+   "rmse": 44.16111299201013,
+   "pearson_r": 0.7488704909291147,
+   "spearman_r": 0.6811292520133702,
+   "bias_unmatched": -35.582516588444946,
+   "pearson_r_unmatched": 0.5026203000113868
+  },
+  {
+   "sid": "369967",
+   "name": "Habshan S.",
+   "lat": 23.7504,
+   "lon": 53.7452,
+   "type": "Industrial",
+   "cell": [
+    24.0,
+    54.0
+   ],
+   "n": 1076,
+   "obs_mean": 64.83736059479554,
+   "obs_median": 58.0,
+   "frac_above_guideline": 0.6356877323420075,
+   "n_matched": 711,
+   "obs_mean_matched": 64.65963431786217,
+   "cams_mean": 51.666152110307415,
+   "bias": -12.99348220755475,
+   "bias_median": -12.820429,
+   "mae": 18.68773600427969,
+   "rmse": 24.858163409717825,
+   "pearson_r": 0.6416791313493062,
+   "spearman_r": 0.6916234957319335,
+   "bias_unmatched": -14.095928788847583,
+   "pearson_r_unmatched": 0.3970392361960664
+  },
+  {
+   "sid": "369968",
+   "name": "Al Ain Islamic",
+   "lat": 24.219,
+   "lon": 55.7348,
+   "type": "Suburban",
+   "cell": [
+    24.0,
+    55.5
+   ],
+   "n": 1108,
+   "obs_mean": 79.4332129963899,
+   "obs_median": 66.0,
+   "frac_above_guideline": 0.878158844765343,
+   "n_matched": 764,
+   "obs_mean_matched": 83.85471204188482,
+   "cams_mean": 85.14836603038519,
+   "bias": 1.2936539885003744,
+   "bias_median": 11.456725187499998,
+   "mae": 23.285796943764023,
+   "rmse": 48.71403340556477,
+   "pearson_r": 0.4109795316175528,
+   "spearman_r": 0.7150100200230711,
+   "bias_unmatched": 2.4578594151624533,
+   "pearson_r_unmatched": 0.30195630926223743
+  },
+  {
+   "sid": "369969",
+   "name": "Zakher",
+   "lat": 24.1634,
+   "lon": 55.7021,
+   "type": "Urban",
+   "cell": [
+    24.0,
+    55.5
+   ],
+   "n": 1134,
+   "obs_mean": 71.7442680776014,
+   "obs_median": 67.0,
+   "frac_above_guideline": 0.9268077601410935,
+   "n_matched": 801,
+   "obs_mean_matched": 70.43320848938826,
+   "cams_mean": 84.99255914256732,
+   "bias": 14.559350653179061,
+   "bias_median": 14.197131999999996,
+   "mae": 18.811665090355806,
+   "rmse": 23.417080931232285,
+   "pearson_r": 0.703068030341626,
+   "spearman_r": 0.7052381807703912,
+   "bias_unmatched": 10.697937629629628,
+   "pearson_r_unmatched": 0.4255849798572378
+  },
+  {
+   "sid": "369971",
+   "name": "Al Qua'a",
+   "lat": 23.5311,
+   "lon": 55.4859,
+   "type": "Rural background",
+   "cell": [
+    23.25,
+    55.5
+   ],
+   "n": 1094,
+   "obs_mean": 92.61608775137111,
+   "obs_median": 73.0,
+   "frac_above_guideline": 0.9296160877513712,
+   "n_matched": 748,
+   "obs_mean_matched": 91.92914438502673,
+   "cams_mean": 87.0871660408709,
+   "bias": -4.841978344155844,
+   "bias_median": -1.0714223749999974,
+   "mae": 20.689815754965622,
+   "rmse": 57.08471431953414,
+   "pearson_r": 0.47756780189900355,
+   "spearman_r": 0.749603268752085,
+   "bias_unmatched": -8.22063369835466,
+   "pearson_r_unmatched": 0.18902494777430423
+  },
+  {
+   "sid": "369972",
+   "name": "Al Tawia",
+   "lat": 24.2591,
+   "lon": 55.7048,
+   "type": "Suburban",
+   "cell": [
+    24.0,
+    55.5
+   ],
+   "n": 1096,
+   "obs_mean": 82.59397810218978,
+   "obs_median": 71.0,
+   "frac_above_guideline": 0.958941605839416,
+   "n_matched": 736,
+   "obs_mean_matched": 85.36684782608695,
+   "cams_mean": 84.72352468289014,
+   "bias": -0.6433231431968164,
+   "bias_median": 2.484258999999998,
+   "mae": 16.322193410229037,
+   "rmse": 22.023190207009357,
+   "pearson_r": 0.7871485161885823,
+   "spearman_r": 0.7459837687179959,
+   "bias_unmatched": -0.778423122262774,
+   "pearson_r_unmatched": 0.5009411676800347
+  },
+  {
+   "sid": "369973",
+   "name": "E11 Road",
+   "lat": 24.0351,
+   "lon": 53.8853,
+   "type": "Traffic",
+   "cell": [
+    24.0,
+    54.0
+   ],
+   "n": 1067,
+   "obs_mean": 125.04498594189316,
+   "obs_median": 60.0,
+   "frac_above_guideline": 0.7216494845360825,
+   "n_matched": 683,
+   "obs_mean_matched": 121.59443631039531,
+   "cams_mean": 52.22175781812645,
+   "bias": -69.37267849226888,
+   "bias_median": -20.72102287499999,
+   "mae": 73.23529606364515,
+   "rmse": 182.79393704784061,
+   "pearson_r": 0.5314437392055851,
+   "spearman_r": 0.6638106825053003,
+   "bias_unmatched": -73.93326057619494,
+   "pearson_r_unmatched": 0.3904412062879232
+  },
+  {
+   "sid": "369974",
+   "name": "Al Mafraq",
+   "lat": 24.287,
+   "lon": 54.5861,
+   "type": "Industrial",
+   "cell": [
+    24.0,
+    54.75
+   ],
+   "n": 1084,
+   "obs_mean": 176.0258302583026,
+   "obs_median": 155.5,
+   "frac_above_guideline": 0.9898523985239852,
+   "n_matched": 737,
+   "obs_mean_matched": 192.07327001356853,
+   "cams_mean": 56.77799856044049,
+   "bias": -135.29527145312804,
+   "bias_median": -114.9641745,
+   "mae": 135.29527145312804,
+   "rmse": 158.59259714494635,
+   "pearson_r": 0.6066595686809721,
+   "spearman_r": 0.6598647108887369,
+   "bias_unmatched": -121.19142137914852,
+   "pearson_r_unmatched": 0.37032734758453595
+  }
+ ],
+ "network": {
+  "n_obs": 20818,
+  "n_matched": 14238,
+  "obs_mean_min": 56.09878844361603,
+  "obs_mean_max": 176.0258302583026,
+  "n_station_means_above_guideline": 19,
+  "frac_above_min": 0.6272134203168686,
+  "frac_above_max": 0.9898523985239852,
+  "cams_mean_min": 45.87581506243271,
+  "cams_mean_max": 110.50927745803921,
+  "bias_min": -135.29527145312804,
+  "bias_max": 38.12566237351384,
+  "bias_station_mean": -29.4622220001658,
+  "bias_station_median": -12.99348220755475,
+  "mae_median": 25.449052788731617,
+  "rmse_median": 47.107026392632044,
+  "pearson_r_median": 0.5314437392055851,
+  "pearson_r_min": 0.11346954287326841,
+  "pearson_r_max": 0.7871485161885823,
+  "spearman_r_median": 0.6598647108887369,
+  "pearson_r_unmatched_median": 0.3784577660501261,
+  "obs_between_station_sd": 31.806481011135695,
+  "cams_between_station_sd": 18.209309089997998,
+  "spearman_station_means": -0.28771929824561404,
+  "spearman_station_means_p": 0.23229760395710117,
+  "bias_vs_unmatched_spearman": 0.9929824561403509,
+  "bias_vs_unmatched_max_abs_diff": 14.103850073979515
+ },
+ "coverage": {
+  "2022-10": 175,
+  "2022-11": 1526,
+  "2022-12": 1945,
+  "2023-01": 737,
+  "2023-04": 76,
+  "2023-06": 129,
+  "2023-08": 1013,
+  "2023-09": 4033,
+  "2023-10": 2478,
+  "2023-11": 4250,
+  "2023-12": 4456
+ },
+ "coverage_share_sep_dec_2023": 0.7309539821308483,
+ "nn_distance_median_km": 6.546974277491421,
+ "moran": {
+  "<= 15 km": {
+   "I": 0.8685181369259831,
+   "n_pairs": 17,
+   "p_perm": 0.0008
+  },
+  "<= 25 km": {
+   "I": 0.8127109572051113,
+   "n_pairs": 24,
+   "p_perm": 0.0003
+  },
+  "<= 50 km": {
+   "I": 0.8150622750860776,
+   "n_pairs": 34,
+   "p_perm": 0.0002
+  },
+  "<= 100 km": {
+   "I": 0.47254400526558715,
+   "n_pairs": 57,
+   "p_perm": 0.0002
+  }
+ },
+ "regions": {
+  "metro_min": -135.29527145312804,
+  "metro_max": -38.63446943976285,
+  "alain_min": -2.9173427567432566,
+  "alain_max": 14.559350653179061,
+  "min_distance_km": 108.55462543235026
+ },
+ "cells": [
+  {
+   "cell_lat": 24.0,
+   "cell_lon": 55.5,
+   "n": 4,
+   "stations": [
+    "Al Ain St.",
+    "Al Ain Islamic",
+    "Zakher",
+    "Al Tawia"
+   ],
+   "obs_mean": 79.26636666670446,
+   "cams_mean": 84.64307048106855,
+   "offset": 3.0730846854348357,
+   "obs_range": 11.549739413035297,
+   "obs_sd": 5.288499892978283,
+   "bias_closest": 0.6433231431968164
+  },
+  {
+   "cell_lat": 24.0,
+   "cell_lon": 54.0,
+   "n": 3,
+   "stations": [
+    "Bida Zayed",
+    "Habshan S.",
+    "E11 Road"
+   ],
+   "obs_mean": 81.99371166010157,
+   "cams_mean": 51.91629040680102,
+   "offset": -28.689919949138293,
+   "obs_range": 68.94619749827713,
+   "obs_sd": 37.53864440513109,
+   "bias_closest": 3.7035991475912473
+  },
+  {
+   "cell_lat": 24.0,
+   "cell_lon": 54.75,
+   "n": 3,
+   "stations": [
+    "Mussafah",
+    "Baniyas School",
+    "Al Mafraq"
+   ],
+   "obs_mean": 131.46109370690579,
+   "cams_mean": 56.93506420110751,
+   "offset": -82.34672061281807,
+   "obs_range": 85.84893495144338,
+   "obs_sd": 43.01838393054925,
+   "bias_closest": 38.63446943976285
+  },
+  {
+   "cell_lat": 24.0,
+   "cell_lon": 52.5,
+   "n": 2,
+   "stations": [
+    "Gayathi",
+    "Ruwais"
+   ],
+   "obs_mean": 70.91780210530212,
+   "cams_mean": 60.64737541743077,
+   "offset": -11.84545853803423,
+   "obs_range": 16.449360824360824,
+   "obs_sd": 11.631454585089875,
+   "bias_closest": 3.966863696850051
+  },
+  {
+   "cell_lat": 24.75,
+   "cell_lon": 54.0,
+   "n": 2,
+   "stations": [
+    "Khadeeja School",
+    "Hamdan St."
+   ],
+   "obs_mean": 99.52189016217032,
+   "cams_mean": 46.18377614522571,
+   "offset": -64.9283362353219,
+   "obs_range": 6.855066170779139,
+   "obs_sd": 4.847263774840429,
+   "bias_closest": 59.97748238036675
+  },
+  {
+   "cell_lat": 24.75,
+   "cell_lon": 54.75,
+   "n": 2,
+   "stations": [
+    "Khalifa City",
+    "Al Maqtaa"
+   ],
+   "obs_mean": 105.80181540138821,
+   "cams_mean": 53.11800861084819,
+   "offset": -61.2713323260777,
+   "obs_range": 6.237551099347314,
+   "obs_sd": 4.41061468034609,
+   "bias_closest": 58.4999576474849
+  },
+  {
+   "cell_lat": 23.25,
+   "cell_lon": 53.25,
+   "n": 1,
+   "stations": [
+    "Liwa"
+   ],
+   "obs_mean": 71.36842105263158,
+   "cams_mean": 77.66578334897164,
+   "offset": 3.84193511048926,
+   "obs_range": 0.0,
+   "obs_sd": null,
+   "bias_closest": 3.841935110489263
+  },
+  {
+   "cell_lat": 23.25,
+   "cell_lon": 55.5,
+   "n": 1,
+   "stations": [
+    "Al Qua'a"
+   ],
+   "obs_mean": 92.61608775137111,
+   "cams_mean": 87.0871660408709,
+   "offset": -4.841978344155834,
+   "obs_range": 0.0,
+   "obs_sd": null,
+   "bias_closest": 4.841978344155844
+  },
+  {
+   "cell_lat": 24.75,
+   "cell_lon": 55.5,
+   "n": 1,
+   "stations": [
+    "Sweihan"
+   ],
+   "obs_mean": 68.43676069153776,
+   "cams_mean": 110.50927745803921,
+   "offset": 38.12566237351385,
+   "obs_range": 0.0,
+   "obs_sd": null,
+   "bias_closest": 38.12566237351384
+  }
+ ],
+ "subgrid": {
+  "n_cells_occupied": 9,
+  "n_cells_multi": 6,
+  "n_stations_sharing": 16,
+  "within_cell_sd_median": 8.459977239034078,
+  "within_cell_sd_max": 43.01838393054925,
+  "within_cell_range_max": 85.84893495144338,
+  "share_of_station_mean_variance_within_cells": 0.4593111584600036,
+  "share_of_station_median_variance_within_cells": 0.27305958787440265,
+  "within_cell_median_range": {
+   "24.00,52.50": 9.0,
+   "24.00,54.00": 11.0,
+   "24.00,54.75": 72.5,
+   "24.00,55.50": 5.0,
+   "24.75,54.00": 22.0,
+   "24.75,54.75": 6.0
+  }
+ },
+ "coverage_matched_share_sep_dec_2023": 0.9398089619328558,
+ "coverage_matched": {
+  "2023-08": 857,
+  "2023-09": 3543,
+  "2023-10": 1451,
+  "2023-11": 4093,
+  "2023-12": 4294
+ },
+ "typology": {
+  "by_type": {
+   "Industrial": {
+    "n": 4,
+    "median": -43.05195157655905,
+    "min": -135.29527145312804,
+    "max": -3.966863696850051
+   },
+   "Rural background": {
+    "n": 2,
+    "median": -0.5000216168332907,
+    "min": -4.841978344155844,
+    "max": 3.841935110489263
+   },
+   "Suburban": {
+    "n": 7,
+    "median": -3.7035991475912473,
+    "min": -58.4999576474849,
+    "max": 38.12566237351384
+   },
+   "Traffic": {
+    "n": 3,
+    "median": -59.97748238036675,
+    "min": -69.37267849226888,
+    "max": -2.9173427567432566
+   },
+   "Urban": {
+    "n": 3,
+    "median": -64.04270700467052,
+    "min": -69.87919009027704,
+    "max": 14.559350653179061
+   }
+  },
+  "kruskal_H": 4.637969924812026,
+  "kruskal_p": 0.32649979424849734,
+  "source_n": 10,
+  "source_median": -62.010094692518635,
+  "background_n": 9,
+  "background_median": -3.7035991475912473,
+  "mannwhitney_p_one_sided": 0.02272764742452923,
+  "permutation_p_one_sided": 0.01850490747546262,
+  "cohens_d": -1.0091086247715821,
+  "note": "two-group contrast formed after the five-type omnibus test; report both"
+ },
+ "pairs": [
+  {
+   "a": "Bida Zayed",
+   "b": "Khadeeja School",
+   "dist_km": 114.3419362443055,
+   "same_cell": false,
+   "n_common": 1061,
+   "spearman_obs": 0.2844835563168918,
+   "median_abs_diff": 45.0,
+   "frac_opposite_sides": 0.3986804901036758,
+   "n_days": 103,
+   "n_days_opposite": 39
+  },
+  {
+   "a": "Bida Zayed",
+   "b": "Liwa",
+   "dist_km": 62.67348350736347,
+   "same_cell": false,
+   "n_common": 1038,
+   "spearman_obs": 0.5612465590779759,
+   "median_abs_diff": 20.0,
+   "frac_opposite_sides": 0.27360308285163776,
+   "n_days": 105,
+   "n_days_opposite": 29
+  },
+  {
+   "a": "Bida Zayed",
+   "b": "Hamdan St.",
+   "dist_km": 114.64857409049591,
+   "same_cell": false,
+   "n_common": 1025,
+   "spearman_obs": 0.47637406688452977,
+   "median_abs_diff": 28.0,
+   "frac_opposite_sides": 0.3492682926829268,
+   "n_days": 103,
+   "n_days_opposite": 41
+  },
+  {
+   "a": "Bida Zayed",
+   "b": "Mussafah",
+   "dist_km": 112.06244286416744,
+   "same_cell": false,
+   "n_common": 1031,
+   "spearman_obs": 0.3196271804023878,
+   "median_abs_diff": 63.0,
+   "frac_opposite_sides": 0.36566440349175555,
+   "n_days": 103,
+   "n_days_opposite": 39
+  },
+  {
+   "a": "Bida Zayed",
+   "b": "Al Ain St.",
+   "dist_km": 219.0486120511253,
+   "same_cell": false,
+   "n_common": 1017,
+   "spearman_obs": 0.454500337868366,
+   "median_abs_diff": 23.0,
+   "frac_opposite_sides": 0.352015732546706,
+   "n_days": 103,
+   "n_days_opposite": 36
+  },
+  {
+   "a": "Bida Zayed",
+   "b": "Sweihan",
+   "dist_km": 189.45081229921152,
+   "same_cell": false,
+   "n_common": 1034,
+   "spearman_obs": 0.4892523675325758,
+   "median_abs_diff": 15.0,
+   "frac_opposite_sides": 0.34332688588007737,
+   "n_days": 102,
+   "n_days_opposite": 35
+  },
+  {
+   "a": "Bida Zayed",
+   "b": "Khalifa City",
+   "dist_km": 123.1671681238072,
+   "same_cell": false,
+   "n_common": 1025,
+   "spearman_obs": 0.2655831525281225,
+   "median_abs_diff": 39.0,
+   "frac_opposite_sides": 0.4009756097560976,
+   "n_days": 103,
+   "n_days_opposite": 39
+  },
+  {
+   "a": "Bida Zayed",
+   "b": "Gayathi",
+   "dist_km": 93.1987421070211,
+   "same_cell": false,
+   "n_common": 1067,
+   "spearman_obs": 0.6586922249402776,
+   "median_abs_diff": 21.0,
+   "frac_opposite_sides": 0.30740393626991563,
+   "n_days": 105,
+   "n_days_opposite": 27
+  },
+  {
+   "a": "Bida Zayed",
+   "b": "Al Maqtaa",
+   "dist_km": 117.40077621220729,
+   "same_cell": false,
+   "n_common": 1026,
+   "spearman_obs": 0.10848063236299141,
+   "median_abs_diff": 38.0,
+   "frac_opposite_sides": 0.3840155945419103,
+   "n_days": 104,
+   "n_days_opposite": 40
+  },
+  {
+   "a": "Bida Zayed",
+   "b": "Ruwais",
+   "dist_km": 108.1206790720036,
+   "same_cell": false,
+   "n_common": 1058,
+   "spearman_obs": 0.2694100982427102,
+   "median_abs_diff": 19.0,
+   "frac_opposite_sides": 0.42344045368620037,
+   "n_days": 103,
+   "n_days_opposite": 44
+  },
+  {
+   "a": "Bida Zayed",
+   "b": "Baniyas School",
+   "dist_km": 120.42504667199965,
+   "same_cell": false,
+   "n_common": 1047,
+   "spearman_obs": 0.4928871166836929,
+   "median_abs_diff": 35.0,
+   "frac_opposite_sides": 0.3744030563514804,
+   "n_days": 105,
+   "n_days_opposite": 38
+  },
+  {
+   "a": "Bida Zayed",
+   "b": "Habshan S.",
+   "dist_km": 11.704690863027365,
+   "same_cell": true,
+   "n_common": 1022,
+   "spearman_obs": 0.5820854003783185,
+   "median_abs_diff": 17.0,
+   "frac_opposite_sides": 0.3532289628180039,
+   "n_days": 103,
+   "n_days_opposite": 32
+  },
+  {
+   "a": "Bida Zayed",
+   "b": "Al Ain Islamic",
+   "dist_km": 215.81985693056393,
+   "same_cell": false,
+   "n_common": 1042,
+   "spearman_obs": 0.4668479424591941,
+   "median_abs_diff": 19.0,
+   "frac_opposite_sides": 0.33685220729366605,
+   "n_days": 103,
+   "n_days_opposite": 34
+  },
+  {
+   "a": "Bida Zayed",
+   "b": "Zakher",
+   "dist_km": 210.9362676702841,
+   "same_cell": false,
+   "n_common": 1059,
+   "spearman_obs": 0.49131783263305706,
+   "median_abs_diff": 17.0,
+   "frac_opposite_sides": 0.3314447592067989,
+   "n_days": 105,
+   "n_days_opposite": 35
+  },
+  {
+   "a": "Bida Zayed",
+   "b": "Al Qua'a",
+   "dist_km": 182.0957779546856,
+   "same_cell": false,
+   "n_common": 1034,
+   "spearman_obs": 0.5220611080403758,
+   "median_abs_diff": 23.0,
+   "frac_opposite_sides": 0.3452611218568665,
+   "n_days": 104,
+   "n_days_opposite": 33
+  },
+  {
+   "a": "Bida Zayed",
+   "b": "Al Tawia",
+   "dist_km": 214.23784657472953,
+   "same_cell": false,
+   "n_common": 1035,
+   "spearman_obs": 0.44257615794894684,
+   "median_abs_diff": 20.0,
+   "frac_opposite_sides": 0.35845410628019325,
+   "n_days": 105,
+   "n_days_opposite": 38
+  },
+  {
+   "a": "Bida Zayed",
+   "b": "E11 Road",
+   "dist_km": 46.40591300826408,
+   "same_cell": true,
+   "n_common": 1001,
+   "spearman_obs": 0.5946787985205044,
+   "median_abs_diff": 19.0,
+   "frac_opposite_sides": 0.2997002997002997,
+   "n_days": 98,
+   "n_days_opposite": 27
+  },
+  {
+   "a": "Bida Zayed",
+   "b": "Al Mafraq",
+   "dist_km": 114.10004118865236,
+   "same_cell": false,
+   "n_common": 1032,
+   "spearman_obs": 0.48060206247515525,
+   "median_abs_diff": 103.0,
+   "frac_opposite_sides": 0.3691860465116279,
+   "n_days": 105,
+   "n_days_opposite": 39
+  },
+  {
+   "a": "Khadeeja School",
+   "b": "Liwa",
+   "dist_km": 172.56993775868128,
+   "same_cell": false,
+   "n_common": 1069,
+   "spearman_obs": 0.16816244992026244,
+   "median_abs_diff": 28.0,
+   "frac_opposite_sides": 0.255378858746492,
+   "n_days": 107,
+   "n_days_opposite": 30
+  },
+  {
+   "a": "Khadeeja School",
+   "b": "Hamdan St.",
+   "dist_km": 0.951031604809717,
+   "same_cell": true,
+   "n_common": 1062,
+   "spearman_obs": 0.3322966966213246,
+   "median_abs_diff": 41.0,
+   "frac_opposite_sides": 0.14595103578154425,
+   "n_days": 105,
+   "n_days_opposite": 11
+  },
+  {
+   "a": "Khadeeja School",
+   "b": "Mussafah",
+   "dist_km": 20.197337178127754,
+   "same_cell": false,
+   "n_common": 1062,
+   "spearman_obs": 0.16303809539856715,
+   "median_abs_diff": 39.0,
+   "frac_opposite_sides": 0.12052730696798493,
+   "n_days": 105,
+   "n_days_opposite": 2
+  },
+  {
+   "a": "Khadeeja School",
+   "b": "Al Ain St.",
+   "dist_km": 144.32279938018658,
+   "same_cell": false,
+   "n_common": 1049,
+   "spearman_obs": 0.2773166539703724,
+   "median_abs_diff": 32.0,
+   "frac_opposite_sides": 0.14204003813155386,
+   "n_days": 105,
+   "n_days_opposite": 5
+  },
+  {
+   "a": "Khadeeja School",
+   "b": "Sweihan",
+   "dist_km": 98.5568430737503,
+   "same_cell": false,
+   "n_common": 1080,
+   "spearman_obs": 0.4397602862463576,
+   "median_abs_diff": 44.0,
+   "frac_opposite_sides": 0.22870370370370371,
+   "n_days": 104,
+   "n_days_opposite": 25
+  },
+  {
+   "a": "Khadeeja School",
+   "b": "Khalifa City",
+   "dist_km": 22.250483914630195,
+   "same_cell": false,
+   "n_common": 1056,
+   "spearman_obs": 0.6536852096256719,
+   "median_abs_diff": 31.0,
+   "frac_opposite_sides": 0.10132575757575757,
+   "n_days": 105,
+   "n_days_opposite": 3
+  },
+  {
+   "a": "Khadeeja School",
+   "b": "Gayathi",
+   "dist_km": 173.71474596591335,
+   "same_cell": false,
+   "n_common": 1121,
+   "spearman_obs": 0.44732388918777316,
+   "median_abs_diff": 32.0,
+   "frac_opposite_sides": 0.1793041926851026,
+   "n_days": 107,
+   "n_days_opposite": 14
+  },
+  {
+   "a": "Khadeeja School",
+   "b": "Al Maqtaa",
+   "dist_km": 17.237502357878665,
+   "same_cell": false,
+   "n_common": 1060,
+   "spearman_obs": 0.3889036961063107,
+   "median_abs_diff": 28.0,
+   "frac_opposite_sides": 0.13867924528301886,
+   "n_days": 106,
+   "n_days_opposite": 2
+  },
+  {
+   "a": "Khadeeja School",
+   "b": "Ruwais",
+   "dist_km": 169.29576027272762,
+   "same_cell": false,
+   "n_common": 1111,
+   "spearman_obs": 0.014479051815810553,
+   "median_abs_diff": 34.0,
+   "frac_opposite_sides": 0.2565256525652565,
+   "n_days": 105,
+   "n_days_opposite": 18
+  },
+  {
+   "a": "Khadeeja School",
+   "b": "Baniyas School",
+   "dist_km": 32.38530032357107,
+   "same_cell": false,
+   "n_common": 1084,
+   "spearman_obs": 0.46683693774917984,
+   "median_abs_diff": 36.0,
+   "frac_opposite_sides": 0.13745387453874539,
+   "n_days": 107,
+   "n_days_opposite": 3
+  },
+  {
+   "a": "Khadeeja School",
+   "b": "Habshan S.",
+   "dist_km": 103.07912078511443,
+   "same_cell": false,
+   "n_common": 1053,
+   "spearman_obs": 0.6445019044154487,
+   "median_abs_diff": 48.0,
+   "frac_opposite_sides": 0.2972459639126306,
+   "n_days": 105,
+   "n_days_opposite": 32
+  },
+  {
+   "a": "Khadeeja School",
+   "b": "Al Ain Islamic",
+   "dist_km": 141.40363763050084,
+   "same_cell": false,
+   "n_common": 1084,
+   "spearman_obs": 0.28074721148097026,
+   "median_abs_diff": 35.0,
+   "frac_opposite_sides": 0.21033210332103322,
+   "n_days": 104,
+   "n_days_opposite": 14
+  },
+  {
+   "a": "Khadeeja School",
+   "b": "Zakher",
+   "dist_km": 139.63183686486943,
+   "same_cell": false,
+   "n_common": 1111,
+   "spearman_obs": 0.2511602721874423,
+   "median_abs_diff": 34.0,
+   "frac_opposite_sides": 0.16471647164716471,
+   "n_days": 107,
+   "n_days_opposite": 9
+  },
+  {
+   "a": "Khadeeja School",
+   "b": "Al Qua'a",
+   "dist_km": 155.06717682834017,
+   "same_cell": false,
+   "n_common": 1071,
+   "spearman_obs": 0.3619939847490255,
+   "median_abs_diff": 35.0,
+   "frac_opposite_sides": 0.14098972922502334,
+   "n_days": 106,
+   "n_days_opposite": 8
+  },
+  {
+   "a": "Khadeeja School",
+   "b": "Al Tawia",
+   "dist_km": 137.53808380520292,
+   "same_cell": false,
+   "n_common": 1073,
+   "spearman_obs": 0.22718022225533618,
+   "median_abs_diff": 35.0,
+   "frac_opposite_sides": 0.16402609506057783,
+   "n_days": 107,
+   "n_days_opposite": 4
+  },
+  {
+   "a": "Khadeeja School",
+   "b": "E11 Road",
+   "dist_km": 69.81243105142832,
+   "same_cell": false,
+   "n_common": 1048,
+   "spearman_obs": 0.5246534787933996,
+   "median_abs_diff": 36.0,
+   "frac_opposite_sides": 0.1898854961832061,
+   "n_days": 100,
+   "n_days_opposite": 19
+  },
+  {
+   "a": "Khadeeja School",
+   "b": "Al Mafraq",
+   "dist_km": 30.865069571750915,
+   "same_cell": false,
+   "n_common": 1062,
+   "spearman_obs": 0.6664005201621829,
+   "median_abs_diff": 53.0,
+   "frac_opposite_sides": 0.128060263653484,
+   "n_days": 107,
+   "n_days_opposite": 2
+  },
+  {
+   "a": "Liwa",
+   "b": "Hamdan St.",
+   "dist_km": 173.01921716793782,
+   "same_cell": false,
+   "n_common": 1048,
+   "spearman_obs": 0.5043026900140165,
+   "median_abs_diff": 23.0,
+   "frac_opposite_sides": 0.24618320610687022,
+   "n_days": 107,
+   "n_days_opposite": 28
+  },
+  {
+   "a": "Liwa",
+   "b": "Mussafah",
+   "dist_km": 166.40085848200272,
+   "same_cell": false,
+   "n_common": 1055,
+   "spearman_obs": 0.19671951611787172,
+   "median_abs_diff": 45.0,
+   "frac_opposite_sides": 0.24454976303317535,
+   "n_days": 107,
+   "n_days_opposite": 27
+  },
+  {
+   "a": "Liwa",
+   "b": "Al Ain St.",
+   "dist_km": 253.29132225266918,
+   "same_cell": false,
+   "n_common": 1045,
+   "spearman_obs": 0.5576379659868541,
+   "median_abs_diff": 22.0,
+   "frac_opposite_sides": 0.23349282296650717,
+   "n_days": 107,
+   "n_days_opposite": 25
+  },
+  {
+   "a": "Liwa",
+   "b": "Sweihan",
+   "dist_km": 233.3421447164275,
+   "same_cell": false,
+   "n_common": 1040,
+   "spearman_obs": 0.4526790907168892,
+   "median_abs_diff": 18.0,
+   "frac_opposite_sides": 0.27115384615384613,
+   "n_days": 106,
+   "n_days_opposite": 34
+  },
+  {
+   "a": "Liwa",
+   "b": "Khalifa City",
+   "dist_km": 177.3689438691334,
+   "same_cell": false,
+   "n_common": 1047,
+   "spearman_obs": 0.33542296578662883,
+   "median_abs_diff": 32.0,
+   "frac_opposite_sides": 0.24737344794651384,
+   "n_days": 107,
+   "n_days_opposite": 29
+  },
+  {
+   "a": "Liwa",
+   "b": "Gayathi",
+   "dist_km": 115.58784286730352,
+   "same_cell": false,
+   "n_common": 1076,
+   "spearman_obs": 0.5731057922077581,
+   "median_abs_diff": 20.0,
+   "frac_opposite_sides": 0.25185873605947956,
+   "n_days": 109,
+   "n_days_opposite": 32
+  },
+  {
+   "a": "Liwa",
+   "b": "Al Maqtaa",
+   "dist_km": 172.38669314587963,
+   "same_cell": false,
+   "n_common": 1055,
+   "spearman_obs": -0.04985715980120629,
+   "median_abs_diff": 34.0,
+   "frac_opposite_sides": 0.2616113744075829,
+   "n_days": 108,
+   "n_days_opposite": 30
+  },
+  {
+   "a": "Liwa",
+   "b": "Ruwais",
+   "dist_km": 140.61851223591972,
+   "same_cell": false,
+   "n_common": 1066,
+   "spearman_obs": 0.23544064357999328,
+   "median_abs_diff": 23.0,
+   "frac_opposite_sides": 0.350844277673546,
+   "n_days": 107,
+   "n_days_opposite": 40
+  },
+  {
+   "a": "Liwa",
+   "b": "Baniyas School",
+   "dist_km": 171.923241551124,
+   "same_cell": false,
+   "n_common": 1066,
+   "spearman_obs": 0.45985795859588124,
+   "median_abs_diff": 26.0,
+   "frac_opposite_sides": 0.27392120075046905,
+   "n_days": 109,
+   "n_days_opposite": 27
+  },
+  {
+   "a": "Liwa",
+   "b": "Habshan S.",
+   "dist_km": 74.16400953850949,
+   "same_cell": false,
+   "n_common": 1047,
+   "spearman_obs": 0.3100274486873318,
+   "median_abs_diff": 20.0,
+   "frac_opposite_sides": 0.4183381088825215,
+   "n_days": 107,
+   "n_days_opposite": 52
+  },
+  {
+   "a": "Liwa",
+   "b": "Al Ain Islamic",
+   "dist_km": 250.18161234335128,
+   "same_cell": false,
+   "n_common": 1052,
+   "spearman_obs": 0.4760617850948265,
+   "median_abs_diff": 20.0,
+   "frac_opposite_sides": 0.21863117870722434,
+   "n_days": 106,
+   "n_days_opposite": 24
+  },
+  {
+   "a": "Liwa",
+   "b": "Zakher",
+   "dist_km": 244.27743200587673,
+   "same_cell": false,
+   "n_common": 1076,
+   "spearman_obs": 0.4524933498399311,
+   "median_abs_diff": 20.0,
+   "frac_opposite_sides": 0.21933085501858737,
+   "n_days": 109,
+   "n_days_opposite": 24
+  },
+  {
+   "a": "Liwa",
+   "b": "Al Qua'a",
+   "dist_km": 197.93771325927352,
+   "same_cell": false,
+   "n_common": 1058,
+   "spearman_obs": 0.5282698440205013,
+   "median_abs_diff": 24.0,
+   "frac_opposite_sides": 0.20321361058601134,
+   "n_days": 108,
+   "n_days_opposite": 21
+  },
+  {
+   "a": "Liwa",
+   "b": "Al Tawia",
+   "dist_km": 249.79019649515763,
+   "same_cell": false,
+   "n_common": 1061,
+   "spearman_obs": 0.47482278632282277,
+   "median_abs_diff": 24.0,
+   "frac_opposite_sides": 0.25164938737040526,
+   "n_days": 109,
+   "n_days_opposite": 27
+  },
+  {
+   "a": "Liwa",
+   "b": "E11 Road",
+   "dist_km": 108.25511894694426,
+   "same_cell": false,
+   "n_common": 1013,
+   "spearman_obs": 0.5450511564754322,
+   "median_abs_diff": 22.0,
+   "frac_opposite_sides": 0.20533070088845015,
+   "n_days": 102,
+   "n_days_opposite": 19
+  },
+  {
+   "a": "Liwa",
+   "b": "Al Mafraq",
+   "dist_km": 165.8257640453454,
+   "same_cell": false,
+   "n_common": 1058,
+   "spearman_obs": 0.3593151985799451,
+   "median_abs_diff": 91.0,
+   "frac_opposite_sides": 0.2514177693761815,
+   "n_days": 109,
+   "n_days_opposite": 28
+  },
+  {
+   "a": "Hamdan St.",
+   "b": "Mussafah",
+   "dist_km": 21.14151105800014,
+   "same_cell": false,
+   "n_common": 1043,
+   "spearman_obs": 0.2721978709311192,
+   "median_abs_diff": 40.0,
+   "frac_opposite_sides": 0.12847555129434324,
+   "n_days": 105,
+   "n_days_opposite": 10
+  },
+  {
+   "a": "Hamdan St.",
+   "b": "Al Ain St.",
+   "dist_km": 145.01026479501382,
+   "same_cell": false,
+   "n_common": 1041,
+   "spearman_obs": 0.6349269555366054,
+   "median_abs_diff": 18.0,
+   "frac_opposite_sides": 0.13256484149855907,
+   "n_days": 106,
+   "n_days_opposite": 9
+  },
+  {
+   "a": "Hamdan St.",
+   "b": "Sweihan",
+   "dist_km": 99.11700782010296,
+   "same_cell": false,
+   "n_common": 1035,
+   "spearman_obs": 0.6815450545156926,
+   "median_abs_diff": 19.0,
+   "frac_opposite_sides": 0.23768115942028986,
+   "n_days": 104,
+   "n_days_opposite": 22
+  },
+  {
+   "a": "Hamdan St.",
+   "b": "Khalifa City",
+   "dist_km": 23.01786198482783,
+   "same_cell": false,
+   "n_common": 1037,
+   "spearman_obs": 0.5188798985159448,
+   "median_abs_diff": 26.0,
+   "frac_opposite_sides": 0.1407907425265188,
+   "n_days": 105,
+   "n_days_opposite": 11
+  },
+  {
+   "a": "Hamdan St.",
+   "b": "Gayathi",
+   "dist_km": 173.53662068041547,
+   "same_cell": false,
+   "n_common": 1076,
+   "spearman_obs": 0.5272168974450606,
+   "median_abs_diff": 23.0,
+   "frac_opposite_sides": 0.2174721189591078,
+   "n_days": 107,
+   "n_days_opposite": 20
+  },
+  {
+   "a": "Hamdan St.",
+   "b": "Al Maqtaa",
+   "dist_km": 18.106673075608835,
+   "same_cell": false,
+   "n_common": 1041,
+   "spearman_obs": 0.1703649785370268,
+   "median_abs_diff": 39.0,
+   "frac_opposite_sides": 0.1575408261287224,
+   "n_days": 106,
+   "n_days_opposite": 12
+  },
+  {
+   "a": "Hamdan St.",
+   "b": "Ruwais",
+   "dist_km": 168.96477049920435,
+   "same_cell": false,
+   "n_common": 1065,
+   "spearman_obs": 0.2569102761933354,
+   "median_abs_diff": 20.0,
+   "frac_opposite_sides": 0.27136150234741785,
+   "n_days": 105,
+   "n_days_opposite": 24
+  },
+  {
+   "a": "Hamdan St.",
+   "b": "Baniyas School",
+   "dist_km": 33.27185831267467,
+   "same_cell": false,
+   "n_common": 1063,
+   "spearman_obs": 0.5965184875083727,
+   "median_abs_diff": 19.0,
+   "frac_opposite_sides": 0.14487300094073377,
+   "n_days": 107,
+   "n_days_opposite": 11
+  },
+  {
+   "a": "Hamdan St.",
+   "b": "Habshan S.",
+   "dist_km": 103.35963950239466,
+   "same_cell": false,
+   "n_common": 1037,
+   "spearman_obs": 0.4027004722352351,
+   "median_abs_diff": 26.0,
+   "frac_opposite_sides": 0.3500482160077146,
+   "n_days": 105,
+   "n_days_opposite": 34
+  },
+  {
+   "a": "Hamdan St.",
+   "b": "Al Ain Islamic",
+   "dist_km": 142.09748033947525,
+   "same_cell": false,
+   "n_common": 1052,
+   "spearman_obs": 0.5662210957462039,
+   "median_abs_diff": 21.0,
+   "frac_opposite_sides": 0.19296577946768062,
+   "n_days": 104,
+   "n_days_opposite": 16
+  },
+  {
+   "a": "Hamdan St.",
+   "b": "Zakher",
+   "dist_km": 140.35622846802002,
+   "same_cell": false,
+   "n_common": 1072,
+   "spearman_obs": 0.5251475712820869,
+   "median_abs_diff": 22.0,
+   "frac_opposite_sides": 0.1296641791044776,
+   "n_days": 107,
+   "n_days_opposite": 8
+  },
+  {
+   "a": "Hamdan St.",
+   "b": "Al Qua'a",
+   "dist_km": 155.99694612544917,
+   "same_cell": false,
+   "n_common": 1052,
+   "spearman_obs": 0.5874233252089962,
+   "median_abs_diff": 20.0,
+   "frac_opposite_sides": 0.13878326996197718,
+   "n_days": 106,
+   "n_days_opposite": 12
+  },
+  {
+   "a": "Hamdan St.",
+   "b": "Al Tawia",
+   "dist_km": 138.21419155755297,
+   "same_cell": false,
+   "n_common": 1057,
+   "spearman_obs": 0.5183932637662614,
+   "median_abs_diff": 20.0,
+   "frac_opposite_sides": 0.16272469252601704,
+   "n_days": 107,
+   "n_days_opposite": 11
+  },
+  {
+   "a": "Hamdan St.",
+   "b": "E11 Road",
+   "dist_km": 69.98709838791403,
+   "same_cell": false,
+   "n_common": 1005,
+   "spearman_obs": 0.6271236937934698,
+   "median_abs_diff": 20.0,
+   "frac_opposite_sides": 0.21194029850746268,
+   "n_days": 100,
+   "n_days_opposite": 17
+  },
+  {
+   "a": "Hamdan St.",
+   "b": "Al Mafraq",
+   "dist_km": 31.801011872078295,
+   "same_cell": false,
+   "n_common": 1047,
+   "spearman_obs": 0.544097252741342,
+   "median_abs_diff": 81.0,
+   "frac_opposite_sides": 0.1518624641833811,
+   "n_days": 107,
+   "n_days_opposite": 10
+  },
+  {
+   "a": "Mussafah",
+   "b": "Al Ain St.",
+   "dist_km": 128.71855373409474,
+   "same_cell": false,
+   "n_common": 1043,
+   "spearman_obs": 0.2691181425674707,
+   "median_abs_diff": 44.0,
+   "frac_opposite_sides": 0.0738255033557047,
+   "n_days": 105,
+   "n_days_opposite": 4
+  },
+  {
+   "a": "Mussafah",
+   "b": "Sweihan",
+   "dist_km": 86.086481256794,
+   "same_cell": false,
+   "n_common": 1037,
+   "spearman_obs": 0.3457740191811636,
+   "median_abs_diff": 50.0,
+   "frac_opposite_sides": 0.2709739633558341,
+   "n_days": 104,
+   "n_days_opposite": 27
+  },
+  {
+   "a": "Mussafah",
+   "b": "Khalifa City",
+   "dist_km": 11.121453084568733,
+   "same_cell": false,
+   "n_common": 1043,
+   "spearman_obs": 0.2656139370983765,
+   "median_abs_diff": 41.0,
+   "frac_opposite_sides": 0.04793863854266539,
+   "n_days": 105,
+   "n_days_opposite": 0
+  },
+  {
+   "a": "Mussafah",
+   "b": "Gayathi",
+   "dist_km": 180.976104587042,
+   "same_cell": false,
+   "n_common": 1074,
+   "spearman_obs": 0.278854424495073,
+   "median_abs_diff": 45.0,
+   "frac_opposite_sides": 0.15735567970204842,
+   "n_days": 107,
+   "n_days_opposite": 14
+  },
+  {
+   "a": "Mussafah",
+   "b": "Al Maqtaa",
+   "dist_km": 6.412315062472394,
+   "same_cell": false,
+   "n_common": 1051,
+   "spearman_obs": 0.4112158862848975,
+   "median_abs_diff": 34.0,
+   "frac_opposite_sides": 0.037107516650808754,
+   "n_days": 106,
+   "n_days_opposite": 2
+  },
+  {
+   "a": "Mussafah",
+   "b": "Ruwais",
+   "dist_km": 179.53626573107886,
+   "same_cell": false,
+   "n_common": 1065,
+   "spearman_obs": 0.25842310875476304,
+   "median_abs_diff": 55.0,
+   "frac_opposite_sides": 0.20657276995305165,
+   "n_days": 105,
+   "n_days_opposite": 20
+  },
+  {
+   "a": "Mussafah",
+   "b": "Baniyas School",
+   "dist_km": 13.786950757378122,
+   "same_cell": true,
+   "n_common": 1062,
+   "spearman_obs": 0.3415998702760539,
+   "median_abs_diff": 33.0,
+   "frac_opposite_sides": 0.05555555555555555,
+   "n_days": 107,
+   "n_days_opposite": 1
+  },
+  {
+   "a": "Mussafah",
+   "b": "Habshan S.",
+   "dist_km": 101.58889599699295,
+   "same_cell": false,
+   "n_common": 1042,
+   "spearman_obs": 0.1679783183569962,
+   "median_abs_diff": 56.0,
+   "frac_opposite_sides": 0.354126679462572,
+   "n_days": 105,
+   "n_days_opposite": 33
+  },
+  {
+   "a": "Mussafah",
+   "b": "Al Ain Islamic",
+   "dist_km": 125.68110197459917,
+   "same_cell": false,
+   "n_common": 1046,
+   "spearman_obs": 0.14060414182917325,
+   "median_abs_diff": 50.0,
+   "frac_opposite_sides": 0.13288718929254303,
+   "n_days": 104,
+   "n_days_opposite": 14
+  },
+  {
+   "a": "Mussafah",
+   "b": "Zakher",
+   "dist_km": 123.28745708278551,
+   "same_cell": false,
+   "n_common": 1070,
+   "spearman_obs": 0.29143082496036504,
+   "median_abs_diff": 48.0,
+   "frac_opposite_sides": 0.0794392523364486,
+   "n_days": 107,
+   "n_days_opposite": 8
+  },
+  {
+   "a": "Mussafah",
+   "b": "Al Qua'a",
+   "dist_km": 134.96284245598744,
+   "same_cell": false,
+   "n_common": 1062,
+   "spearman_obs": 0.16407246192734817,
+   "median_abs_diff": 44.0,
+   "frac_opposite_sides": 0.0800376647834275,
+   "n_days": 107,
+   "n_days_opposite": 6
+  },
+  {
+   "a": "Mussafah",
+   "b": "Al Tawia",
+   "dist_km": 122.20380809321485,
+   "same_cell": false,
+   "n_common": 1060,
+   "spearman_obs": 0.145980550731581,
+   "median_abs_diff": 45.0,
+   "frac_opposite_sides": 0.06886792452830189,
+   "n_days": 107,
+   "n_days_opposite": 3
+  },
+  {
+   "a": "Mussafah",
+   "b": "E11 Road",
+   "dist_km": 71.5994523131213,
+   "same_cell": false,
+   "n_common": 1008,
+   "spearman_obs": 0.2373862994922785,
+   "median_abs_diff": 63.0,
+   "frac_opposite_sides": 0.2569444444444444,
+   "n_days": 100,
+   "n_days_opposite": 16
+  },
+  {
+   "a": "Mussafah",
+   "b": "Al Mafraq",
+   "dist_km": 10.76599468715275,
+   "same_cell": true,
+   "n_common": 1052,
+   "spearman_obs": 0.21949618274322824,
+   "median_abs_diff": 67.0,
+   "frac_opposite_sides": 0.028517110266159697,
+   "n_days": 107,
+   "n_days_opposite": 0
+  },
+  {
+   "a": "Al Ain St.",
+   "b": "Sweihan",
+   "dist_km": 50.52414993619186,
+   "same_cell": false,
+   "n_common": 1026,
+   "spearman_obs": 0.844316051536643,
+   "median_abs_diff": 18.5,
+   "frac_opposite_sides": 0.2378167641325536,
+   "n_days": 104,
+   "n_days_opposite": 25
+  },
+  {
+   "a": "Al Ain St.",
+   "b": "Khalifa City",
+   "dist_km": 122.26351168985943,
+   "same_cell": false,
+   "n_common": 1031,
+   "spearman_obs": 0.4777116113557791,
+   "median_abs_diff": 25.0,
+   "frac_opposite_sides": 0.0979631425800194,
+   "n_days": 105,
+   "n_days_opposite": 5
+  },
+  {
+   "a": "Al Ain St.",
+   "b": "Gayathi",
+   "dist_km": 303.2678982292446,
+   "same_cell": false,
+   "n_common": 1061,
+   "spearman_obs": 0.6659245668828144,
+   "median_abs_diff": 14.0,
+   "frac_opposite_sides": 0.15174363807728558,
+   "n_days": 107,
+   "n_days_opposite": 13
+  },
+  {
+   "a": "Al Ain St.",
+   "b": "Al Maqtaa",
+   "dist_km": 128.176058335665,
+   "same_cell": false,
+   "n_common": 1046,
+   "spearman_obs": 0.21808417955303336,
+   "median_abs_diff": 25.0,
+   "frac_opposite_sides": 0.07552581261950286,
+   "n_days": 106,
+   "n_days_opposite": 6
+  },
+  {
+   "a": "Al Ain St.",
+   "b": "Ruwais",
+   "dist_km": 305.8474546136061,
+   "same_cell": false,
+   "n_common": 1052,
+   "spearman_obs": 0.1243975501397786,
+   "median_abs_diff": 18.0,
+   "frac_opposite_sides": 0.2423954372623574,
+   "n_days": 105,
+   "n_days_opposite": 22
+  },
+  {
+   "a": "Al Ain St.",
+   "b": "Baniyas School",
+   "dist_km": 115.02268899800312,
+   "same_cell": false,
+   "n_common": 1052,
+   "spearman_obs": 0.6624983550803677,
+   "median_abs_diff": 18.0,
+   "frac_opposite_sides": 0.0779467680608365,
+   "n_days": 107,
+   "n_days_opposite": 3
+  },
+  {
+   "a": "Al Ain St.",
+   "b": "Habshan S.",
+   "dist_km": 211.96941643276972,
+   "same_cell": false,
+   "n_common": 1038,
+   "spearman_obs": 0.4609119822133124,
+   "median_abs_diff": 25.0,
+   "frac_opposite_sides": 0.3699421965317919,
+   "n_days": 106,
+   "n_days_opposite": 35
+  },
+  {
+   "a": "Al Ain St.",
+   "b": "Al Ain Islamic",
+   "dist_km": 3.233221691426532,
+   "same_cell": true,
+   "n_common": 1040,
+   "spearman_obs": 0.8088961719431896,
+   "median_abs_diff": 11.0,
+   "frac_opposite_sides": 0.10384615384615385,
+   "n_days": 105,
+   "n_days_opposite": 13
+  },
+  {
+   "a": "Al Ain St.",
+   "b": "Zakher",
+   "dist_km": 9.48088773716445,
+   "same_cell": true,
+   "n_common": 1059,
+   "spearman_obs": 0.9029833839820738,
+   "median_abs_diff": 7.0,
+   "frac_opposite_sides": 0.0453257790368272,
+   "n_days": 107,
+   "n_days_opposite": 5
+  },
+  {
+   "a": "Al Ain St.",
+   "b": "Al Qua'a",
+   "dist_km": 82.32279902309715,
+   "same_cell": false,
+   "n_common": 1049,
+   "spearman_obs": 0.841400275430591,
+   "median_abs_diff": 8.0,
+   "frac_opposite_sides": 0.0657769304099142,
+   "n_days": 106,
+   "n_days_opposite": 6
+  },
+  {
+   "a": "Al Ain St.",
+   "b": "Al Tawia",
+   "dist_km": 7.208452094569158,
+   "same_cell": true,
+   "n_common": 1049,
+   "spearman_obs": 0.8956083752505607,
+   "median_abs_diff": 6.0,
+   "frac_opposite_sides": 0.05433746425166826,
+   "n_days": 107,
+   "n_days_opposite": 3
+  },
+  {
+   "a": "Al Ain St.",
+   "b": "E11 Road",
+   "dist_km": 192.0030584235567,
+   "same_cell": false,
+   "n_common": 1004,
+   "spearman_obs": 0.7183267386578195,
+   "median_abs_diff": 22.0,
+   "frac_opposite_sides": 0.23804780876494025,
+   "n_days": 101,
+   "n_days_opposite": 17
+  },
+  {
+   "a": "Al Ain St.",
+   "b": "Al Mafraq",
+   "dist_km": 119.78896406089895,
+   "same_cell": false,
+   "n_common": 1044,
+   "spearman_obs": 0.5300544971073521,
+   "median_abs_diff": 76.0,
+   "frac_opposite_sides": 0.07183908045977011,
+   "n_days": 107,
+   "n_days_opposite": 4
+  },
+  {
+   "a": "Sweihan",
+   "b": "Khalifa City",
+   "dist_km": 77.58274895670905,
+   "same_cell": false,
+   "n_common": 1033,
+   "spearman_obs": 0.6189636837425861,
+   "median_abs_diff": 32.0,
+   "frac_opposite_sides": 0.2633107454017425,
+   "n_days": 104,
+   "n_days_opposite": 29
+  },
+  {
+   "a": "Sweihan",
+   "b": "Gayathi",
+   "dist_km": 266.35466664729194,
+   "same_cell": false,
+   "n_common": 1093,
+   "spearman_obs": 0.7222878201583415,
+   "median_abs_diff": 15.0,
+   "frac_opposite_sides": 0.2808783165599268,
+   "n_days": 106,
+   "n_days_opposite": 28
+  },
+  {
+   "a": "Sweihan",
+   "b": "Al Maqtaa",
+   "dist_km": 83.9938725742927,
+   "same_cell": false,
+   "n_common": 1037,
+   "spearman_obs": 0.38585294149304566,
+   "median_abs_diff": 31.0,
+   "frac_opposite_sides": 0.29990356798457085,
+   "n_days": 105,
+   "n_days_opposite": 28
+  },
+  {
+   "a": "Sweihan",
+   "b": "Ruwais",
+   "dist_km": 265.6220965653995,
+   "same_cell": false,
+   "n_common": 1083,
+   "spearman_obs": 0.1662674473107761,
+   "median_abs_diff": 19.0,
+   "frac_opposite_sides": 0.38873499538319484,
+   "n_days": 104,
+   "n_days_opposite": 37
+  },
+  {
+   "a": "Sweihan",
+   "b": "Baniyas School",
+   "dist_km": 73.38458133704361,
+   "same_cell": false,
+   "n_common": 1060,
+   "spearman_obs": 0.7380978537923258,
+   "median_abs_diff": 28.0,
+   "frac_opposite_sides": 0.2962264150943396,
+   "n_days": 106,
+   "n_days_opposite": 27
+  },
+  {
+   "a": "Sweihan",
+   "b": "Habshan S.",
+   "dist_km": 180.64361529282857,
+   "same_cell": false,
+   "n_common": 1027,
+   "spearman_obs": 0.6569649566459009,
+   "median_abs_diff": 15.0,
+   "frac_opposite_sides": 0.2872444011684518,
+   "n_days": 104,
+   "n_days_opposite": 30
+  },
+  {
+   "a": "Sweihan",
+   "b": "Al Ain Islamic",
+   "dist_km": 48.31694016936261,
+   "same_cell": false,
+   "n_common": 1058,
+   "spearman_obs": 0.7540425450506759,
+   "median_abs_diff": 12.0,
+   "frac_opposite_sides": 0.2448015122873346,
+   "n_days": 103,
+   "n_days_opposite": 23
+  },
+  {
+   "a": "Sweihan",
+   "b": "Zakher",
+   "dist_km": 49.61320745313719,
+   "same_cell": false,
+   "n_common": 1083,
+   "spearman_obs": 0.8095161132863525,
+   "median_abs_diff": 15.0,
+   "frac_opposite_sides": 0.24469067405355494,
+   "n_days": 106,
+   "n_days_opposite": 24
+  },
+  {
+   "a": "Sweihan",
+   "b": "Al Qua'a",
+   "dist_km": 105.02257953902131,
+   "same_cell": false,
+   "n_common": 1047,
+   "spearman_obs": 0.8222859290424028,
+   "median_abs_diff": 18.0,
+   "frac_opposite_sides": 0.2531041069723018,
+   "n_days": 105,
+   "n_days_opposite": 27
+  },
+  {
+   "a": "Sweihan",
+   "b": "Al Tawia",
+   "dist_km": 43.31740166642521,
+   "same_cell": false,
+   "n_common": 1047,
+   "spearman_obs": 0.7851913565250704,
+   "median_abs_diff": 17.0,
+   "frac_opposite_sides": 0.2722063037249284,
+   "n_days": 106,
+   "n_days_opposite": 27
+  },
+  {
+   "a": "Sweihan",
+   "b": "E11 Road",
+   "dist_km": 155.35532380718837,
+   "same_cell": false,
+   "n_common": 1018,
+   "spearman_obs": 0.7598187815287953,
+   "median_abs_diff": 16.0,
+   "frac_opposite_sides": 0.2455795677799607,
+   "n_days": 99,
+   "n_days_opposite": 22
+  },
+  {
+   "a": "Sweihan",
+   "b": "Al Mafraq",
+   "dist_km": 79.19637750965234,
+   "same_cell": false,
+   "n_common": 1037,
+   "spearman_obs": 0.7003572606559973,
+   "median_abs_diff": 99.0,
+   "frac_opposite_sides": 0.29026036644165865,
+   "n_days": 106,
+   "n_days_opposite": 28
+  },
+  {
+   "a": "Khalifa City",
+   "b": "Gayathi",
+   "dist_km": 190.80155991902134,
+   "same_cell": false,
+   "n_common": 1072,
+   "spearman_obs": 0.5157554671112756,
+   "median_abs_diff": 25.0,
+   "frac_opposite_sides": 0.16977611940298507,
+   "n_days": 107,
+   "n_days_opposite": 15
+  },
+  {
+   "a": "Khalifa City",
+   "b": "Al Maqtaa",
+   "dist_km": 6.546974277491421,
+   "same_cell": true,
+   "n_common": 1044,
+   "spearman_obs": 0.38590746540191134,
+   "median_abs_diff": 24.0,
+   "frac_opposite_sides": 0.06704980842911877,
+   "n_days": 106,
+   "n_days_opposite": 3
+  },
+  {
+   "a": "Khalifa City",
+   "b": "Ruwais",
+   "dist_km": 188.4302543979812,
+   "same_cell": false,
+   "n_common": 1063,
+   "spearman_obs": 0.08609325432769055,
+   "median_abs_diff": 25.0,
+   "frac_opposite_sides": 0.22859830667920977,
+   "n_days": 105,
+   "n_days_opposite": 21
+  },
+  {
+   "a": "Khalifa City",
+   "b": "Baniyas School",
+   "dist_km": 12.428964903820187,
+   "same_cell": false,
+   "n_common": 1059,
+   "spearman_obs": 0.6096674620380842,
+   "median_abs_diff": 15.0,
+   "frac_opposite_sides": 0.07932011331444759,
+   "n_days": 107,
+   "n_days_opposite": 2
+  },
+  {
+   "a": "Khalifa City",
+   "b": "Habshan S.",
+   "dist_km": 112.65354964727283,
+   "same_cell": false,
+   "n_common": 1039,
+   "spearman_obs": 0.5753829331995941,
+   "median_abs_diff": 32.0,
+   "frac_opposite_sides": 0.3320500481231954,
+   "n_days": 105,
+   "n_days_opposite": 34
+  },
+  {
+   "a": "Khalifa City",
+   "b": "Al Ain Islamic",
+   "dist_km": 119.31541777137191,
+   "same_cell": false,
+   "n_common": 1047,
+   "spearman_obs": 0.43114620223133976,
+   "median_abs_diff": 27.0,
+   "frac_opposite_sides": 0.16332378223495703,
+   "n_days": 104,
+   "n_days_opposite": 16
+  },
+  {
+   "a": "Khalifa City",
+   "b": "Zakher",
+   "dist_km": 117.433245255397,
+   "same_cell": false,
+   "n_common": 1067,
+   "spearman_obs": 0.3695978814263095,
+   "median_abs_diff": 27.0,
+   "frac_opposite_sides": 0.1105904404873477,
+   "n_days": 107,
+   "n_days_opposite": 9
+  },
+  {
+   "a": "Khalifa City",
+   "b": "Al Qua'a",
+   "dist_km": 135.18160833442283,
+   "same_cell": false,
+   "n_common": 1050,
+   "spearman_obs": 0.5202289662073204,
+   "median_abs_diff": 25.0,
+   "frac_opposite_sides": 0.11238095238095239,
+   "n_days": 106,
+   "n_days_opposite": 7
+  },
+  {
+   "a": "Khalifa City",
+   "b": "Al Tawia",
+   "dist_km": 115.53957959691421,
+   "same_cell": false,
+   "n_common": 1054,
+   "spearman_obs": 0.4204492614622318,
+   "median_abs_diff": 26.0,
+   "frac_opposite_sides": 0.09962049335863378,
+   "n_days": 107,
+   "n_days_opposite": 4
+  },
+  {
+   "a": "Khalifa City",
+   "b": "E11 Road",
+   "dist_km": 82.2552644703376,
+   "same_cell": false,
+   "n_common": 1007,
+   "spearman_obs": 0.5734749253375441,
+   "median_abs_diff": 30.0,
+   "frac_opposite_sides": 0.25819265143992054,
+   "n_days": 100,
+   "n_days_opposite": 18
+  },
+  {
+   "a": "Khalifa City",
+   "b": "Al Mafraq",
+   "dist_km": 14.800010116221884,
+   "same_cell": false,
+   "n_common": 1048,
+   "spearman_obs": 0.6790410687685524,
+   "median_abs_diff": 56.0,
+   "frac_opposite_sides": 0.061068702290076333,
+   "n_days": 107,
+   "n_days_opposite": 1
+  },
+  {
+   "a": "Gayathi",
+   "b": "Al Maqtaa",
+   "dist_km": 184.26643806476307,
+   "same_cell": false,
+   "n_common": 1076,
+   "spearman_obs": 0.262022660071751,
+   "median_abs_diff": 30.0,
+   "frac_opposite_sides": 0.1412639405204461,
+   "n_days": 108,
+   "n_days_opposite": 16
+  },
+  {
+   "a": "Gayathi",
+   "b": "Ruwais",
+   "dist_km": 28.9427865317161,
+   "same_cell": true,
+   "n_common": 1129,
+   "spearman_obs": 0.23895017529959245,
+   "median_abs_diff": 17.0,
+   "frac_opposite_sides": 0.3224092116917626,
+   "n_days": 107,
+   "n_days_opposite": 32
+  },
+  {
+   "a": "Gayathi",
+   "b": "Baniyas School",
+   "dist_km": 193.04395992343328,
+   "same_cell": false,
+   "n_common": 1100,
+   "spearman_obs": 0.690303003365237,
+   "median_abs_diff": 21.0,
+   "frac_opposite_sides": 0.1509090909090909,
+   "n_days": 109,
+   "n_days_opposite": 13
+  },
+  {
+   "a": "Gayathi",
+   "b": "Habshan S.",
+   "dist_km": 95.59016770120542,
+   "same_cell": false,
+   "n_common": 1069,
+   "spearman_obs": 0.6946329433537561,
+   "median_abs_diff": 19.0,
+   "frac_opposite_sides": 0.3068288119738073,
+   "n_days": 107,
+   "n_days_opposite": 28
+  },
+  {
+   "a": "Gayathi",
+   "b": "Al Ain Islamic",
+   "dist_km": 300.0519547896212,
+   "same_cell": false,
+   "n_common": 1101,
+   "spearman_obs": 0.6714475568477406,
+   "median_abs_diff": 14.0,
+   "frac_opposite_sides": 0.17075386012715713,
+   "n_days": 106,
+   "n_days_opposite": 20
+  },
+  {
+   "a": "Gayathi",
+   "b": "Zakher",
+   "dist_km": 296.00333714695194,
+   "same_cell": false,
+   "n_common": 1128,
+   "spearman_obs": 0.6863546503668704,
+   "median_abs_diff": 12.0,
+   "frac_opposite_sides": 0.13918439716312056,
+   "n_days": 109,
+   "n_days_opposite": 14
+  },
+  {
+   "a": "Gayathi",
+   "b": "Al Qua'a",
+   "dist_km": 274.54646702171266,
+   "same_cell": false,
+   "n_common": 1087,
+   "spearman_obs": 0.7403825601811262,
+   "median_abs_diff": 14.0,
+   "frac_opposite_sides": 0.13799448022079117,
+   "n_days": 108,
+   "n_days_opposite": 14
+  },
+  {
+   "a": "Gayathi",
+   "b": "Al Tawia",
+   "dist_km": 297.66390415820234,
+   "same_cell": false,
+   "n_common": 1089,
+   "spearman_obs": 0.6645399026511357,
+   "median_abs_diff": 13.0,
+   "frac_opposite_sides": 0.1322314049586777,
+   "n_days": 109,
+   "n_days_opposite": 13
+  },
+  {
+   "a": "Gayathi",
+   "b": "E11 Road",
+   "dist_km": 111.48627950535935,
+   "same_cell": false,
+   "n_common": 1061,
+   "spearman_obs": 0.717284983063937,
+   "median_abs_diff": 17.0,
+   "frac_opposite_sides": 0.24410933081998115,
+   "n_days": 102,
+   "n_days_opposite": 18
+  },
+  {
+   "a": "Gayathi",
+   "b": "Al Mafraq",
+   "dist_km": 187.15995314783078,
+   "same_cell": false,
+   "n_common": 1078,
+   "spearman_obs": 0.6682173628670824,
+   "median_abs_diff": 85.0,
+   "frac_opposite_sides": 0.13172541743970315,
+   "n_days": 109,
+   "n_days_opposite": 14
+  },
+  {
+   "a": "Al Maqtaa",
+   "b": "Ruwais",
+   "dist_km": 181.91268695955992,
+   "same_cell": false,
+   "n_common": 1066,
+   "spearman_obs": 0.10136889568467818,
+   "median_abs_diff": 32.0,
+   "frac_opposite_sides": 0.2129455909943715,
+   "n_days": 106,
+   "n_days_opposite": 20
+  },
+  {
+   "a": "Al Maqtaa",
+   "b": "Baniyas School",
+   "dist_km": 15.200227880944613,
+   "same_cell": false,
+   "n_common": 1070,
+   "spearman_obs": 0.4557106262077074,
+   "median_abs_diff": 25.0,
+   "frac_opposite_sides": 0.04579439252336449,
+   "n_days": 108,
+   "n_days_opposite": 3
+  },
+  {
+   "a": "Al Maqtaa",
+   "b": "Habshan S.",
+   "dist_km": 106.75747130550646,
+   "same_cell": false,
+   "n_common": 1043,
+   "spearman_obs": 0.5088546854642709,
+   "median_abs_diff": 38.0,
+   "frac_opposite_sides": 0.36433365292425696,
+   "n_days": 106,
+   "n_days_opposite": 33
+  },
+  {
+   "a": "Al Maqtaa",
+   "b": "Al Ain Islamic",
+   "dist_km": 125.19823619470313,
+   "same_cell": false,
+   "n_common": 1052,
+   "spearman_obs": 0.21872853125136166,
+   "median_abs_diff": 28.0,
+   "frac_opposite_sides": 0.1311787072243346,
+   "n_days": 105,
+   "n_days_opposite": 16
+  },
+  {
+   "a": "Al Maqtaa",
+   "b": "Zakher",
+   "dist_km": 123.14742940461456,
+   "same_cell": false,
+   "n_common": 1075,
+   "spearman_obs": 0.21044284504608096,
+   "median_abs_diff": 27.0,
+   "frac_opposite_sides": 0.0827906976744186,
+   "n_days": 108,
+   "n_days_opposite": 10
+  },
+  {
+   "a": "Al Maqtaa",
+   "b": "Al Qua'a",
+   "dist_km": 138.28169356924047,
+   "same_cell": false,
+   "n_common": 1063,
+   "spearman_obs": 0.25526616734989144,
+   "median_abs_diff": 28.0,
+   "frac_opposite_sides": 0.08654750705550329,
+   "n_days": 107,
+   "n_days_opposite": 8
+  },
+  {
+   "a": "Al Maqtaa",
+   "b": "Al Tawia",
+   "dist_km": 121.51242626738217,
+   "same_cell": false,
+   "n_common": 1063,
+   "spearman_obs": 0.17797449052917708,
+   "median_abs_diff": 25.0,
+   "frac_opposite_sides": 0.05456255879586077,
+   "n_days": 108,
+   "n_days_opposite": 5
+  },
+  {
+   "a": "Al Maqtaa",
+   "b": "E11 Road",
+   "dist_km": 75.95161246355488,
+   "same_cell": false,
+   "n_common": 1011,
+   "spearman_obs": 0.2736378215662409,
+   "median_abs_diff": 45.0,
+   "frac_opposite_sides": 0.29080118694362017,
+   "n_days": 101,
+   "n_days_opposite": 19
+  },
+  {
+   "a": "Al Maqtaa",
+   "b": "Al Mafraq",
+   "dist_km": 14.773109582035412,
+   "same_cell": false,
+   "n_common": 1056,
+   "spearman_obs": 0.411126468978624,
+   "median_abs_diff": 65.0,
+   "frac_opposite_sides": 0.016098484848484848,
+   "n_days": 108,
+   "n_days_opposite": 2
+  },
+  {
+   "a": "Ruwais",
+   "b": "Baniyas School",
+   "dist_km": 192.490346231721,
+   "same_cell": false,
+   "n_common": 1090,
+   "spearman_obs": 0.14352214035105798,
+   "median_abs_diff": 28.0,
+   "frac_opposite_sides": 0.24954128440366974,
+   "n_days": 107,
+   "n_days_opposite": 21
+  },
+  {
+   "a": "Ruwais",
+   "b": "Habshan S.",
+   "dist_km": 107.54868712019186,
+   "same_cell": false,
+   "n_common": 1059,
+   "spearman_obs": 0.12539272593302037,
+   "median_abs_diff": 20.0,
+   "frac_opposite_sides": 0.465533522190746,
+   "n_days": 105,
+   "n_days_opposite": 49
+  },
+  {
+   "a": "Ruwais",
+   "b": "Al Ain Islamic",
+   "dist_km": 302.67781685122316,
+   "same_cell": false,
+   "n_common": 1092,
+   "spearman_obs": 0.08917763358479683,
+   "median_abs_diff": 16.0,
+   "frac_opposite_sides": 0.2857142857142857,
+   "n_days": 104,
+   "n_days_opposite": 28
+  },
+  {
+   "a": "Ruwais",
+   "b": "Zakher",
+   "dist_km": 299.19845982094853,
+   "same_cell": false,
+   "n_common": 1118,
+   "spearman_obs": 0.1027941883138939,
+   "median_abs_diff": 14.5,
+   "frac_opposite_sides": 0.24686940966010734,
+   "n_days": 107,
+   "n_days_opposite": 24
+  },
+  {
+   "a": "Ruwais",
+   "b": "Al Qua'a",
+   "dist_km": 284.71488557165173,
+   "same_cell": false,
+   "n_common": 1078,
+   "spearman_obs": 0.0958113873995085,
+   "median_abs_diff": 20.0,
+   "frac_opposite_sides": 0.25139146567717996,
+   "n_days": 106,
+   "n_days_opposite": 24
+  },
+  {
+   "a": "Ruwais",
+   "b": "Al Tawia",
+   "dist_km": 299.8358602111664,
+   "same_cell": false,
+   "n_common": 1079,
+   "spearman_obs": 0.032995973129883595,
+   "median_abs_diff": 17.0,
+   "frac_opposite_sides": 0.2391102873030584,
+   "n_days": 107,
+   "n_days_opposite": 21
+  },
+  {
+   "a": "Ruwais",
+   "b": "E11 Road",
+   "dist_km": 114.94844001444113,
+   "same_cell": false,
+   "n_common": 1051,
+   "spearman_obs": 0.1586976204111823,
+   "median_abs_diff": 18.0,
+   "frac_opposite_sides": 0.3472882968601332,
+   "n_days": 100,
+   "n_days_opposite": 30
+  },
+  {
+   "a": "Ruwais",
+   "b": "Al Mafraq",
+   "dist_km": 187.02765442214917,
+   "same_cell": false,
+   "n_common": 1068,
+   "spearman_obs": 0.19697743868902706,
+   "median_abs_diff": 92.0,
+   "frac_opposite_sides": 0.20786516853932585,
+   "n_days": 107,
+   "n_days_opposite": 20
+  },
+  {
+   "a": "Baniyas School",
+   "b": "Habshan S.",
+   "dist_km": 110.5059526981191,
+   "same_cell": false,
+   "n_common": 1057,
+   "spearman_obs": 0.632882436552731,
+   "median_abs_diff": 32.0,
+   "frac_opposite_sides": 0.3727530747398297,
+   "n_days": 107,
+   "n_days_opposite": 34
+  },
+  {
+   "a": "Baniyas School",
+   "b": "Al Ain Islamic",
+   "dist_km": 111.9714612771529,
+   "same_cell": false,
+   "n_common": 1074,
+   "spearman_obs": 0.65372739954463,
+   "median_abs_diff": 22.0,
+   "frac_opposite_sides": 0.14152700186219738,
+   "n_days": 106,
+   "n_days_opposite": 14
+  },
+  {
+   "a": "Baniyas School",
+   "b": "Zakher",
+   "dist_km": 109.51764113348302,
+   "same_cell": false,
+   "n_common": 1097,
+   "spearman_obs": 0.5743972743275323,
+   "median_abs_diff": 22.0,
+   "frac_opposite_sides": 0.09298085688240657,
+   "n_days": 109,
+   "n_days_opposite": 7
+  },
+  {
+   "a": "Baniyas School",
+   "b": "Al Qua'a",
+   "dist_km": 123.22400885298269,
+   "same_cell": false,
+   "n_common": 1074,
+   "spearman_obs": 0.6736073798620331,
+   "median_abs_diff": 17.0,
+   "frac_opposite_sides": 0.09031657355679702,
+   "n_days": 108,
+   "n_days_opposite": 5
+  },
+  {
+   "a": "Baniyas School",
+   "b": "Al Tawia",
+   "dist_km": 108.55462543235026,
+   "same_cell": false,
+   "n_common": 1078,
+   "spearman_obs": 0.6079982149154511,
+   "median_abs_diff": 19.0,
+   "frac_opposite_sides": 0.061224489795918366,
+   "n_days": 109,
+   "n_days_opposite": 2
+  },
+  {
+   "a": "Baniyas School",
+   "b": "E11 Road",
+   "dist_km": 82.52404058478922,
+   "same_cell": false,
+   "n_common": 1026,
+   "spearman_obs": 0.6893077624861746,
+   "median_abs_diff": 31.0,
+   "frac_opposite_sides": 0.2826510721247563,
+   "n_days": 102,
+   "n_days_opposite": 16
+  },
+  {
+   "a": "Baniyas School",
+   "b": "Al Mafraq",
+   "dist_km": 6.325823637802314,
+   "same_cell": true,
+   "n_common": 1066,
+   "spearman_obs": 0.7040143653628995,
+   "median_abs_diff": 71.0,
+   "frac_opposite_sides": 0.04878048780487805,
+   "n_days": 109,
+   "n_days_opposite": 1
+  },
+  {
+   "a": "Habshan S.",
+   "b": "Al Ain Islamic",
+   "dist_km": 208.73632509678177,
+   "same_cell": false,
+   "n_common": 1045,
+   "spearman_obs": 0.5269735936561947,
+   "median_abs_diff": 21.0,
+   "frac_opposite_sides": 0.3980861244019139,
+   "n_days": 105,
+   "n_days_opposite": 40
+  },
+  {
+   "a": "Habshan S.",
+   "b": "Zakher",
+   "dist_km": 204.0833599394285,
+   "same_cell": false,
+   "n_common": 1067,
+   "spearman_obs": 0.4856160049481153,
+   "median_abs_diff": 19.0,
+   "frac_opposite_sides": 0.3673851921274602,
+   "n_days": 107,
+   "n_days_opposite": 38
+  },
+  {
+   "a": "Habshan S.",
+   "b": "Al Qua'a",
+   "dist_km": 178.9809413284489,
+   "same_cell": false,
+   "n_common": 1050,
+   "spearman_obs": 0.6099119853254653,
+   "median_abs_diff": 24.0,
+   "frac_opposite_sides": 0.38571428571428573,
+   "n_days": 106,
+   "n_days_opposite": 39
+  },
+  {
+   "a": "Habshan S.",
+   "b": "Al Tawia",
+   "dist_km": 206.93048472676682,
+   "same_cell": false,
+   "n_common": 1055,
+   "spearman_obs": 0.4970588083633489,
+   "median_abs_diff": 22.0,
+   "frac_opposite_sides": 0.37725118483412323,
+   "n_days": 107,
+   "n_days_opposite": 34
+  },
+  {
+   "a": "Habshan S.",
+   "b": "E11 Road",
+   "dist_km": 34.71386451481478,
+   "same_cell": true,
+   "n_common": 1012,
+   "spearman_obs": 0.7132488939573611,
+   "median_abs_diff": 16.0,
+   "frac_opposite_sides": 0.29446640316205536,
+   "n_days": 101,
+   "n_days_opposite": 33
+  },
+  {
+   "a": "Habshan S.",
+   "b": "Al Mafraq",
+   "dist_km": 104.185028898043,
+   "same_cell": false,
+   "n_common": 1046,
+   "spearman_obs": 0.7136670463018941,
+   "median_abs_diff": 100.0,
+   "frac_opposite_sides": 0.35564053537284895,
+   "n_days": 107,
+   "n_days_opposite": 33
+  },
+  {
+   "a": "Al Ain Islamic",
+   "b": "Zakher",
+   "dist_km": 7.015943894531255,
+   "same_cell": true,
+   "n_common": 1094,
+   "spearman_obs": 0.8106447993207139,
+   "median_abs_diff": 9.0,
+   "frac_opposite_sides": 0.07861060329067641,
+   "n_days": 106,
+   "n_days_opposite": 8
+  },
+  {
+   "a": "Al Ain Islamic",
+   "b": "Al Qua'a",
+   "dist_km": 80.56898813680606,
+   "same_cell": false,
+   "n_common": 1065,
+   "spearman_obs": 0.8005850340573296,
+   "median_abs_diff": 11.0,
+   "frac_opposite_sides": 0.10892018779342723,
+   "n_days": 105,
+   "n_days_opposite": 8
+  },
+  {
+   "a": "Al Ain Islamic",
+   "b": "Al Tawia",
+   "dist_km": 5.397614973194831,
+   "same_cell": true,
+   "n_common": 1062,
+   "spearman_obs": 0.8233477045069042,
+   "median_abs_diff": 9.0,
+   "frac_opposite_sides": 0.10263653483992467,
+   "n_days": 106,
+   "n_days_opposite": 12
+  },
+  {
+   "a": "Al Ain Islamic",
+   "b": "E11 Road",
+   "dist_km": 188.79843896520435,
+   "same_cell": false,
+   "n_common": 1034,
+   "spearman_obs": 0.6835123726888569,
+   "median_abs_diff": 17.0,
+   "frac_opposite_sides": 0.2495164410058027,
+   "n_days": 101,
+   "n_days_opposite": 19
+  },
+  {
+   "a": "Al Ain Islamic",
+   "b": "Al Mafraq",
+   "dist_km": 116.70113575186555,
+   "same_cell": false,
+   "n_common": 1055,
+   "spearman_obs": 0.5575300589455471,
+   "median_abs_diff": 85.0,
+   "frac_opposite_sides": 0.12417061611374408,
+   "n_days": 106,
+   "n_days_opposite": 15
+  },
+  {
+   "a": "Zakher",
+   "b": "Al Qua'a",
+   "dist_km": 73.66650510975091,
+   "same_cell": false,
+   "n_common": 1085,
+   "spearman_obs": 0.8024587890642417,
+   "median_abs_diff": 11.0,
+   "frac_opposite_sides": 0.07465437788018434,
+   "n_days": 108,
+   "n_days_opposite": 4
+  },
+  {
+   "a": "Zakher",
+   "b": "Al Tawia",
+   "dist_km": 10.644876776586457,
+   "same_cell": true,
+   "n_common": 1087,
+   "spearman_obs": 0.8585017416103381,
+   "median_abs_diff": 8.0,
+   "frac_opposite_sides": 0.05611775528978841,
+   "n_days": 109,
+   "n_days_opposite": 5
+  },
+  {
+   "a": "Zakher",
+   "b": "E11 Road",
+   "dist_km": 184.96053795515562,
+   "same_cell": false,
+   "n_common": 1052,
+   "spearman_obs": 0.6677623215242263,
+   "median_abs_diff": 17.0,
+   "frac_opposite_sides": 0.22433460076045628,
+   "n_days": 102,
+   "n_days_opposite": 15
+  },
+  {
+   "a": "Zakher",
+   "b": "Al Mafraq",
+   "dist_km": 113.99700704545624,
+   "same_cell": false,
+   "n_common": 1075,
+   "spearman_obs": 0.47752492924535606,
+   "median_abs_diff": 90.0,
+   "frac_opposite_sides": 0.07906976744186046,
+   "n_days": 109,
+   "n_days_opposite": 8
+  },
+  {
+   "a": "Al Qua'a",
+   "b": "Al Tawia",
+   "dist_km": 83.95314640329075,
+   "same_cell": false,
+   "n_common": 1071,
+   "spearman_obs": 0.8287679105990581,
+   "median_abs_diff": 8.0,
+   "frac_opposite_sides": 0.07563025210084033,
+   "n_days": 108,
+   "n_days_opposite": 5
+  },
+  {
+   "a": "Al Qua'a",
+   "b": "E11 Road",
+   "dist_km": 172.23530539321396,
+   "same_cell": false,
+   "n_common": 1020,
+   "spearman_obs": 0.7346693924090301,
+   "median_abs_diff": 21.0,
+   "frac_opposite_sides": 0.2411764705882353,
+   "n_days": 101,
+   "n_days_opposite": 13
+  },
+  {
+   "a": "Al Qua'a",
+   "b": "Al Mafraq",
+   "dist_km": 124.2211143488628,
+   "same_cell": false,
+   "n_common": 1060,
+   "spearman_obs": 0.5933485573652061,
+   "median_abs_diff": 77.0,
+   "frac_opposite_sides": 0.07735849056603773,
+   "n_days": 108,
+   "n_days_opposite": 6
+  },
+  {
+   "a": "Al Tawia",
+   "b": "E11 Road",
+   "dist_km": 186.28705015431964,
+   "same_cell": false,
+   "n_common": 1021,
+   "spearman_obs": 0.6347830316409814,
+   "median_abs_diff": 23.0,
+   "frac_opposite_sides": 0.2556317335945152,
+   "n_days": 102,
+   "n_days_opposite": 16
+  },
+  {
+   "a": "Al Tawia",
+   "b": "Al Mafraq",
+   "dist_km": 113.43907311618506,
+   "same_cell": false,
+   "n_common": 1063,
+   "spearman_obs": 0.47552342245211054,
+   "median_abs_diff": 79.0,
+   "frac_opposite_sides": 0.05268109125117592,
+   "n_days": 109,
+   "n_days_opposite": 3
+  },
+  {
+   "a": "E11 Road",
+   "b": "Al Mafraq",
+   "dist_km": 76.41733034477677,
+   "same_cell": false,
+   "n_common": 1012,
+   "spearman_obs": 0.7049295032415955,
+   "median_abs_diff": 82.0,
+   "frac_opposite_sides": 0.2707509881422925,
+   "n_days": 102,
+   "n_days_opposite": 17
+  }
+ ],
+ "coherence": {
+  "n_pairs": 171,
+  "same_cell": {
+   "n_pairs": 15,
+   "dist_min": 0.951031604809717,
+   "dist_median": 9.48088773716445,
+   "dist_max": 46.40591300826408,
+   "spearman_median": 0.7040143653628995,
+   "spearman_min": 0.21949618274322824,
+   "spearman_max": 0.9029833839820738,
+   "median_abs_diff_median": 17.0,
+   "frac_opposite_median": 0.07861060329067641,
+   "frac_opposite_max": 0.3532289628180039,
+   "n_days_total": 1583,
+   "frac_days_opposite_pooled": 0.11749842072015161
+  },
+  "different_cell": {
+   "n_pairs": 156,
+   "dist_min": 6.412315062472394,
+   "dist_median": 123.19558848839495,
+   "dist_max": 305.8474546136061,
+   "spearman_median": 0.48310903371163527,
+   "spearman_min": -0.04985715980120629,
+   "spearman_max": 0.844316051536643,
+   "median_abs_diff_median": 25.0,
+   "frac_opposite_median": 0.22865100519145676,
+   "frac_opposite_max": 0.465533522190746,
+   "n_days_total": 16472,
+   "frac_days_opposite_pooled": 0.18722680913064593
+  },
+  "coherence_ge_80km_median": 0.47637406688452977,
+  "n_ge_80km": 125,
+  "cams_obs_spearman_median": 0.6598647108887369,
+  "cams_obs_spearman_min": 0.1636030734025542,
+  "cams_obs_spearman_max": 0.749603268752085,
+  "closest_pair": {
+   "a": "Khadeeja School",
+   "b": "Hamdan St.",
+   "dist_km": 0.951031604809717,
+   "same_cell": true,
+   "n_common": 1062,
+   "spearman_obs": 0.3322966966213246,
+   "median_abs_diff": 41.0,
+   "frac_opposite_sides": 0.14595103578154425,
+   "n_days": 105,
+   "n_days_opposite": 11
+  }
+ },
+ "regional": {
+  "n_days": 109,
+  "n_days_with_model": 104,
+  "first_day": "2023-04-16",
+  "last_day": "2023-12-31",
+  "tercile_bounds": [
+   66.0,
+   94.0
+  ],
+  "classes": {
+   "low": {
+    "n_days": 40,
+    "regional_median": 58.5,
+    "regional_min": 42.0,
+    "regional_max": 66.0,
+    "bias_all": -20.820963050222257,
+    "bias_metro": -62.64804955112562,
+    "bias_al_ain": 8.759457073226272,
+    "between_monitor_sd_median": 30.00593168845569,
+    "cams_between_monitor_sd_median": 19.129447682123672,
+    "within_cell_sd_median": 12.020815280171307
+   },
+   "mid": {
+    "n_days": 33,
+    "regional_median": 72.0,
+    "regional_min": 66.5,
+    "regional_max": 94.0,
+    "bias_all": -22.50115689262993,
+    "bias_metro": -58.95980689918048,
+    "bias_al_ain": 4.062249957512316,
+    "between_monitor_sd_median": 31.018575834225945,
+    "cams_between_monitor_sd_median": 19.216691883665852,
+    "within_cell_sd_median": 14.710452200590213
+   },
+   "high": {
+    "n_days": 36,
+    "regional_median": 114.5,
+    "regional_min": 95.0,
+    "regional_max": 143.0,
+    "bias_all": -45.586912083734546,
+    "bias_metro": -96.98636621010989,
+    "bias_al_ain": -3.280273618520857,
+    "between_monitor_sd_median": 60.19535616164944,
+    "cams_between_monitor_sd_median": 23.602193172391466,
+    "within_cell_sd_median": 33.23401871576773
+   }
+  },
+  "spearman_regional_obs_vs_cams": 0.7779675178579286,
+  "spearman_regional_obs_vs_cams_p": 2.607882589637141e-22,
+  "series": [
+   {
+    "day": "2023-08-25",
+    "obs": 136.0,
+    "cams": 113.74448851785715,
+    "cls": "high"
+   },
+   {
+    "day": "2023-08-26",
+    "obs": 127.0,
+    "cams": 81.822747875,
+    "cls": "high"
+   },
+   {
+    "day": "2023-08-27",
+    "obs": 129.0,
+    "cams": 117.825691375,
+    "cls": "high"
+   },
+   {
+    "day": "2023-08-28",
+    "obs": 134.0,
+    "cams": 75.51884275,
+    "cls": "high"
+   },
+   {
+    "day": "2023-08-29",
+    "obs": 106.0,
+    "cams": 55.706063928571425,
+    "cls": "high"
+   },
+   {
+    "day": "2023-08-30",
+    "obs": 114.0,
+    "cams": 122.5545442857143,
+    "cls": "high"
+   },
+   {
+    "day": "2023-08-31",
+    "obs": 121.0,
+    "cams": 97.422001625,
+    "cls": "high"
+   },
+   {
+    "day": "2023-09-01",
+    "obs": 94.0,
+    "cams": 70.34050642857143,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-09-02",
+    "obs": 85.0,
+    "cams": 68.90291371428572,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-09-03",
+    "obs": 100.0,
+    "cams": 94.36260971428571,
+    "cls": "high"
+   },
+   {
+    "day": "2023-09-04",
+    "obs": 126.0,
+    "cams": 100.19882473214285,
+    "cls": "high"
+   },
+   {
+    "day": "2023-09-05",
+    "obs": 115.0,
+    "cams": 76.621659875,
+    "cls": "high"
+   },
+   {
+    "day": "2023-09-06",
+    "obs": 102.0,
+    "cams": 103.05229628571428,
+    "cls": "high"
+   },
+   {
+    "day": "2023-09-07",
+    "obs": 126.0,
+    "cams": 86.18685271428572,
+    "cls": "high"
+   },
+   {
+    "day": "2023-09-08",
+    "obs": 143.0,
+    "cams": 102.8891915,
+    "cls": "high"
+   },
+   {
+    "day": "2023-09-09",
+    "obs": 105.0,
+    "cams": 46.818982125000005,
+    "cls": "high"
+   },
+   {
+    "day": "2023-09-10",
+    "obs": 99.0,
+    "cams": 55.746438714285716,
+    "cls": "high"
+   },
+   {
+    "day": "2023-09-11",
+    "obs": 108.0,
+    "cams": 82.35846214285715,
+    "cls": "high"
+   },
+   {
+    "day": "2023-09-12",
+    "obs": 99.0,
+    "cams": 57.661765375,
+    "cls": "high"
+   },
+   {
+    "day": "2023-09-13",
+    "obs": 101.0,
+    "cams": 82.71321483035715,
+    "cls": "high"
+   },
+   {
+    "day": "2023-09-14",
+    "obs": 121.0,
+    "cams": 76.09803871428572,
+    "cls": "high"
+   },
+   {
+    "day": "2023-09-15",
+    "obs": 115.0,
+    "cams": 98.86058262499999,
+    "cls": "high"
+   },
+   {
+    "day": "2023-09-17",
+    "obs": 110.0,
+    "cams": 84.718054375,
+    "cls": "high"
+   },
+   {
+    "day": "2023-09-18",
+    "obs": 124.0,
+    "cams": 88.532188,
+    "cls": "high"
+   },
+   {
+    "day": "2023-09-19",
+    "obs": 142.0,
+    "cams": 83.91265250000001,
+    "cls": "high"
+   },
+   {
+    "day": "2023-09-20",
+    "obs": 134.0,
+    "cams": 117.71969574999999,
+    "cls": "high"
+   },
+   {
+    "day": "2023-09-21",
+    "obs": 101.5,
+    "cams": 60.932393874999995,
+    "cls": "high"
+   },
+   {
+    "day": "2023-09-22",
+    "obs": 71.0,
+    "cams": 41.16606081249999,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-09-23",
+    "obs": 122.0,
+    "cams": 91.3312764732143,
+    "cls": "high"
+   },
+   {
+    "day": "2023-09-24",
+    "obs": 128.0,
+    "cams": 97.44980062500001,
+    "cls": "high"
+   },
+   {
+    "day": "2023-09-25",
+    "obs": 125.0,
+    "cams": 110.27439785714286,
+    "cls": "high"
+   },
+   {
+    "day": "2023-09-26",
+    "obs": 113.0,
+    "cams": 50.145681,
+    "cls": "high"
+   },
+   {
+    "day": "2023-10-03",
+    "obs": 108.0,
+    "cams": 51.29088885714286,
+    "cls": "high"
+   },
+   {
+    "day": "2023-10-04",
+    "obs": 85.0,
+    "cams": 61.01520433928572,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-10-06",
+    "obs": 108.0,
+    "cams": 84.0258922142857,
+    "cls": "high"
+   },
+   {
+    "day": "2023-10-09",
+    "obs": 84.0,
+    "cams": 58.73058928571428,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-10-10",
+    "obs": 82.0,
+    "cams": 55.20708428571428,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-10-13",
+    "obs": 73.0,
+    "cams": 48.731920857142846,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-10-26",
+    "obs": 71.0,
+    "cams": 79.43646092857142,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-10-27",
+    "obs": 48.5,
+    "cams": 40.5903654375,
+    "cls": "low"
+   },
+   {
+    "day": "2023-10-28",
+    "obs": 49.0,
+    "cams": 38.608575374999994,
+    "cls": "low"
+   },
+   {
+    "day": "2023-10-29",
+    "obs": 63.0,
+    "cams": 53.138383874999995,
+    "cls": "low"
+   },
+   {
+    "day": "2023-10-30",
+    "obs": 63.0,
+    "cams": 56.364537285714285,
+    "cls": "low"
+   },
+   {
+    "day": "2023-10-31",
+    "obs": 68.0,
+    "cams": 67.53148675,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-11-01",
+    "obs": 57.0,
+    "cams": 48.08299722321429,
+    "cls": "low"
+   },
+   {
+    "day": "2023-11-02",
+    "obs": 73.0,
+    "cams": 56.83658057142858,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-11-03",
+    "obs": 85.0,
+    "cams": 69.441653375,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-11-04",
+    "obs": 66.5,
+    "cams": 47.451807,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-11-05",
+    "obs": 56.0,
+    "cams": 46.554845500000006,
+    "cls": "low"
+   },
+   {
+    "day": "2023-11-06",
+    "obs": 58.0,
+    "cams": 40.448668624999996,
+    "cls": "low"
+   },
+   {
+    "day": "2023-11-07",
+    "obs": 50.0,
+    "cams": 41.58931715178571,
+    "cls": "low"
+   },
+   {
+    "day": "2023-11-08",
+    "obs": 65.0,
+    "cams": 48.4044615,
+    "cls": "low"
+   },
+   {
+    "day": "2023-11-09",
+    "obs": 56.0,
+    "cams": 49.46194475,
+    "cls": "low"
+   },
+   {
+    "day": "2023-11-10",
+    "obs": 59.0,
+    "cams": 71.290216,
+    "cls": "low"
+   },
+   {
+    "day": "2023-11-11",
+    "obs": 51.0,
+    "cams": 61.042848428571425,
+    "cls": "low"
+   },
+   {
+    "day": "2023-11-12",
+    "obs": 47.0,
+    "cams": 46.123489,
+    "cls": "low"
+   },
+   {
+    "day": "2023-11-13",
+    "obs": 48.0,
+    "cams": 38.033974,
+    "cls": "low"
+   },
+   {
+    "day": "2023-11-14",
+    "obs": 54.0,
+    "cams": 23.264922571428574,
+    "cls": "low"
+   },
+   {
+    "day": "2023-11-15",
+    "obs": 79.0,
+    "cams": 51.635294571428574,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-11-16",
+    "obs": 86.0,
+    "cams": 58.932613125,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-11-17",
+    "obs": 68.0,
+    "cams": 59.08327742857143,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-11-18",
+    "obs": 42.0,
+    "cams": 34.389757,
+    "cls": "low"
+   },
+   {
+    "day": "2023-11-19",
+    "obs": 52.0,
+    "cams": 40.501475750000004,
+    "cls": "low"
+   },
+   {
+    "day": "2023-11-20",
+    "obs": 74.0,
+    "cams": 52.64500675,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-11-21",
+    "obs": 70.0,
+    "cams": 55.205398437499994,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-11-22",
+    "obs": 96.0,
+    "cams": 68.375073375,
+    "cls": "high"
+   },
+   {
+    "day": "2023-11-23",
+    "obs": 72.0,
+    "cams": 49.080043125,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-11-24",
+    "obs": 63.0,
+    "cams": 46.507433285714285,
+    "cls": "low"
+   },
+   {
+    "day": "2023-11-25",
+    "obs": 68.0,
+    "cams": 65.53828850000001,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-11-26",
+    "obs": 57.0,
+    "cams": 45.56871162499999,
+    "cls": "low"
+   },
+   {
+    "day": "2023-11-27",
+    "obs": 62.0,
+    "cams": 35.375961875,
+    "cls": "low"
+   },
+   {
+    "day": "2023-11-28",
+    "obs": 72.5,
+    "cams": 25.934341062500003,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-11-29",
+    "obs": 77.0,
+    "cams": 70.49442400000001,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-11-30",
+    "obs": 52.0,
+    "cams": 27.672975250000007,
+    "cls": "low"
+   },
+   {
+    "day": "2023-12-01",
+    "obs": 55.0,
+    "cams": 34.0480005,
+    "cls": "low"
+   },
+   {
+    "day": "2023-12-02",
+    "obs": 66.0,
+    "cams": 46.934132875,
+    "cls": "low"
+   },
+   {
+    "day": "2023-12-04",
+    "obs": 65.0,
+    "cams": 68.08281678571429,
+    "cls": "low"
+   },
+   {
+    "day": "2023-12-05",
+    "obs": 65.0,
+    "cams": 50.2104164375,
+    "cls": "low"
+   },
+   {
+    "day": "2023-12-06",
+    "obs": 65.0,
+    "cams": 45.645605374999995,
+    "cls": "low"
+   },
+   {
+    "day": "2023-12-07",
+    "obs": 58.0,
+    "cams": 31.376330125,
+    "cls": "low"
+   },
+   {
+    "day": "2023-12-08",
+    "obs": 66.0,
+    "cams": 52.560494625000004,
+    "cls": "low"
+   },
+   {
+    "day": "2023-12-09",
+    "obs": 70.0,
+    "cams": 63.70892437500001,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-12-10",
+    "obs": 71.0,
+    "cams": 43.73951787500001,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-12-11",
+    "obs": 67.0,
+    "cams": 57.13611428571429,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-12-12",
+    "obs": 68.0,
+    "cams": 43.092854,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-12-13",
+    "obs": 70.0,
+    "cams": 46.74143357142857,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-12-14",
+    "obs": 78.0,
+    "cams": 65.91361,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-12-15",
+    "obs": 69.0,
+    "cams": 53.26052837500001,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-12-16",
+    "obs": 55.0,
+    "cams": 59.605286285714286,
+    "cls": "low"
+   },
+   {
+    "day": "2023-12-17",
+    "obs": 66.0,
+    "cams": 44.2107005,
+    "cls": "low"
+   },
+   {
+    "day": "2023-12-18",
+    "obs": 57.0,
+    "cams": 33.04607825,
+    "cls": "low"
+   },
+   {
+    "day": "2023-12-19",
+    "obs": 61.0,
+    "cams": 37.462584,
+    "cls": "low"
+   },
+   {
+    "day": "2023-12-20",
+    "obs": 60.0,
+    "cams": 28.109269937500006,
+    "cls": "low"
+   },
+   {
+    "day": "2023-12-21",
+    "obs": 73.0,
+    "cams": 60.618582499999995,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-12-22",
+    "obs": 65.0,
+    "cams": 48.630650687499994,
+    "cls": "low"
+   },
+   {
+    "day": "2023-12-23",
+    "obs": 72.0,
+    "cams": 47.837317125,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-12-24",
+    "obs": 67.5,
+    "cams": 49.720889375000006,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-12-25",
+    "obs": 66.0,
+    "cams": 35.62205075,
+    "cls": "low"
+   },
+   {
+    "day": "2023-12-26",
+    "obs": 78.0,
+    "cams": 44.146034625,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-12-27",
+    "obs": 62.0,
+    "cams": 26.150466075000004,
+    "cls": "low"
+   },
+   {
+    "day": "2023-12-28",
+    "obs": 54.0,
+    "cams": 36.30775942857143,
+    "cls": "low"
+   },
+   {
+    "day": "2023-12-29",
+    "obs": 68.0,
+    "cams": 32.185873375,
+    "cls": "mid"
+   },
+   {
+    "day": "2023-12-30",
+    "obs": 60.0,
+    "cams": 33.24687031250001,
+    "cls": "low"
+   },
+   {
+    "day": "2023-12-31",
+    "obs": 64.0,
+    "cams": 40.38336825,
+    "cls": "low"
+   }
+  ]
+ },
+ "residual_acf_median": {
+  "1 d": 0.37458779072251785,
+  "3 d": 0.15518191371922133,
+  "7 d": 0.1461395205925923,
+  "10 d": 0.16134719594665675
+ }
+}
