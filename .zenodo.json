@@ -1,0 +1,14 @@
+{
+  "title": "camscast: code, processed records and results for the evaluation of CAMS reanalysis PM10 against the Abu Dhabi regulatory monitoring network",
+  "upload_type": "software",
+  "description": "Analysis code, processed observation-model records and result files for a study that evaluates surface PM10 of the CAMS EAC4 reanalysis against the 19-monitor regulatory network of the Emirate of Abu Dhabi (October 2022 to May 2024), shows that the PM10 values held by the OpenAQ archive for this network are 24-h running means, and identifies dust independently with AERONET and airport weather reports. Raw CAMS, AERONET and METAR files are not redistributed; the fetch scripts retrieve them.",
+  "creators": [
+    {"name": "Yoo, Jin", "affiliation": "CBRN Defense Research Institute, Korea Ministry of National Defense", "orcid": "0000-0002-7738-8424"},
+    {"name": "Kim, Jeongyun", "affiliation": "Department of Chemical and Biological Engineering, Seoul National University", "orcid": "0009-0004-1377-8572"},
+    {"name": "Lee, Doo-Hee", "affiliation": "Department of Civil Engineering and Environmental Sciences, Korea Military Academy", "orcid": "0000-0002-5116-2064"},
+    {"name": "Kang, Ku", "affiliation": "CBRN Defense Research Institute, Korea Ministry of National Defense", "orcid": "0000-0001-8739-218X"}
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": ["PM10", "CAMS reanalysis", "Abu Dhabi", "running mean", "AERONET", "dust", "model evaluation"]
+}
